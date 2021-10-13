@@ -1,16 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind custom components */
+
+/* Navigation Bar
+    'nav'           base class for the component
+    'nav-groups'    container to allign all elemnt groups inside nav
+    'nav-itens'     allign navigation items horizontally
+    'nav-brand'     highlighted nav text */
+.nav {
+  @apply bg-gray-800 p-5 px-16 text-white;
+}
+.nav-groups {
+  @apply flex justify-between;
+}
+.nav-items {
+  @apply flex flex-row gap-10 text-left items-center;
+}
+.nav-brand {
+  @apply text-lg font-bold flex flex-row gap-5;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Button
+'btn'               base class for a button component
+'btn-sm'            small button
+'btn-md'            medium button
+'btn-lg'            large button */
+.btn {
+  @apply bg-gray-600 rounded-md px-6 py-2 text-white;
 }
-
-* {
-  box-sizing: border-box;
+.btn-sm {
+  @apply px-3 py-2 text-xs;
+}
+.btn-md {
+  @apply px-10 py-3;
+}
+.btn-lg {
+  @apply px-14 py-5 text-lg;
 }
