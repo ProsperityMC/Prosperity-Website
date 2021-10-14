@@ -32,9 +32,7 @@ export default function Nav() {
           </Link>
           {/* TODO: Hide when on mobile / viewport too small */}
           <button className="btn">
-            <a target="_blank" href="https://discord.gg/hfTxZ4XxYj">
-              Join
-            </a>
+            <a href="https://discord.gg/hfTxZ4XxYj">Join</a>
           </button>
         </div>
       </div>
