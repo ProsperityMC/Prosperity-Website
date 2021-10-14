@@ -10,7 +10,7 @@
     'nav-itens'     allign navigation items horizontally
     'nav-brand'     highlighted nav text */
 .nav {
-  @apply bg-gray-800 p-5 px-16 text-white;
+  @apply bg-gray-800 p-5 px-24 text-white xl:px-48 2xl:px-72;
 }
 .nav-groups {
   @apply flex justify-between;

@@ -30,6 +30,7 @@ export default function Nav() {
           <Link href="/stats">
             <a>Stats</a>
           </Link>
+          {/* TODO: Hide when on mobile / viewport too small */}
           <button className="btn">
             <a target="_blank" href="https://discord.gg/hfTxZ4XxYj">
               Join
