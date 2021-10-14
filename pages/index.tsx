@@ -5,11 +5,14 @@ const Home: NextPage = () => {
     <>
       <div className="md:flex sm:justify-between sm:gap-52">
         <div>
-          <p className="text-5xl py-6">Prosperity</p>
+          <p className="py-6 text-6xl">Prosperity</p>
           <div className="flex flex-row gap-3">
-            <button className="btn">Join</button>
-            <button className="btn">Discord</button>
-            <button className="btn">GitHub</button>
+            <button className="btn">
+              <a href="https://discord.gg/hfTxZ4XxYj">Join</a>
+            </button>
+            <button className="btn">
+              <a href="https://github.com/ProsperityMC/Prosperity-Website/tree/dev">GitHub</a>
+            </button>
           </div>
         </div>
         <br className="md:hidden" />

@@ -31,7 +31,7 @@ export default function Nav() {
             <a>Stats</a>
           </Link>
           {/* TODO: Hide when on mobile / viewport too small */}
-          <button className="btn">
+          <button className="btn btn-yellow">
             <a href="https://discord.gg/hfTxZ4XxYj">Join</a>
           </button>
         </div>
