@@ -5,7 +5,7 @@ export default function Nav() {
     <div className="nav">
       <div className="nav-groups">
         <div className="nav-items">
-          <Link href="">
+          <Link href="/">
             <a className="nav-brand">
               <div className="bg-white w-8 h-8 rounded-md">
                 {/* Placeholder element until I make a logo that fits with the rest of the design */}
@@ -13,24 +13,28 @@ export default function Nav() {
               Prosperity MC
             </a>
           </Link>
-          <Link href="">
+          <Link href="/">
             <a>Home</a>
           </Link>
-          <Link href="">
+          <Link href="/wiki">
             <a>Wiki</a>
           </Link>
-          <Link href="">
+          <Link href="/gallery">
             <a>Gallery</a>
           </Link>
-          <Link href="">
+          <Link href="/mods">
             <a>Mods</a>
           </Link>
         </div>
         <div className="nav-items">
-          <Link href="">
+          <Link href="/stats">
             <a>Stats</a>
           </Link>
-          <button className="btn">Join</button>
+          <button className="btn">
+            <a target="_blank" href="https://discord.gg/hfTxZ4XxYj">
+              Join
+            </a>
+          </button>
         </div>
       </div>
     </div>
