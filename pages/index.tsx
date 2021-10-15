@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     <>
       {/* This layout code is kind of a mess, I'm not sure if it has to be this cmoplicated */}
       <div className="flex content-center h-screen">
-        <div className="lg:flex md:justify-between md:gap-52">
+        <div className="lg:flex md:justify-between md:gap-52 lg:gap-64 xl:gap-80 2xl:gap-96">
           <div className="flex-wrap content-center lg:flex">
             <p className="text-6xl">Prosperity</p>
             <div className="flex flex-row gap-3 py-5">
