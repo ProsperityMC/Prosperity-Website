@@ -1,16 +1,67 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind base styles */
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-gray-500 text-gray-50;
+}
+.text-xs,
+.text-sm,
+.text-base,
+.text-lg,
+.text-xl,
+.text-2xl,
+.text-3xl,
+.text-4xl,
+.text-5xl,
+.text-6xl,
+.text-7xl,
+.text-8xl,
+.text-9xl {
+  @apply font-bold;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Tailwind custom components */
+
+/* Navigation Bar
+    'nav'           base class for the component
+    'nav-groups'    container to allign all elemnt groups inside nav
+    'nav-itens'     allign navigation items horizontally
+    'nav-brand'     highlighted nav text */
+.nav {
+  @apply bg-gray-500 p-5 px-24 text-gray-50 xl:px-48 2xl:px-72 font-semibold;
+}
+.nav-groups {
+  @apply flex justify-between;
+}
+.nav-items {
+  @apply flex flex-row gap-10 text-left items-center;
+}
+.nav-brand {
+  @apply text-lg font-bold flex flex-row gap-5;
 }
 
-* {
-  box-sizing: border-box;
+/* Button
+'btn'               base class for a button component
+'btn-sm'            small button
+'btn-md'            medium button
+'btn-lg'            large button 
+'btn-[color]'       button with color applied */
+.btn {
+  @apply bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold hover:bg-gray-300 hover:shadow-xl;
+}
+.btn-sm {
+  @apply px-3 py-2 text-xs;
+}
+.btn-md {
+  @apply px-10 py-3;
+}
+.btn-lg {
+  @apply px-14 py-5 text-lg;
+}
+
+.btn-yellow {
+  @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
 }
