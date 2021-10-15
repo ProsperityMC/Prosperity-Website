@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </head>
       <Nav></Nav>
       {/* Container for all content */}
-      <div className="px-24 xl:px-48 2xl:px-72">
+      <div className="x-break">
         <Component {...pageProps} />
       </div>
     </>

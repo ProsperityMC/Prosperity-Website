@@ -25,22 +25,30 @@ body {
 
 /* Tailwind custom components */
 
+/* Break
+'x-break'             standard horizontal padding for each breakpoint */
+.x-break {
+  @apply px-24 xl:px-48 2xl:px-72;
+}
+
 /* Navigation Bar
     'nav'           base class for the component
     'nav-groups'    container to allign all elemnt groups inside nav
     'nav-itens'     allign navigation items horizontally
     'nav-brand'     highlighted nav text */
 .nav {
-  @apply bg-gray-500 p-5 px-24 text-gray-50 xl:px-48 2xl:px-72 font-semibold;
+  @apply bg-gray-500 py-5 text-gray-50 font-semibold grid grid-flow-col gap-10;
 }
-.nav-groups {
-  @apply flex justify-between;
-}
+/* px-2 xl:px-48 2xl:px-72 */
 .nav-items {
-  @apply flex flex-row gap-10 text-left items-center;
+  @apply flex gap-10 text-left items-center flex-row flex-wrap;
 }
 .nav-brand {
   @apply text-lg font-bold flex flex-row gap-5;
+}
+
+.nav a {
+  @apply hover:text-white;
 }
 
 /* Button

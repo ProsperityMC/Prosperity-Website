@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="nav">
-      <div className="nav-groups">
+    <div className="x-break">
+      <div className="nav">
         <div className="nav-items">
           <Link href="/">
             <a className="nav-brand">
-              <div className="bg-white w-8 h-8 rounded-md">
+              <div className="w-8 h-8 bg-white rounded-md">
                 {/* Placeholder element until I make a logo that fits with the rest of the design */}
               </div>
-              Prosperity MC
+              <div>Prosperity MC</div>
             </a>
           </Link>
           <Link href="/">
@@ -26,14 +26,13 @@ export default function Nav() {
             <a>Mods</a>
           </Link>
         </div>
-        <div className="nav-items">
+        <div className="justify-end nav-items">
           <Link href="/stats">
             <a>Stats</a>
           </Link>
-          {/* TODO: Hide when on mobile / viewport too small */}
-          <button className="btn btn-yellow">
-            <a href="https://discord.gg/hfTxZ4XxYj">Join</a>
-          </button>
+          <a href="https://discord.gg/hfTxZ4XxYj">
+            <button className="btn btn-yellow">Join</button>
+          </a>
         </div>
       </div>
     </div>
