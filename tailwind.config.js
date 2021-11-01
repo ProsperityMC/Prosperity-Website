@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       display: "DM\\ Sans",
       body: "Inter",
+      mono: "Source\\ Code\\ Pro",
     },
     extend: {
       colors: {

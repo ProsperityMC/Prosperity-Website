@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <>
       {/* This layout code is kind of a mess, I'm not sure if it has to be this cmoplicated */}
@@ -28,6 +28,4 @@ const Home: NextPage = () => {
       </div>
     </>
   );
-};
-
-export default Home;
+}

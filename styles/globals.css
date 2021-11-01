@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-500 text-gray-50;
+    @apply bg-gray-500 text-gray-200;
   }
   .text-xs,
   .text-sm,
@@ -21,7 +21,10 @@
   .text-7xl,
   .text-8xl,
   .text-9xl {
-    @apply font-bold;
+    @apply font-bold text-gray-50 my-4;
+  }
+  a {
+    @apply underline text-yellow-500 hover:text-yellow-400;
   }
 }
 
@@ -46,11 +49,11 @@
   @apply flex gap-10 text-left items-center flex-row flex-wrap;
 }
 .nav-brand {
-  @apply text-lg font-bold flex flex-row gap-5;
+  @apply text-lg font-bold flex flex-row gap-5 my-0;
 }
 
 .nav a {
-  @apply hover:text-white;
+  @apply hover:text-white text-gray-50 no-underline my-0;
 }
 
 /* Button
@@ -74,4 +77,80 @@
 
 .btn-yellow {
   @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
+}
+
+/* Markdown
+class spam to make markdown styled elements work */
+.markdown h1 {
+  @apply text-5xl;
+}
+.markdown h2 {
+  @apply text-3xl;
+}
+.markdown h3 {
+  @apply text-2xl;
+}
+.markdown h4 {
+  @apply text-xl;
+}
+.markdown h5 {
+  @apply text-lg;
+}
+.markdown h6 {
+  @apply text-sm;
+}
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown hr {
+  @apply my-4 border-gray-400;
+}
+
+.markdown code {
+  @apply bg-gray-600 px-2 py-1 rounded-md text-gray-50 font-mono text-sm;
+}
+
+.markdown pre {
+  @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
+}
+.markdown pre * {
+  @apply p-0 mb-0;
+}
+.markdown pre * code {
+  @apply text-base;
+}
+
+.markdown blockquote {
+  @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-50 font-semibold;
+}
+.markdown blockquote * {
+  @apply mb-0;
+}
+
+.markdown ul,
+ol {
+  @apply ml-8 mb-4;
+}
+.markdown ul {
+  @apply list-disc;
+}
+.markdown li {
+  @apply list-item;
+}
+.markdown ol {
+  @apply list-decimal;
+}
+
+.markdown table {
+  @apply bg-gray-600 rounded-md mb-4 table-auto w-full;
+}
+.markdown table * {
+  @apply p-2 px-4 text-left align-top;
+}
+.markdown thead {
+  @apply text-gray-50 align-middle;
+}
+.markdown tr {
+  @apply hover:text-gray-50;
 }

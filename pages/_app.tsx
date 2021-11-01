@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|DM+Sans" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro" />
       </head>
       <Nav></Nav>
       {/* Container for all content */}
