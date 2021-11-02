@@ -1,3 +1,6 @@
+import gallery from "../content/gallery.md";
+
 export default function Gallery() {
-  return <p className="text-6xl">Gallery page</p>;
+  const { html } = gallery;
+  return <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />;
 }

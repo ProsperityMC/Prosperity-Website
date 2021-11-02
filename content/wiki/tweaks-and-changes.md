@@ -1,5 +1,6 @@
 ---
 title: Tweaks and Changes
+slug: tweaks
 ---
 
 > Please note that as the server has updated to the latest version of the game not all mods are available. This _does not_ include mods that affect gameplay, like Carpet. These mods will most likely be performance mods, which will be added to the server again when they're available.

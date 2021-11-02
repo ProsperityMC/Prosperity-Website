@@ -1,5 +1,3 @@
-import type { NextPage } from "next";
-
 export default function Home() {
   return (
     <>
@@ -8,7 +6,7 @@ export default function Home() {
         <div className="lg:flex md:justify-between md:gap-52 lg:gap-64 xl:gap-80 2xl:gap-96">
           <div className="flex-wrap content-center lg:flex">
             <p className="text-6xl">Prosperity</p>
-            <div className="flex flex-row gap-3 py-5">
+            <div className="flex flex-row gap-4">
               <a href="https://discord.gg/hfTxZ4XxYj">
                 <button className="btn btn-yellow">Join</button>
               </a>
@@ -18,11 +16,10 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap content-center">
-            <p>
-              Prosperity is a survival-multiplayer Minecraft server with a focus enabling players to work on large projects
-              easily. To achieve this the server has many quality of life improvements, and changes that allow you to farm more
-              items, and have an easier time than a vanilla server.
-            </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </div>
         </div>
       </div>

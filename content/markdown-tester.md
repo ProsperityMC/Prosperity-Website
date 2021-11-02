@@ -1,9 +1,3 @@
----
-title: Test
----
-
-Markdown palette page to display all elements for testing.
-
 # Header 1
 
 ## Header 2
@@ -14,51 +8,70 @@ Markdown palette page to display all elements for testing.
 
 ##### Header 5
 
-###### Header 6
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-- List item
-- List item
-  - Sub-item
-    - ...
-      - ...
-
-1. Number list
-2. 2
-   1. 2.1
-      1. 2.1.1
-
----
-
-[Link](https://github.com/ProsperityMC/Prosperity-Website/tree/dev)
+###### Header 66
 
 **Bold**
+
+[Link]()
 
 _Italic_
 
 ~~Strikethrough~~
 
-`Code`
+`code`
 
-> Quote blocks
+Standard paragraph.
+
+Long paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+---
+
+1. Numbered lists
+2. . . .
+3. . . .
+   1. . . .
+      1. . . .
+
+- Bulleted lists
+- . . .
+  - . . .
+    - . . .
+
+> Short quote.
+
+> Multi-line quote.
 >
-> ...
+> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+>
+> Et harum quidem rerum facilis est et expedita distinctio.
 
 ```
-Multi-line code block
-...
-...
-...
+Code block.
+. . .
+. . .
+. . .
 ```
 
-I'm not doing a math block, sorry
+```
+**Code blocks don't allow formatting.**
+```
 
-| Left   |    Middle     |                       Right |
-| ------ | :-----------: | --------------------------: |
-| Row #1 | Centered text | This should be to the right |
-| Row #2 |     Lorem     |                         ... |
-| Row #3 |     Lorem     |                         ... |
-| Row #4 |     Lorem     |                         ... |
+| Table head  |     . . .     |        . . . |
+| ----------- | :-----------: | -----------: |
+| Align left. | Align center. | Align right. |
+| . . .       |     . . .     |        . . . |
+| . . .       |     . . .     |        . . . |
+| . . .       |     . . .     |        . . . |
 
-![Alt image text, image block](http://wallpapercave.com/wp/pC1tYmE.jpg)
+| Resize colunms | . . .                                                                                                                                                                                                                                                                                                                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| . . .          | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. |
+
+| Tables allow formatting |
+| ----------------------- |
+| **Bold**                |
+| _Italic_                |
+| ~~Strikethrough~~       |
+| `code`                  |
+| # Header 1              |
+| - Bulleted list         |

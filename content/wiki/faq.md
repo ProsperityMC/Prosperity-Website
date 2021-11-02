@@ -1,5 +1,6 @@
 ---
 title: FAQ
+slug: faq
 ---
 
 Common questions and answers, if a question gets asked enough or feels relevant enough it will go here.
