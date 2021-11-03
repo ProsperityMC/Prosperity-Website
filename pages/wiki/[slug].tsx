@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 export default function WikiPage({ content, data }: any) {
   const frontmatter = data;
-  return <ReactMarkdown className="markdown" children={content} />;
+  return <ReactMarkdown className="markdown">{content}</ReactMarkdown>;
 }
 
 WikiPage.getInitialProps = async (context: any) => {

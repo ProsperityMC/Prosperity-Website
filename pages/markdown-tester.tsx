@@ -4,7 +4,11 @@ import remarkGfm from "remark-gfm";
 
 export default function MarkdownTester({ content, data }: any) {
   const frontmatter = data;
-  return <ReactMarkdown className="markdown" children={content} remarkPlugins={[remarkGfm]} />;
+  return (
+    <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
+      {content}
+    </ReactMarkdown>
+  );
 }
 
 MarkdownTester.getInitialProps = async (context: any) => {
