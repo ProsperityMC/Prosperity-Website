@@ -8,7 +8,7 @@ Website made for the Prosperity Minecraft server. Built using NextJS with TypeSc
 
 ## Builds
 
-The latest commits from the `main` and `dev` branches are automatically built and deployed on [Vercel](https://vercel.com/docs/concepts), to the [production](https://prosperity-website.vercel.app/) and [development](https://prosperity-website-dev.vercel.app/) websites respectively.
+The latest commits from the `main` and `dev` branches are automatically built and deployed on [Vercel](https://vercel.com/docs/concepts), to the [production](https://prosperity.vercel.app/) and [development](https://dev-prosperity.vercel.app/) websites respectively.
 
 ## Develop
 
