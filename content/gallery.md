@@ -1,1 +1,1 @@
-Placeholder gallery page.
+Projects gallery placeholder page.

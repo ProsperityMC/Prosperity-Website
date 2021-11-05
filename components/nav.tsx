@@ -22,9 +22,7 @@ export default function Nav() {
           <Link href="/gallery">
             <a>Gallery</a>
           </Link>
-          <Link href="/mods">
-            <a>Mods</a>
-          </Link>
+          <a href="https://github.com/ProsperityMC">Development</a>
         </div>
         <div className="justify-end nav-items">
           <Link href="/stats">
