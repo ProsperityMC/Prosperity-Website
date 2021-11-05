@@ -1,6 +1,5 @@
 ---
 title: Technical Information
-slug: tech-info
 ---
 
 # Current

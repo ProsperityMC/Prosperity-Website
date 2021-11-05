@@ -1,6 +1,5 @@
 ---
 title: Rules
-slug: rules
 ---
 
 # Prosperity rules

@@ -1,18 +1,20 @@
 import type { AppProps } from "next/app";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
-
+import Head from "next/head";
 import Nav from "../components/nav";
 
-function MyApp({ Component, pageProps }: AppProps) {
+export function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
-      <head>
+      <Head>
+        <title>Prosperity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro" />
-      </head>
-      <Nav></Nav>
-      {/* Container for all content */}
+      </Head>
       <div className="x-break">
+        <Nav></Nav>
         <Component {...pageProps} />
       </div>
     </>

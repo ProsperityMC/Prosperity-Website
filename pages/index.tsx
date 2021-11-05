@@ -2,10 +2,14 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import Head from "next/head";
 
-export default function Home({ content }: any) {
+export default function Home({ content }: any): JSX.Element {
   return (
     <>
+      <Head>
+        <title>Prosperity | Home</title>
+      </Head>
       {/* This layout code is kind of a mess, I'm not sure if it has to be this cmoplicated */}
       <div className="flex content-center h-screen">
         <div className="lg:flex md:justify-between md:gap-52 lg:gap-64 xl:gap-80 2xl:gap-96">

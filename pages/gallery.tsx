@@ -1,13 +1,19 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Head from "next/head";
 
-export default function Gallery({ content, data }: any) {
+export default function Gallery({ content, data }: any): JSX.Element {
   const frontmatter = data;
   return (
-    <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
-      {content}
-    </ReactMarkdown>
+    <>
+      <Head>
+        <title>Prosperity | Gallery</title>
+      </Head>
+      <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
+        {content}
+      </ReactMarkdown>
+    </>
   );
 }
 
