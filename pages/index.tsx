@@ -1,6 +1,7 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Link from "next/link";
 
 export default function Home({ content }: any) {
   return (
@@ -14,9 +15,11 @@ export default function Home({ content }: any) {
               <a href="https://discord.gg/hfTxZ4XxYj">
                 <button className="btn btn-yellow">Join</button>
               </a>
-              <a href="https://github.com/ProsperityMC/Prosperity-Website/tree/dev">
-                <button className="btn">GitHub</button>
-              </a>
+              <Link href="/wiki">
+                <a>
+                  <button className="btn">Wiki</button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-wrap content-center">
