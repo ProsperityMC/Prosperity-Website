@@ -1,25 +1,38 @@
-import matter from "gray-matter";
+import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import Head from "next/head";
+import { allPages } from ".contentlayer/data";
+import type { Page } from ".contentlayer/types";
+import { FC } from "react";
 
-export default function WikiPage({ content, data }: any): JSX.Element {
-  const frontmatter = data;
+export async function getStaticPaths() {
+  const paths = allPages.map((_) => `/wiki/${_._raw.flattenedPath}`);
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }: any) {
+  const page = allPages.find((_) => _._raw.flattenedPath === params.slug);
+  return {
+    props: {
+      page,
+    },
+  };
+}
+
+const WikiPage: FC<{ page: Page }> = ({ page }) => {
   return (
     <>
       <Head>
-        <title>Prosperity | {data.title}</title>
+        <title>Prosperity | {page.title}</title>
       </Head>
       <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
-        {content}
+        {page.body.raw}
       </ReactMarkdown>
     </>
   );
-}
-
-WikiPage.getInitialProps = async (context: any) => {
-  const { slug } = context.query;
-  const content = await import(`../../content/wiki/${slug}.md`);
-  const data = matter(content.default);
-  return { ...data };
 };
+
+export default WikiPage;
