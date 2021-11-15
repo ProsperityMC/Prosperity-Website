@@ -1,12 +1,12 @@
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { allPages } from ".contentlayer/data";
-import type { Page } from ".contentlayer/types";
+import { allWikis } from ".contentlayer/data";
+import type { Wiki } from ".contentlayer/types";
 import { FC } from "react";
 
 export async function getStaticPaths() {
-  const paths = allPages.map((_) => `/wiki/${_._raw.flattenedPath}`);
+  const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
   return {
     paths,
     fallback: false,
@@ -14,25 +14,24 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const page = allPages.find((_) => _._raw.flattenedPath === params.slug);
+  const wiki = allWikis.find((_) => _._raw.flattenedPath === params.slug);
   return {
     props: {
-      page,
+      wiki,
     },
   };
 }
 
-const WikiPage: FC<{ page: Page }> = ({ page }) => {
+const WikiPage: FC<{ wiki: Wiki }> = ({ wiki }) => {
   return (
     <>
       <Head>
-        <title>Prosperity | {page.title}</title>
+        <title>Prosperity | {wiki.title}</title>
       </Head>
       <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
-        {page.body.raw}
+        {wiki.body.raw}
       </ReactMarkdown>
     </>
   );
 };
-
 export default WikiPage;

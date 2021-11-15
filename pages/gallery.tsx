@@ -1,24 +1,12 @@
-import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import Head from "next/head";
 
-export default function Gallery({ content, data }: any): JSX.Element {
-  const frontmatter = data;
+export default function Gallery(): JSX.Element {
   return (
     <>
       <Head>
         <title>Prosperity | Gallery</title>
       </Head>
-      <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
-        {content}
-      </ReactMarkdown>
+      <p className="text-6xl">Gallery page</p>
     </>
   );
 }
-
-Gallery.getInitialProps = async (context: any) => {
-  const content = await import("../content/gallery.md");
-  const data = matter(content.default);
-  return { ...data };
-};

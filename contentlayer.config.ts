@@ -1,7 +1,7 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
-export const Page = defineDocumentType(() => ({
-  name: "Page",
+export const Wiki = defineDocumentType(() => ({
+  name: "Wiki",
   filePathPattern: `**/*.md`,
   fields: {
     title: {
@@ -14,5 +14,5 @@ export const Page = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "content/wiki",
-  documentTypes: [Page],
+  documentTypes: [Wiki],
 });

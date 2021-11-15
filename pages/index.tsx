@@ -1,10 +1,7 @@
-import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import Head from "next/head";
 
-export default function Home({ content }: any): JSX.Element {
+export default function Home(): JSX.Element {
   return (
     <>
       <Head>
@@ -27,18 +24,12 @@ export default function Home({ content }: any): JSX.Element {
             </div>
           </div>
           <div className="flex flex-wrap content-center">
-            <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
-              {content}
-            </ReactMarkdown>
+            Prosperity is a survival-multiplayer Minecraft server with a focus enabling players to work on large projects
+            easily. To achieve this the server has many quality of life improvements, and changes that allow you to farm more
+            items, and have an easier time than a vanilla server.
           </div>
         </div>
       </div>
     </>
   );
 }
-
-Home.getInitialProps = async (context: any) => {
-  const content = await import("../content/home.md");
-  const data = matter(content.default);
-  return { ...data };
-};
