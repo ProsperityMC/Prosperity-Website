@@ -1,12 +1,25 @@
-import Head from "next/head";
+import { allWikis } from ".contentlayer/data";
+import Link from "next/link";
 
-export default function Wiki(): JSX.Element {
+export async function getStaticProps() {
+  const wikis = allWikis.map((wiki) => ({ slug: wiki._raw.flattenedPath, title: wiki.title }));
+  return {
+    props: {
+      wikis,
+    },
+  };
+}
+
+export default function WikiHome({ wikis }: any) {
   return (
     <>
-      <Head>
-        <title>Prosperity | Wiki</title>
-      </Head>
-      <p className="text-6xl">Wiki page</p>
+      {wikis.map(({ title, slug }: any) => (
+        <div key={slug}>
+          <Link href={`/wiki/${slug}`}>
+            <a>{title}</a>
+          </Link>
+        </div>
+      ))}
     </>
   );
 }

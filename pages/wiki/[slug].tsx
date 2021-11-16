@@ -22,7 +22,7 @@ export async function getStaticProps({ params }: any) {
   };
 }
 
-const WikiPage: FC<{ wiki: Wiki }> = ({ wiki }) => {
+export default function WikiPage({ wiki }: any): JSX.Element {
   return (
     <>
       <Head>
@@ -33,5 +33,4 @@ const WikiPage: FC<{ wiki: Wiki }> = ({ wiki }) => {
       </ReactMarkdown>
     </>
   );
-};
-export default WikiPage;
+}
