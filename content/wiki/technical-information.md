@@ -1,5 +1,7 @@
 ---
 title: Technical Information
+authors: CarbonGhost
+description: Server specs and other technical information.
 ---
 
 # Current

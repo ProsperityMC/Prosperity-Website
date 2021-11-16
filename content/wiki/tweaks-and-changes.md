@@ -1,5 +1,7 @@
 ---
 title: Tweaks and Changes
+authors: CarbonGhost
+description: Full mod list and configuration.
 ---
 
 > Please note that as the server has updated to the latest version of the game not all mods are available. This _does not_ include mods that affect gameplay, like Carpet. These mods will most likely be performance mods, which will be added to the server again when they're available.
@@ -622,5 +624,4 @@ flippinCactus true
 lagFreeSpawning true
 creeperSpawningInJungleTemples true
 commandMods true
-
 ```

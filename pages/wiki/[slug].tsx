@@ -2,8 +2,7 @@ import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { allWikis } from ".contentlayer/data";
-import type { Wiki } from ".contentlayer/types";
-import { FC } from "react";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
@@ -28,6 +27,13 @@ export default function WikiPage({ wiki }: any): JSX.Element {
       <Head>
         <title>Prosperity | {wiki.title}</title>
       </Head>
+      <p className="text-6xl">{wiki.title}</p>
+      <p>By {wiki.authors}</p>
+      <Link href="/wiki">
+        <a>
+          <button className="btn btn-sm">Back</button>
+        </a>
+      </Link>
       <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
         {wiki.body.raw}
       </ReactMarkdown>

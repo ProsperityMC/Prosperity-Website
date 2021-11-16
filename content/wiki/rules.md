@@ -1,5 +1,7 @@
 ---
 title: Rules
+authors: CarbonGhost
+description: Server rules.
 ---
 
 # Prosperity rules

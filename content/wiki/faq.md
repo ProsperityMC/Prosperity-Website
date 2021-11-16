@@ -1,6 +1,7 @@
 ---
 title: FAQ
-slug: faq
+authors: CarbonGhost
+description: Common questions and useful information about the server.
 ---
 
 Common questions and answers, if a question gets asked enough or feels relevant enough it will go here.

@@ -2,7 +2,12 @@ import { allWikis } from ".contentlayer/data";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  const wikis = allWikis.map((wiki) => ({ slug: wiki._raw.flattenedPath, title: wiki.title }));
+  const wikis = allWikis.map((wiki) => ({
+    slug: wiki._raw.flattenedPath,
+    title: wiki.title,
+    authors: wiki.authors,
+    description: wiki.description,
+  }));
   return {
     props: {
       wikis,
@@ -13,11 +18,15 @@ export async function getStaticProps() {
 export default function WikiHome({ wikis }: any) {
   return (
     <>
-      {wikis.map(({ title, slug }: any) => (
+      <p className="text-6xl">Wiki</p>
+      {wikis.map(({ title, slug, description }: any) => (
         <div key={slug}>
-          <Link href={`/wiki/${slug}`}>
-            <a>{title}</a>
-          </Link>
+          <div className="pb-8">
+            <Link href={`/wiki/${slug}`}>
+              <a className="text-xl text-yellow-500">{title}</a>
+            </Link>
+            <p>{description}</p>
+          </div>
         </div>
       ))}
     </>
