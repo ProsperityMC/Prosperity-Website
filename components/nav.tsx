@@ -26,6 +26,9 @@ export default function Nav(): JSX.Element {
         <a href="https://github.com/ProsperityMC" target="_blank" rel="noreferrer">
           Development
         </a>
+        <a href="https://trello.com/b/5REhvGyT/survival-projects" target="_blank" rel="noreferrer">
+          Projects
+        </a>
       </div>
       <div className="justify-end nav-items">
         <Link href="/stats">
