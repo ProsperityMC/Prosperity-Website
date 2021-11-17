@@ -12,6 +12,7 @@ export function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro" />
+        <meta name="description" content="The Prosperity Minecraft server."/>
       </Head>
       <div className="x-break">
         <Nav></Nav>

@@ -1,5 +1,6 @@
 import { allWikis } from ".contentlayer/data";
 import Link from "next/link";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const wikis = allWikis.map((wiki) => ({
@@ -18,6 +19,10 @@ export async function getStaticProps() {
 export default function WikiHome({ wikis }: any) {
   return (
     <>
+      <Head>
+        <title>Prosperity | Wiki</title>
+        <meta name="description" content="Prosperity wiki home." />
+      </Head>
       <p className="text-6xl">Wiki</p>
       {wikis.map(({ title, slug, description }: any) => (
         <div key={slug}>
