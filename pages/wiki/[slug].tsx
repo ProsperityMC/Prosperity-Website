@@ -34,6 +34,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
       <Head>
         <title>Prosperity | {wiki.title}</title>
         <meta name="description" content={wiki.description} />
+        <meta name="author" content={wiki.authors} />
       </Head>
       <div className="lg:flex md:justify-between md:gap-16">
         <div className="w-52 md:order-last">
