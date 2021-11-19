@@ -4,36 +4,90 @@ authors: CarbonGhost
 description: Common questions and useful information about the server.
 ---
 
-Common questions and answers, if a question gets asked enough or feels relevant enough it will go here.
+Common questions about the server will be answered here.
 
-### Is the server modded/do I need to install mods on my client?
+# Mods
 
-The server is modded, but is compatible with vanilla, the full list of mods can be found [here](https://github.com/CarbonGhost/Prosperity/wiki/Tweaks-and-Changes). You can connect to the server with any client, but to use some features you must have the client mods installed, see [here](https://github.com/CarbonGhost/Prosperity/wiki/Tweaks-and-Changes#client-mods).
+## Do I have to install mods to play on the server?
 
-### How old is the world?
+No, you can join with OptiFine, vanilla, or any client mod that you like. The mods that are run on the server are entirely server-side, meaning that installing any mod on your client is entirely optional.
 
-The world was created on June 11th, 2021, on 1.17.
+## How do I use voice chat?
 
-### Where is the server located?
+You can use the [SimpleVoiceChat]() mod to use proximity voice-chat on the server.
 
-As of right now the server is hosted on the US West Coast.
+## How do I see shared schematics?
 
-### How do I use proximity chat?
+You must have the [Litematica]() and [Syncmatica]() mods in order to view shared schematics.
 
-[See the section about client mods](https://github.com/CarbonGhost/Prosperity/wiki/Tweaks-and-Changes#client-mods).
+## What mods do I need to test in singleplayer?
 
-### Where do I submit suggestions?
+All the required mods in order to test things on singleplayer are listed on the [mods page]().
 
-You can submit suggestions on the [feedback form](https://forms.gle/NmSfgZgRwaYHLAkA9).
+## How do I get OptiFine features on Fabric?
 
-### What is the world seed?
+Many of the commonly used mods on the server are only available for Fabric, and are thus unable to be used with OptiFine. I have created a list of OptiFine feature replacements you can find [here]().
 
-See the [Techincal Information](https://github.com/CarbonGhost/Prosperity/wiki/Technical-Information) page.
+# Server
 
-### What is the IP?
+## What is the world seed?
 
-You can see the IP when you have been approved in [Discord](https://discord.gg/hfTxZ4XxYj).
+You can find this information on the [technical info]() page.
 
-### When will I be approved?
+## What are the server specs?
 
-After you submit the form it can take some time to be approved, please do not ping or message me, I will get to it as soon as I'm able.
+You can also find this information on the [technical info]() page.
+
+## When did the server start?
+
+Prosperity was first created on June 11th, 2021. The current world has been active since June 25th.
+
+## How long will the world last?
+
+TODO.
+
+## How do I add custom item textures?
+
+You can send a file in the `#custom-textures` channel in Discord, or create a pull request for the [resource pack repository]() on GitHub. Please note that these textures cannot override default textures, and are quire limited, see the GitHub README for more info.
+
+## How do I join the Trello board?
+
+Ask a staff member, they will be able to send you an invite link. This functionality may be added to the Discord bot in the future.
+
+# Administration
+
+## How long will it take for me to be whitelisted?
+
+This can vary depending on time zones and other factors, feel free to ping a Minecraft server admin (`@Prosperity Admin` on Discord) for your application to be reviewed.
+
+## What are the whitelist requirements?
+
+These are currently not public.
+
+## Where can I make a suggustion?
+
+TODO.
+
+## How do I report a player?
+
+You can send a direct message to a Minecraft server admin and it will be investigated as quickly as possible. 
+
+## How do I become a staff member?
+
+You may be asked to become a staff member, we are not currently taking applications / looking for new staff members, so please do not ask.
+
+# Misc
+
+## How does the Cam app work?
+
+You can run `/cam` to enter spectator mode, and run it again to return to your last position. This does have some bugs, see below.
+
+### I lost all my XP
+
+You can leave and rejoin the server and your XP should be restored.
+
+### I teleported across dimensions and have am lost / suffocating
+
+Teleporting across dimensions is somewhat buggy, and can sometimes result in you being teleported into the void, into solid blocks, or large distances. If you do teleport across dimensions using Cam, then I recommend that you attempt to teleport back to your original dimension as this should fix any issues.
+
+If you are suffocating in blocks, then an admin may be able to help you, although this is not guaranteed.
