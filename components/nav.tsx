@@ -16,7 +16,7 @@ export default function Nav(): JSX.Element {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/wiki">
+        <Link href="/wiki/home">
           <a>Wiki</a>
         </Link>
         <Link href="/gallery">

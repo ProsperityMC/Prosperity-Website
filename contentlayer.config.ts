@@ -12,7 +12,7 @@ export const Wiki = defineDocumentType(() => ({
     authors: {
       type: "string",
       description: "All wiki page contributors.",
-      required: true,
+      required: false,
     },
     description: {
       type: "string",

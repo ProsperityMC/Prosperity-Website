@@ -20,7 +20,6 @@ export async function getStaticProps({ params }: any) {
   const wikis = allWikis.map((wiki) => ({
     slug: wiki._raw.flattenedPath,
     title: wiki.title,
-    authors: wiki.authors,
     description: wiki.description,
   }));
   return {
@@ -58,12 +57,8 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         {/* Main wiki page */}
         <div className="w-full">
           <p className="text-6xl">{wiki.title}</p>
-          <p className="my-4 text">Contributors: {wiki.authors}</p>
-          <Link href="/wiki">
-            <a>
-              <button className="btn btn-sm mb-8">← Back</button>
-            </a>
-          </Link>
+          {wiki.authors && <p className="my-4">Authors: {wiki.authors}</p>}
+          {!wiki.authors && <div className="my-4"/>}
           <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
             {wiki.body.raw}
           </ReactMarkdown>
