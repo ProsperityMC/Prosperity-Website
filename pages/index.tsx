@@ -7,14 +7,13 @@ export default function Home(): JSX.Element {
       <Head>
         <title>Prosperity | Home</title>
       </Head>
-      {/* This layout code is kind of a mess, I'm not sure if it has to be this cmoplicated */}
       <div className="flex content-center h-screen">
         <div className="lg:flex md:justify-between md:gap-52 lg:gap-64 xl:gap-80 2xl:gap-96">
           <div className="flex-wrap content-center lg:flex">
             <p className="text-6xl">Prosperity</p>
-            <div className="flex flex-row gap-4">
+            <div className="btn-group my-4">
               <a href="https://discord.gg/hfTxZ4XxYj">
-                <button className="btn btn-yellow">Join</button>
+                <button className="btn btn-yellow">Join ↗</button>
               </a>
               <Link href="/wiki">
                 <a>

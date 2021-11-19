@@ -15,7 +15,7 @@ export function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <meta name="description" content="The Prosperity Minecraft server." />
         <meta
           name="keywords"
-          content="Prosperity, ProsperityMC, Prosperity SMP, Prosperity Wiki, Minecraft, Minecraft server"
+          content="Prosperity, Prosperity MC, Prosperity SMP, Prosperity Wiki, Minecraft, Minecraft server"
         />
         <meta property="og:site_name" content="Prosperity MC" />
         <meta name="theme-color" content="#FFC10B" />

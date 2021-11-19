@@ -23,7 +23,7 @@ export default function WikiHome({ wikis }: any) {
         <title>Prosperity | Wiki</title>
         <meta name="description" content="Prosperity wiki home." />
       </Head>
-      <p className="text-6xl">Wiki</p>
+      {/* Ha, this page isn't visually consistent with the rest of the site! */}
       {wikis.map(({ title, slug, description }: any) => (
         <div key={slug}>
           <div className="pb-8">

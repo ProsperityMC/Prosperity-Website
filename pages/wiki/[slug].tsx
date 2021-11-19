@@ -13,7 +13,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
+  // I have no idea if these can / should be returned all in one piece of code
+  // Return specific wiki from value passed by slug
   const wiki = allWikis.find((_) => _._raw.flattenedPath === params.slug);
+  // Return all wikis for sidebar navigation
   const wikis = allWikis.map((wiki) => ({
     slug: wiki._raw.flattenedPath,
     title: wiki.title,
@@ -36,11 +39,15 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         <meta name="description" content={wiki.description} />
         <meta name="author" content={wiki.authors} />
       </Head>
-      <div className="lg:flex md:justify-between md:gap-16">
-        <div className="w-52 md:order-last">
+      {/* Sidebar navigation */}
+      <div className="md:flex md:justify-between gap-16 lg:gap-32">
+        <div className="w-56 md:order-last space-y-4 justify-end">
+          <p className="text-xl mb-4">Table of contents</p>
+          <p className="text-gray-300">Not yet implemented ...</p>
+          <p className="text-xl mb-4">Wiki</p>
           {wikis.map(({ title, slug }: any) => (
             <div key={slug}>
-              <div className="pb-3">
+              <div className="mb-3">
                 <Link href={`/wiki/${slug}`}>
                   <a>{title}</a>
                 </Link>
@@ -48,12 +55,13 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
             </div>
           ))}
         </div>
+        {/* Main wiki page */}
         <div className="w-full">
           <p className="text-6xl">{wiki.title}</p>
-          <p>By {wiki.authors}</p>
+          <p className="my-4 text">Contributors: {wiki.authors}</p>
           <Link href="/wiki">
             <a>
-              <button className="btn btn-sm">Back</button>
+              <button className="btn btn-sm mb-8">← Back</button>
             </a>
           </Link>
           <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>

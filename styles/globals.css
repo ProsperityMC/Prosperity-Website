@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tailwind base styles */
-
 @layer base {
   body {
     @apply bg-gray-500 text-gray-200;
@@ -21,49 +19,46 @@
   .text-7xl,
   .text-8xl,
   .text-9xl {
-    @apply font-bold text-gray-50 my-4;
+    @apply font-bold text-gray-50;
   }
   a {
     @apply underline text-yellow-500 hover:text-yellow-400;
   }
 }
 
-/* Tailwind custom components */
-
-/* Break
-'x-break'             standard horizontal padding for each breakpoint */
 .x-break {
-  @apply px-24 xl:px-48 2xl:px-72;
+  @apply px-12 sm:px-24 xl:px-48 2xl:px-72;
 }
 
-/* Navigation Bar
-    'nav'           base class for the component
-    'nav-groups'    container to allign all elemnt groups inside nav
-    'nav-itens'     allign navigation items horizontally
-    'nav-brand'     highlighted nav text */
-.nav {
-  @apply bg-gray-500 py-5 text-gray-50 font-semibold grid grid-flow-col gap-10;
+.dropdown {
+  @apply bg-gray-600;
 }
-/* px-2 xl:px-48 2xl:px-72 */
+.dropdown-items {
+  @apply absolute;
+}
+.dropdown-items div {
+  @apply flex;
+}
+
+.nav {
+  @apply my-8 w-full gap-12 flex justify-between font-semibold mx-auto select-none overflow-x-auto;
+}
 .nav-items {
-  @apply flex gap-10 text-left items-center flex-row flex-wrap;
+  @apply flex gap-12 items-center;
 }
 .nav-brand {
-  @apply text-lg font-bold flex flex-row gap-5 my-0;
+  @apply flex gap-4 items-center text-lg font-bold whitespace-nowrap overflow-x-visible text-white;
 }
-
 .nav a {
-  @apply hover:text-white text-gray-50 no-underline my-0;
+  @apply hover:text-white text-gray-50 no-underline;
 }
 
-/* Button
-'btn'               base class for a button component
-'btn-sm'            small button
-'btn-md'            medium button
-'btn-lg'            large button 
-'btn-[color]'       button with color applied */
+.btn-group {
+  @apply flex gap-4 items-center;
+}
+
 .btn {
-  @apply bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold hover:bg-gray-300 hover:shadow-xl;
+  @apply whitespace-nowrap bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold hover:bg-gray-300 hover:shadow-xl;
 }
 .btn-sm {
   @apply px-3 py-2 text-xs;
@@ -74,43 +69,37 @@
 .btn-lg {
   @apply px-14 py-5 text-lg;
 }
-
 .btn-yellow {
   @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
 }
 
-/* Markdown
-class spam to make markdown styled elements work */
 .markdown h1 {
-  @apply text-5xl;
+  @apply text-5xl mb-6;
 }
 .markdown h2 {
-  @apply text-3xl;
+  @apply text-3xl mb-5;
 }
 .markdown h3 {
-  @apply text-2xl;
+  @apply text-2xl mb-4; 
 }
 .markdown h4 {
-  @apply text-xl;
+  @apply text-xl mb-3;
 }
 .markdown h5 {
-  @apply text-lg;
+  @apply text-lg mb-2;
 }
 .markdown h6 {
-  @apply text-sm;
+  @apply text-sm mb-1;
 }
 .markdown p {
   @apply mb-4;
 }
-
 .markdown hr {
   @apply my-4 border-gray-400;
 }
-
 .markdown code {
   @apply bg-gray-600 px-2 py-1 rounded-md text-gray-50 font-mono text-sm;
 }
-
 .markdown pre {
   @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
 }
@@ -120,14 +109,12 @@ class spam to make markdown styled elements work */
 .markdown pre * code {
   @apply text-base;
 }
-
 .markdown blockquote {
   @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-50 font-semibold;
 }
 .markdown blockquote * {
   @apply mb-0;
 }
-
 .markdown ul,
 ol {
   @apply ml-8 mb-4;
