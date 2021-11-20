@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
               <a href="https://discord.gg/hfTxZ4XxYj">
                 <button className="btn btn-yellow">Join ↗</button>
               </a>
-              <Link href="/wiki">
+              <Link href="/wiki/home">
                 <a>
                   <button className="btn">Wiki</button>
                 </a>

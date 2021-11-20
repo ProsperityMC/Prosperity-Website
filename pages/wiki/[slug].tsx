@@ -1,8 +1,11 @@
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { allWikis } from ".contentlayer/data";
 import Link from "next/link";
+import remarkGfm from "remark-gfm";
+import remarkToc from "remark-toc";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 export async function getStaticPaths() {
   const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
@@ -41,8 +44,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
       {/* Sidebar navigation */}
       <div className="md:flex md:justify-between gap-16 lg:gap-32">
         <div className="w-56 md:order-last space-y-4 justify-end">
-          <p className="text-xl mb-4">Table of contents</p>
-          <p className="text-gray-300">Not yet implemented ...</p>
+          {/* All wikis navigation */}
           <p className="text-xl mb-4">Wiki</p>
           {wikis.map(({ title, slug }: any) => (
             <div key={slug}>
@@ -57,9 +59,16 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         {/* Main wiki page */}
         <div className="w-full">
           <p className="text-6xl">{wiki.title}</p>
-          {wiki.authors && <p className="my-4">Authors: {wiki.authors}</p>}
-          {!wiki.authors && <div className="my-4"/>}
-          <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
+          {wiki.authors && <p className="text-xs my-4">Authors: {wiki.authors}</p>}
+          {!wiki.authors && <div className="my-4" />}
+          <ReactMarkdown
+            className="markdown"
+            remarkPlugins={[remarkGfm, remarkToc]}
+            rehypePlugins={[
+              rehypeSlug,
+              [rehypeAutolinkHeadings, { behavior: "wrap", properties: { className: ["clickable-header"] } }],
+            ]}
+          >
             {wiki.body.raw}
           </ReactMarkdown>
         </div>

@@ -4,10 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-gray-500 text-gray-200;
+    @apply bg-gray-500 text-gray-200 selection:bg-blue-500 selection:text-gray-500 ring-blue-500;
   }
   .text-xs,
-  .text-sm,
+  .text-sm {
+    @apply text-gray-300;
+  }
   .text-base,
   .text-lg,
   .text-xl,
@@ -73,6 +75,10 @@
   @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
 }
 
+.clickable-header {
+  @apply text-gray-50 hover:text-white no-underline;
+}
+
 .markdown h1 {
   @apply text-5xl mb-6;
 }
@@ -80,7 +86,7 @@
   @apply text-3xl mb-5;
 }
 .markdown h3 {
-  @apply text-2xl mb-4; 
+  @apply text-2xl mb-4;
 }
 .markdown h4 {
   @apply text-xl mb-3;
@@ -98,7 +104,7 @@
   @apply my-4 border-gray-400;
 }
 .markdown code {
-  @apply bg-gray-600 px-2 py-1 rounded-md text-gray-50 font-mono text-sm;
+  @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm;
 }
 .markdown pre {
   @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
@@ -110,7 +116,7 @@
   @apply text-base;
 }
 .markdown blockquote {
-  @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-50 font-semibold;
+  @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
 }
 .markdown blockquote * {
   @apply mb-0;
@@ -134,6 +140,9 @@ ol {
 }
 .markdown table * {
   @apply p-2 px-4 text-left align-top;
+}
+.markdown table * code {
+  @apply align-baseline;
 }
 .markdown thead {
   @apply text-gray-50 align-middle;
