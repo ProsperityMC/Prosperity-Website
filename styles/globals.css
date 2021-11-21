@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-gray-50 dark:bg-gray-500 text-gray-500 dark:text-gray-200 selection:bg-blue-500 selection:text-gray-50 dark:selection:text-gray-500 ring-blue-500;
+    @apply bg-gray-500 text-gray-200 selection:bg-blue-500 selection:text-gray-500 ring-blue-500;
   }
   .text-xs,
   .text-sm {
-    @apply text-gray-400 dark:text-gray-300;
+    @apply text-gray-300;
   }
   .text-base,
   .text-lg,
@@ -21,15 +21,25 @@
   .text-7xl,
   .text-8xl,
   .text-9xl {
-    @apply font-bold text-gray-700 dark:text-gray-50;
+    @apply font-bold text-gray-50;
   }
   a {
-    @apply underline text-blue-500 hover:text-blue-600 dark:text-yellow-500 dark:hover:text-yellow-400;
+    @apply underline text-yellow-500 hover:text-yellow-400;
   }
 }
 
 .x-break {
-  @apply mx-8 sm:px-24 xl:mx-48 2xl:mx-72;
+  @apply px-12 sm:px-24 xl:px-48 2xl:px-72;
+}
+
+.dropdown {
+  @apply bg-gray-600;
+}
+.dropdown-items {
+  @apply absolute;
+}
+.dropdown-items div {
+  @apply flex;
 }
 
 .nav {
@@ -39,10 +49,10 @@
   @apply flex gap-12 items-center;
 }
 .nav-brand {
-  @apply flex gap-4 items-center text-lg font-bold whitespace-nowrap overflow-x-visible;
+  @apply flex gap-4 items-center text-lg font-bold whitespace-nowrap overflow-x-visible text-white;
 }
 .nav a {
-  @apply text-gray-700 hover:text-gray-400 dark:hover:text-white dark:text-gray-50 no-underline;
+  @apply hover:text-white text-gray-50 no-underline;
 }
 
 .btn-group {
@@ -61,12 +71,12 @@
 .btn-lg {
   @apply px-14 py-5 text-lg;
 }
-.btn-primary {
-  @apply bg-blue-500 hover:bg-blue-600 dark:bg-yellow-500  dark:hover:bg-yellow-400 dark:text-gray-500;
+.btn-yellow {
+  @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
 }
 
 .clickable-header {
-  @apply text-gray-700 hover:text-gray-400 dark:text-gray-50 dark:hover:text-white no-underline;
+  @apply text-gray-50 hover:text-white no-underline;
 }
 
 .markdown h1 {
@@ -94,10 +104,10 @@
   @apply my-4 border-gray-400;
 }
 .markdown code {
-  @apply bg-white text-gray-700 dark:bg-gray-600 dark:text-gray-50 px-1 py-1 rounded-md  font-mono text-sm;
+  @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm;
 }
 .markdown pre {
-  @apply bg-white p-2 dark:bg-gray-600 w-full mb-4 rounded-md px-4;
+  @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
 }
 .markdown pre * {
   @apply p-0 mb-0;
@@ -106,7 +116,7 @@
   @apply text-base;
 }
 .markdown blockquote {
-  @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-600 dark:text-gray-100 font-semibold;
+  @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
 }
 .markdown blockquote * {
   @apply mb-0;
@@ -126,7 +136,7 @@ ol {
 }
 
 .markdown table {
-  @apply bg-white dark:bg-gray-600 rounded-md mb-4 table-auto w-full;
+  @apply bg-gray-600 rounded-md mb-4 table-auto w-full;
 }
 .markdown table * {
   @apply p-2 px-4 text-left align-top;
@@ -135,8 +145,8 @@ ol {
   @apply align-baseline;
 }
 .markdown thead {
-  @apply text-gray-700 dark:text-gray-50 align-middle;
+  @apply text-gray-50 align-middle;
 }
 .markdown tr {
-  @apply hover:text-gray-700 dark:hover:text-gray-50;
+  @apply hover:text-gray-50;
 }

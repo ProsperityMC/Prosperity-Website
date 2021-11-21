@@ -42,7 +42,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         <meta name="author" content={wiki.authors} />
       </Head>
       {/* Sidebar navigation */}
-      <div className="md:flex md:justify-between gap-0 md:gap-16 lg:gap-32">
+      <div className="md:flex md:justify-between gap-16 lg:gap-32">
         <div className="w-56 md:order-last space-y-4 justify-end">
           {/* All wikis navigation */}
           <p className="text-xl mb-4">Wiki</p>

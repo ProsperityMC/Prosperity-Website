@@ -13,10 +13,12 @@ export default function Home(): JSX.Element {
             <p className="text-6xl">Prosperity</p>
             <div className="btn-group my-4">
               <a href="https://discord.gg/hfTxZ4XxYj">
-                <button className="btn btn-primary">Join ↗</button>
+                <button className="btn btn-yellow">Join ↗</button>
               </a>
               <Link href="/wiki/home">
-                <a>Wiki</a>
+                <a>
+                  <button className="btn">Wiki</button>
+                </a>
               </Link>
             </div>
           </div>
