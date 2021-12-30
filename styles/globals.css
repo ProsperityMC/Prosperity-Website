@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 @layer base {
   body {
@@ -24,7 +25,7 @@
     @apply font-bold text-gray-50;
   }
   a {
-    @apply underline text-yellow-500 hover:text-yellow-400;
+    @apply underline text-amber-500 hover:text-amber-400;
   }
 }
 
@@ -71,8 +72,8 @@
 .btn-lg {
   @apply px-14 py-5 text-lg;
 }
-.btn-yellow {
-  @apply bg-yellow-500 text-gray-500 hover:bg-yellow-400;
+.btn-amber {
+  @apply bg-amber-500 text-gray-500 hover:bg-amber-400;
 }
 
 .clickable-header {

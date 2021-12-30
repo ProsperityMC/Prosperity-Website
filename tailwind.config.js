@@ -1,7 +1,8 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false,
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     fontFamily: {
       display: "DM\\ Sans",
@@ -10,6 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        current: 'currentColor',
         // These probably need some more work, but the website is using like 4 colors
         gray: {
           50: "#DBDBDB",
@@ -35,7 +37,7 @@ module.exports = {
           800: "#7D0707",
           900: "#610000",
         },
-        yellow: {
+        amber: {
           50: "#FDFAF0",
           100: "#FCF1D0",
           200: "#FCEAB5",
@@ -113,5 +115,6 @@ module.exports = {
   variants: {
     extend: {},
   },
+  corePlugins: { preflight: true },
   plugins: [require("@tailwindcss/aspect-ratio")],
 };

@@ -49,7 +49,7 @@ export default function Nav(): JSX.Element {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="btn btn-yellow">Join ↗</button>
+          <button className="btn btn-amber">Join ↗</button>
         </a>
       </div>
     </div>
