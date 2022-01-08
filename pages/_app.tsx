@@ -4,13 +4,19 @@ import "../styles/globals.css";
 import Head from "next/head";
 import Nav from "../components/nav";
 
-export function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
         <title>Prosperity</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="The Prosperity Minecraft server." />
         <meta
@@ -28,4 +34,3 @@ export function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     </>
   );
 }
-export default MyApp;

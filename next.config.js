@@ -4,10 +4,10 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/wiki',
-        destination: '/wiki/home',
+        source: "/wiki",
+        destination: "/wiki/home",
         permanent: true,
       },
-    ]
+    ];
   },
 };
