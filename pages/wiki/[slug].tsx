@@ -57,16 +57,24 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
           ))}
         </div>
         {/* Main wiki page */}
-        <div className="w-full">
+        <div className="w-full mb-16">
           <p className="text-6xl">{wiki.title}</p>
-          {wiki.authors && <p className="text-xs my-4">Authors: {wiki.authors}</p>}
+          {wiki.authors && (
+            <p className="text-xs my-4">Authors: {wiki.authors}</p>
+          )}
           {!wiki.authors && <div className="my-4" />}
           <ReactMarkdown
             className="markdown"
             remarkPlugins={[remarkGfm, remarkToc]}
             rehypePlugins={[
               rehypeSlug,
-              [rehypeAutolinkHeadings, { behavior: "wrap", properties: { className: ["clickable-header"] } }],
+              [
+                rehypeAutolinkHeadings,
+                {
+                  behavior: "wrap",
+                  properties: { className: ["clickable-header"] },
+                },
+              ],
             ]}
           >
             {wiki.body.raw}

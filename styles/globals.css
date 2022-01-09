@@ -44,7 +44,7 @@
 }
 
 .nav {
-  @apply my-8 w-full gap-12 flex justify-between font-semibold mx-auto select-none overflow-x-auto;
+  @apply my-8 w-full gap-12 flex justify-between font-semibold mx-auto select-none overflow-x-clip;
 }
 .nav-items {
   @apply flex gap-12 items-center;
@@ -61,7 +61,7 @@
 }
 
 .btn {
-  @apply whitespace-nowrap bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold hover:bg-gray-300 hover:shadow-xl;
+  @apply whitespace-nowrap bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold;
 }
 .btn-sm {
   @apply px-3 py-2 text-xs;
@@ -73,7 +73,7 @@
   @apply px-14 py-5 text-lg;
 }
 .btn-amber {
-  @apply bg-amber-500 text-gray-500 hover:bg-amber-400;
+  @apply bg-amber-500 text-gray-500 shadow-md hover:shadow-lg hover:shadow-amber-500/40 shadow-amber-500/20;
 }
 
 .clickable-header {

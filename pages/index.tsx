@@ -16,16 +16,16 @@ export default function Home(): JSX.Element {
                 <button className="btn btn-amber">Join ↗</button>
               </a>
               <Link href="/wiki/home">
-                <a>
-                  <button className="btn">Wiki</button>
-                </a>
+                <a>Wiki</a>
               </Link>
             </div>
           </div>
           <div className="flex flex-wrap content-center">
-            Prosperity is a survival-multiplayer Minecraft server with a focus enabling players to work on large projects
-            easily. To achieve this the server has many quality of life improvements, and changes that allow you to farm more
-            items, and have an easier time than a vanilla server.
+            Prosperity is a survival-multiplayer Minecraft server with a focus
+            enabling players to work on large projects easily. To achieve this
+            the server has many quality of life improvements, and changes that
+            allow you to farm more items, and have an easier time than a vanilla
+            server.
           </div>
         </div>
       </div>
