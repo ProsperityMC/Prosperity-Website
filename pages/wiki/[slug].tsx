@@ -41,38 +41,41 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         <meta name="description" content={wiki.description} />
         <meta name="author" content={wiki.authors} />
       </Head>
-      {/* Sidebar navigation */}
-      <div className="md:flex md:justify-between gap-16 lg:gap-32">
-        <div className="w-56 md:order-last space-y-4 justify-end">
-          {/* All wikis navigation */}
-          <p className="text-xl mb-4">Wiki</p>
-          {wikis.map(({ title, slug }: any) => (
-            <div key={slug}>
-              <div className="mb-3">
-                <Link href={`/wiki/${slug}`}>
-                  <a>{title}</a>
-                </Link>
+      <div className="content-center gap-8 mx-auto sm:grid sm:grid-flow-col">
+        {/* Wiki navigation container */}
+        <div className="order-last">
+          <div className="mb-8 sm:float-right">
+            <p className="mb-2 text-xl">Wiki</p>
+            {wikis.map(({ title, slug }: any) => (
+              <div key={slug}>
+                <div className="mb-2">
+                  <Link href={`/wiki/${slug}`}>
+                    <a>{title}</a>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        {/* Main wiki page */}
-        <div className="w-full mb-16">
+        {/* Wiki content container */}
+        <div className="mb-24">
           <p className="text-6xl">{wiki.title}</p>
           {wiki.authors && (
-            <p className="text-xs my-4">Authors: {wiki.authors}</p>
+            <p className="my-4 text-xs">Authors: {wiki.authors}</p>
           )}
           {!wiki.authors && <div className="my-4" />}
           <ReactMarkdown
-            className="markdown"
+            className="text-content"
             remarkPlugins={[remarkGfm, remarkToc]}
             rehypePlugins={[
               rehypeSlug,
               [
                 rehypeAutolinkHeadings,
                 {
-                  behavior: "wrap",
-                  properties: { className: ["clickable-header"] },
+                  behavior: "group",
+                  properties: {
+                    className: ["linked-header"],
+                  },
                 },
               ],
             ]}

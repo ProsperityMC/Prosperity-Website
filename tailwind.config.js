@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        current: 'currentColor',
+        current: "currentColor",
         // These probably need some more work, but the website is using like 4 colors
         gray: {
           50: "#DBDBDB",

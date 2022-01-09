@@ -27,8 +27,8 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
         <meta name="theme-color" content="#FFC10B" />
         <meta property="og:type" content="website" />
       </Head>
-      <div className="x-break">
-        <Nav></Nav>
+      <Nav></Nav>
+      <div className="px-12 mt-[7rem] sm:px-24 xl:px-48 2xl:px-72">
         <Component {...pageProps} />
       </div>
     </>

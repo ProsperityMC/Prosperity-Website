@@ -25,129 +25,82 @@
     @apply font-bold text-gray-50;
   }
   a {
-    @apply underline text-amber-500 hover:text-amber-400;
+    @apply underline text-amber-500 hover:text-amber-400 duration-150;
   }
 }
 
-.x-break {
-  @apply px-12 sm:px-24 xl:px-48 2xl:px-72;
+.text-content {
+  @apply leading-relaxed;
 }
 
-.dropdown {
-  @apply bg-gray-600;
-}
-.dropdown-items {
-  @apply absolute;
-}
-.dropdown-items div {
-  @apply flex;
-}
-
-.nav {
-  @apply my-8 w-full gap-12 flex justify-between font-semibold mx-auto select-none overflow-x-clip;
-}
-.nav-items {
-  @apply flex gap-12 items-center;
-}
-.nav-brand {
-  @apply flex gap-4 items-center text-lg font-bold whitespace-nowrap overflow-x-visible text-white;
-}
-.nav a {
-  @apply hover:text-white text-gray-50 no-underline;
-}
-
-.btn-group {
-  @apply flex gap-4 items-center;
-}
-
-.btn {
-  @apply whitespace-nowrap bg-gray-400 rounded-md px-6 py-2 text-gray-50 font-bold;
-}
-.btn-sm {
-  @apply px-3 py-2 text-xs;
-}
-.btn-md {
-  @apply px-10 py-3;
-}
-.btn-lg {
-  @apply px-14 py-5 text-lg;
-}
-.btn-amber {
-  @apply bg-amber-500 text-gray-500 shadow-md hover:shadow-lg hover:shadow-amber-500/40 shadow-amber-500/20;
-}
-
-.clickable-header {
-  @apply text-gray-50 hover:text-white no-underline;
-}
-
-.markdown h1 {
+.text-content h1 {
   @apply text-5xl mb-6;
 }
-.markdown h2 {
+.text-content h2 {
   @apply text-3xl mb-5;
 }
-.markdown h3 {
+.text-content h3 {
   @apply text-2xl mb-4;
 }
-.markdown h4 {
+.text-content h4 {
   @apply text-xl mb-3;
 }
-.markdown h5 {
+.text-content h5 {
   @apply text-lg mb-2;
 }
-.markdown h6 {
+.text-content h6 {
   @apply text-sm mb-1;
 }
-.markdown p {
+.text-content p {
   @apply mb-4;
 }
-.markdown hr {
+.text-content hr {
   @apply my-4 border-gray-400;
 }
-.markdown code {
+.text-content code {
   @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm;
 }
-.markdown pre {
+.text-content pre {
   @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
 }
-.markdown pre * {
+.text-content pre * {
   @apply p-0 mb-0;
 }
-.markdown pre * code {
+.text-content pre * code {
   @apply text-base;
 }
-.markdown blockquote {
+.text-content blockquote {
   @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
 }
-.markdown blockquote * {
+.text-content blockquote * {
   @apply mb-0;
 }
-.markdown ul,
+.text-content ul,
 ol {
   @apply ml-8 mb-4;
 }
-.markdown ul {
+.text-content ul {
   @apply list-disc;
 }
-.markdown li {
+.text-content li {
   @apply list-item;
 }
-.markdown ol {
+.text-content ol {
   @apply list-decimal;
 }
 
-.markdown table {
+.text-content table {
   @apply bg-gray-600 rounded-md mb-4 table-auto w-full;
 }
-.markdown table * {
+.text-content table * {
   @apply p-2 px-4 text-left align-top;
 }
-.markdown table * code {
+.text-content table * code {
   @apply align-baseline;
 }
-.markdown thead {
+.text-content thead {
   @apply text-gray-50 align-middle;
 }
-.markdown tr {
+.text-content tr {
   @apply hover:text-gray-50;
 }

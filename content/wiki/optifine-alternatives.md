@@ -6,41 +6,6 @@ description: A list of mods you can use instead of OptiFine.
 
 This is an exhastive list of all the mods you can use to replace OptiFine's functionality.
 
-- [Why ditch OptiFine?](#why-ditch-optifine)
-  - [What about OptiFabric?](#what-about-optifabric)
-- [Your options](#your-options)
-  - [Shaders & rendering](#shaders--rendering)
-    - [Shaders](#shaders)
-    - [Fast rendering](#fast-rendering)
-    - [More rendering features](#more-rendering-features)
-  - [Graphics features](#graphics-features)
-    - [Better grass & snow](#better-grass--snow)
-    - [Connected textures](#connected-textures)
-    - [Fast leaves](#fast-leaves)
-    - [Dynamic lighting](#dynamic-lighting)
-    - [Extended view distance](#extended-view-distance)
-    - [Animations, particles, fog, and more](#animations-particles-fog-and-more)
-  - [Resource pack features](#resource-pack-features)
-    - [Port OptiFIne packs to modern formats](#port-optifine-packs-to-modern-formats)
-    - [More block features](#more-block-features)
-    - [More GUI features](#more-gui-features)
-    - [Custom entity models (CEM)](#custom-entity-models-cem)
-    - [Animated textures port](#animated-textures-port)
-  - [Utilities](#utilities)
-    - [Zoom](#zoom)
-    - [Hide armor](#hide-armor)
-    - [Hide shields & totems when not in use](#hide-shields--totems-when-not-in-use)
-  - [Performance](#performance)
-    - [General game optimizations](#general-game-optimizations)
-    - [Lighting engine optimization](#lighting-engine-optimization)
-    - [Faster load times](#faster-load-times)
-  - [Misic](#misic)
-    - [Fully customizable capes](#fully-customizable-capes)
-    - [Disable world view bob](#disable-world-view-bob)
-    - [Additional tooltips (shulker tooltips)](#additional-tooltips-shulker-tooltips)
-  - [Forge](#forge)
-- [Why does this have to be so hard?](#why-does-this-have-to-be-so-hard)
-
 ## Why ditch OptiFine?
 
 OptiFine is a ubiquitous mod, and has been around for years. It's feature rich and, historically, has improved performance. However in recent years OptiFine's performance benefits have gotten smaller, and the mod now boasts list of bugs and drawbacks. OptiFine is known to replace large sections of vanilla code, and is now has years of technical debt, and this is all maintained by one person.
