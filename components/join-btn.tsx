@@ -8,7 +8,7 @@ export default function JoinBtn() {
           "window",
           `width=500, height=700, left=${screen.width / 2 - 500 / 2}, top=${
             screen.height / 2 - 700 / 2
-          }, popup=1, noreferrer=1, noopener=1, menubar=0, toolbar=0, status=0`
+          }, popup=1, noreferrer=1, noopener=1, menubar=0, toolbar=0, status=0`,
         );
       }}
     >

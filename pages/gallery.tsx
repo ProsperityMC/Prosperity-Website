@@ -2,6 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Gallery(): JSX.Element {
+  const galleryImages: Array<Array<string>> = [
+    ["Image #1", "/img_0", "CarbonGhost's mountain.", "CarbonGhost"],
+    ["Image #2", "/img_1", "Spawn town.", "CarbonGhost"],
+    ["Image #3", "/img_2", "Spawn town.", "CarbonGhost"],
+    ["Image #4", "/img_3", "CarbonGhost's base.", "CarbonGhost"],
+    ["Image #5", "/img_4", "Sand shop.", "CarbonGhost"],
+  ];
   return (
     <>
       <Head>
@@ -12,17 +19,10 @@ export default function Gallery(): JSX.Element {
         />
       </Head>
       <div className="xl:grid-cols-2 2xl:grid-cols-3 gap-x-4 grid content-center gap-8 mx-auto mb-24">
-        {[
-          ["Image #1", "/img_0", "CarbonGhost's mountain.", "CarbonGhost"],
-          ["Image #2", "/img_1", "Spawn town.", "CarbonGhost"],
-          ["Image #3", "/img_2", "Spawn town.", "CarbonGhost"],
-          ["Image #4", "/img_3", "CarbonGhost's base.", "CarbonGhost"],
-          ["Image #5", "/img_4", "Sand shop.", "CarbonGhost"],
-        ].map(([title, url, description, author], i) => (
+        {galleryImages.map(([title, url, description, author], i) => (
           <div key={title}>
             <div className="hover:drop-shadow-lg drop-shadow-md flex p-0 m-0">
               <Image
-                id={`image_${i}`}
                 className="hover:brightness-110 w-full p-0 m-0 duration-150 bg-gray-600 rounded-md cursor-pointer"
                 onClick={async () => {}}
                 src={`/gallery${url}.png`}

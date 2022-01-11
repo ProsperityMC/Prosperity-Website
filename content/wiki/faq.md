@@ -70,7 +70,7 @@ TODO.
 
 ## How do I report a player?
 
-You can send a direct message to a Minecraft server admin and it will be investigated as quickly as possible. 
+You can send a direct message to a Minecraft server admin and it will be investigated as quickly as possible.
 
 ## How do I become a staff member?
 
