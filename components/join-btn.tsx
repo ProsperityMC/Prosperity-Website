@@ -1,7 +1,7 @@
 export default function JoinBtn() {
   return (
     <button
-      className="px-6 py-2 font-bold text-gray-500 duration-300 rounded-md shadow-md whitespace-nowrap bg-amber-500 hover:shadow-lg hover:shadow-amber-500/40 shadow-amber-500/20 transform-gpu focus:bg-yellow-300 focus:scale-105"
+      className="whitespace-nowrap bg-amber-500 hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-400/40 shadow-amber-500/20 transform-gpu focus:bg-yellow-400 focus:scale-105 px-6 py-2 font-bold text-gray-500 duration-300 rounded-md shadow-md"
       onClick={async () => {
         window.open(
           "https://discord.gg/hfTxZ4XxYj",

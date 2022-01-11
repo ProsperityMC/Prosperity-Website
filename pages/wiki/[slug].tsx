@@ -41,10 +41,10 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         <meta name="description" content={wiki.description} />
         <meta name="author" content={wiki.authors} />
       </Head>
-      <div className="content-center gap-8 mx-auto sm:grid sm:grid-flow-col">
+      <div className="sm:grid sm:grid-flow-col content-center gap-8 mx-auto">
         {/* Wiki navigation container */}
         <div className="order-last">
-          <div className="mb-8 sm:float-right">
+          <div className="sm:float-right mb-8">
             <p className="mb-2 text-xl">Wiki</p>
             {wikis.map(({ title, slug }: any) => (
               <div key={slug}>

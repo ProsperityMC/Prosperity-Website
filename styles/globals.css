@@ -102,5 +102,5 @@ ol {
   @apply text-gray-50 align-middle;
 }
 .text-content tr {
-  @apply hover:text-gray-50;
+  @apply hover:text-gray-50 duration-150;
 }
