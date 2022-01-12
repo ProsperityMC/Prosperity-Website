@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
@@ -48,7 +49,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
             {wikis.map(({ title, slug }: any) => (
               <div key={slug}>
                 <div className="mb-2">
-                  <a href={`/wiki/${slug}`}>
+                  <Link href={`/wiki/${slug}`}>
                     <a>
                       <span className="inline-flex items-baseline content-center gap-1">
                         <a>{title}</a>
@@ -66,7 +67,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
                         </svg>
                       </span>
                     </a>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
