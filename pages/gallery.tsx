@@ -18,7 +18,7 @@ export default function Gallery(): JSX.Element {
           content="Fancy screenshots from the Prosperity server."
         />
       </Head>
-      <div className="xl:grid-cols-2 2xl:grid-cols-3 gap-x-4 grid content-center gap-8 mx-auto mb-24">
+      <div className="xl:grid-cols-2 gap-x-4 grid content-center gap-8 mx-auto mb-24">
         {galleryImages.map(([title, url, description, author], i) => (
           <div key={title}>
             <div className="hover:drop-shadow-lg drop-shadow-md flex p-0 m-0">

@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
         <meta property="og:type" content="website" />
       </Head>
       <Nav></Nav>
-      <div className="px-12 mt-[6.5rem] sm:px-24 xl:px-48 2xl:px-72">
+      <div className="mt-[6.5rem] responsive-width">
         <Component {...pageProps} />
       </div>
     </>

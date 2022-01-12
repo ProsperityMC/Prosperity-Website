@@ -29,6 +29,10 @@
   }
 }
 
+.responsive-width {
+  @apply mx-8 sm:mx-24 xl:mx-48 2xl:mx-72;
+}
+
 .text-content {
   @apply leading-relaxed;
 }
