@@ -1,1 +1,0 @@
-Projects gallery placeholder page.

@@ -5,25 +5,24 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: "DM\\ Sans",
-      body: "Inter",
-      mono: "Source\\ Code\\ Pro",
+      display: '"Inter"',
+      body: '"Montserrat"',
+      mono: '"Source Code Pro"',
     },
     extend: {
       colors: {
         current: "currentColor",
-        // These probably need some more work, but the website is using like 4 colors
         gray: {
-          50: "#DBDBDB",
-          100: "#C4C5CB",
-          200: "#AEB0B6",
-          300: "#6C7078",
-          400: "#4A4E55",
-          500: "#252628",
-          600: "#18191A",
-          700: "#0F0F10",
-          800: "#0A0A0A",
-          900: "#050505",
+          50: "#DADADA",
+          100: "#CED0D3",
+          200: "#B8BBC1",
+          300: "#5B5F68",
+          400: "#343539",
+          500: "#242527",
+          600: "#1A1B1C",
+          700: "#141415",
+          800: "#0A0A0B",
+          900: "#060608",
         },
         red: {
           50: "#F9E9E9",

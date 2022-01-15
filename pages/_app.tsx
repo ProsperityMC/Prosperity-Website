@@ -9,10 +9,6 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     <>
       <Head>
         <title>Prosperity</title>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Inter|DM+Sans|Source+Code+Pro"
-        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
