@@ -1,5 +1,5 @@
 ---
-title: OptiFine Alternatices
+title: OptiFine Alternatives
 authors: CarbonGhost
 description: A list of mods you can use instead of OptiFine.
 ---
@@ -59,14 +59,16 @@ This list goes by feature and offers a list of mods to replace it, _all of these
 #### Better grass & snow
 
 **LambdaBetterGrass** adds a more detailed implementation of smooth grass as well as better snow and resource pack support
-<small>Requires **[Indium](#more-rendering-features)**</small>
+
+Requires **[Indium](#more-rendering-features)**
 
 [Download](https://modrinth.com/mod/lambdabettergrass)
 
 #### Connected textures
 
 The **Connected Textures Mod** adds support for connected textures via resource packs. Note that by default the mod does not add any features without a resource pack; The mod also has a separate format from OptiFine's MCPatcher format so not all resource packs will work.
-<small>Requires **[Indium](#more-rendering-features)**</small>
+
+Requires **[Indium](#more-rendering-features)**
 
 [Download](https://www.curseforge.com/minecraft/mc-mods/ctm-fabric)
 
@@ -152,14 +154,12 @@ The **Custom Entity Models** mod adapts MCPatcher's CEM system to be able to be 
 
 #### General game optimizations
 
-<small>Singleplayer only</small>
 **Lithium** is a complete game optimization mod that does not break any vanilla mechanics.
 
 [Download](https://modrinth.com/mod/lithium)
 
 #### Lighting engine optimization
 
-<small>Singleplayer only</small>
 **Starlight** is a mod that optimizes the light engine to be faster while maintaining vanilla mechanics.
 
 [Download](https://modrinth.com/mod/starlight)
@@ -198,4 +198,4 @@ Forge currently does not have a suitable OptiFine replacement, due to many incom
 
 If you have taken the time to read through the suggestions here, or have compiled this list of mods yourself, you may be wondering why this has to be so difficult, when OptiFine can be installed in about 3 clicks. The answer is that there is no reason for it.
 
-It is my personal opinion that, if ever OptiFine were to fall out of use, the Fabric modding community needs to make an option that is as appealing and easy to use for the average person as OptiFine currently is. The mods exist to replace the majority of the mods features, with eqivilent or better results, the last obstacle is widespread adoption, and making the alternatives easy to use.
+It is my personal opinion that, if ever OptiFine were to fall out of use, the Fabric modding community needs to make an option that is as appealing and easy to use for the average person as OptiFine currently is. The mods exist to replace the majority of the mods features, with equivalent or better results, the last obstacle is widespread adoption, and making the alternatives easy to use.

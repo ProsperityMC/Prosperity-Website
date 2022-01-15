@@ -17,53 +17,60 @@ export default function Nav(): JSX.Element {
       {({ open }) => (
         <>
           <div className="fixed top-0 z-30 w-screen py-8 mt-0 bg-gray-500">
-            <Disclosure.Panel className="float-r md:hidden fixed top-0 left-0 h-full px-8 pr-24 duration-150 bg-gray-600 shadow-md">
-              <div className="flex flex-col gap-8 mt-8">
-                <div>
-                  <Brand />
-                </div>
-                <div className="flex flex-col gap-2">
-                  {internalNavLinks.map(([title, url]) => (
-                    <Link key={title} href={url}>
-                      <a className="hover:text-white text-gray-50 no-underline duration-150">
-                        {title}
-                      </a>
-                    </Link>
-                  ))}
-                </div>
-                <div>
-                  {externalNavLinks.map(([title, url]) => (
-                    <a
-                      key={title}
-                      href={url}
-                      target="_blank"
-                      className="hover:text-white text-gray-50 no-underline duration-150"
-                      rel="noreferrer"
-                    >
-                      <span className="flex items-center content-center gap-2">
-                        <p>{title}</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-4 h-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
+            <Disclosure.Panel className="float-r md:hidden fixed top-0 left-0 h-full pl-8 sm:pl-24 xl:pl-48 2xl:pl-72 pr-24 duration-150 bg-gray-600 shadow-md">
+              {({ close }) => (
+                <div className="flex flex-col gap-8 mt-8">
+                  <div>
+                    <Brand />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    {internalNavLinks.map(([title, url]) => (
+                      <Link href={url} key={title}>
+                        <a
+                          className="hover:text-white text-gray-50 no-underline duration-150"
+                          onClick={async () => {
+                            close();
+                          }}
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </span>
-                    </a>
-                  ))}
+                          {title}
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                  <div>
+                    {externalNavLinks.map(([title, url]) => (
+                      <a
+                        key={title}
+                        href={url}
+                        target="_blank"
+                        className="hover:text-white text-gray-50 no-underline duration-150"
+                        rel="noreferrer"
+                      >
+                        <span className="flex items-center content-center gap-2">
+                          <p>{title}</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                  <div>
+                    <JoinBtn />
+                  </div>
                 </div>
-                <div>
-                  <JoinBtn />
-                </div>
-              </div>
+              )}
             </Disclosure.Panel>
             <div className="responsive-width">
               {/* Desktop navigation */}
