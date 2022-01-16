@@ -66,7 +66,7 @@ You can learn more about exactly which features are being used, and find configu
 
 Tweakeroo contains a very large amount of survival utilities, these range from freecam to autoclickers, to the ability to disable entity rendering. It is highly recommended that you use this mod, to make your life easier, and make collaboration with the players that already do use it much better.
 
-*Yes you can use freeccam on this server. See the rules for more information.*
+_Yes you can use freeccam on this server. See the rules for more information._
 
 [Tweakeroo on CurseForge](https://www.curseforge.com/minecraft/mc-mods/tweakeroo/files)
 
@@ -95,6 +95,7 @@ If you're looking for a specific farm, base, or biome, there's a good chance it 
 ### Important points of interest
 
 Some of the most important places to know are:
+
 - The commercial district @ `-289 74 -794 OW` / `-38 128 -97 Nether`
 - The overworld hostile mob switch @ `300 255 130 Nether`
 - The Nether hostile mob switch @ `651 222 133 Nether`

@@ -33,7 +33,7 @@ In addition, I use the [Prettier](https://marketplace.visualstudio.com/items?ite
 
 ### Contributing to the wiki
 
-If you wish the contribute to wiki, please follow the development setup instructions. This site uses the standard markdown format in addition to some custom frontmatter, you can see the formatting in the existing wiki pages. 
+If you wish the contribute to wiki, please follow the development setup instructions. This site uses the standard markdown format in addition to some custom frontmatter, you can see the formatting in the existing wiki pages.
 
 Run `./node_modules/.bin/contentlayer dev` in order to automatically recompile any markdown files in the `/content/wiki/` directory so you can preview your changes on the dev server.
 
@@ -41,4 +41,4 @@ When making any changes, please ensure that you use proper text formatting, spel
 
 ### Contributing to the gallery
 
-*The gallery isn't fully implemented yet, you will be able to contribute to it in the future ...*
+_The gallery isn't fully implemented yet, you will be able to contribute to it in the future ..._

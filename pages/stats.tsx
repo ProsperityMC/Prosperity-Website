@@ -10,7 +10,8 @@ export default function Stats(): JSX.Element {
           content="Live resource usage and performance metrics for Prosperity."
         />
       </Head>
-      <p className="text-6xl">Stats page</p>
+
+      <p className="text-6xl">Functionality not yet implemented.</p>
     </>
   );
 }

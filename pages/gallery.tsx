@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Gallery(): JSX.Element {
+export default function GalleryPage(): JSX.Element {
+  // Array of arrays with paths to each imagea, image descriptions, and image authors.
+  // For each item in the array, an element is created on the page.
+  // Paths are relitive to the `/public/gallery` directory.
   const galleryImages: Array<Array<string>> = [
     ["Image #1", "/img_0", "CarbonGhost's mountain.", "CarbonGhost"],
     ["Image #2", "/img_1", "Spawn town.", "CarbonGhost"],
@@ -15,10 +18,13 @@ export default function Gallery(): JSX.Element {
         <title>Prosperity | Gallery</title>
         <meta
           name="description"
-          content="Fancy screenshots from the Prosperity server."
+          content="Screenshots from the Prosperity server."
         />
       </Head>
+
       <div className="xl:grid-cols-2 gap-x-4 grid content-center gap-8 mx-auto mb-24">
+        {/* Gallery iamge
+        For each item in the `galleryImages` array, create a new image with props. */}
         {galleryImages.map(([title, url, description, author], i) => (
           <div key={title}>
             <div className="hover:drop-shadow-lg drop-shadow-md flex p-0 m-0">
