@@ -1,6 +1,6 @@
-import type { AppProps } from "next/app";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import Nav from "../components/nav";
 
@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
         <meta property="og:site_name" content="Prosperity MC" />
         <meta name="theme-color" content="#FFC10B" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="../public/brand/splash.png" />
       </Head>
       <Nav></Nav>
       <div className="mt-[6.5rem] responsive-width">
