@@ -1,6 +1,6 @@
 ---
 title: New Player Guide
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: New player guide and information.
 ---
 

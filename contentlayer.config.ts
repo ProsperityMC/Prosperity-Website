@@ -10,13 +10,14 @@ export const Wiki = defineDocumentType(() => ({
       required: true,
     },
     authors: {
-      type: "string",
+      type: "list",
+      of: { type: "string" },
       description: "All wiki page contributors.",
       required: false,
     },
     description: {
       type: "string",
-      description: "Breif summary of the page.",
+      description: "Brief summary of the page.",
       required: true,
     },
   },

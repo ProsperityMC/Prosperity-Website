@@ -43,7 +43,7 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         <meta name="description" content={wiki.description} />
         <meta name="author" content={wiki.authors} />
       </Head>
-      
+
       <div className="md:grid md:grid-flow-col content-center gap-8 mx-auto">
         {/* Wiki page navigation
         Contains a list of links to all generated wiki pages.
@@ -85,10 +85,10 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
           <p className="text-6xl">{wiki.title}</p>
           <div className="flex content-center gap-8 my-4 text-sm">
             {wiki.authors && (
-              <span className="flex items-center content-center gap-2 text-sm">
+              <span className="flex content-center gap-2 text-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className=" w-4 h-4"
+                  className="w-4 h-4 self-center"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -111,11 +111,11 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
             rehypePlugins={[rehypeSlug]}
             components={{
               a: ({ node, ...props }) => (
-                <span className="inline-flex items-baseline content-center gap-1">
+                <span className="inline-flex content-center gap-1">
                   <a {...props} target="_blank" rel="nonreferer"></a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-gray-50 w-4 h-4"
+                    className="stroke-gray-50 w-4 h-4 self-center"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

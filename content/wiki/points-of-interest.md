@@ -1,6 +1,6 @@
 ---
 title: Points of Interest
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: Useful locations and points of interest accross the server.
 ---
 

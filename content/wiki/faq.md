@@ -1,6 +1,6 @@
 ---
 title: FAQ
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: Common questions and useful information about the server.
 ---
 

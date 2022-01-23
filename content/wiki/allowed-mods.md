@@ -1,8 +1,7 @@
 ---
 title: Allowed Mods
 description: Incomplete list of allowed  banned client mods.
-authors: CarbonGhost
-pinned: false
+authors: [CarbonGhost]
 ---
 
 This is not a complete list, there are no loopholes. If a mod isn't on this list it may be fine, but please [submit a feedback from](https://forms.gle/T5AUdMpDffdrRMnb7).

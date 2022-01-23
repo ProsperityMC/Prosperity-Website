@@ -46,11 +46,11 @@ export default function Nav(): JSX.Element {
                         className="hover:text-white text-gray-50 no-underline duration-150"
                         rel="noreferrer"
                       >
-                        <span className="flex items-center content-center gap-2">
+                        <span className="flex content-center gap-2">
                           <p>{title}</p>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-4 h-4"
+                            className="w-4 h-4 self-center"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -72,6 +72,7 @@ export default function Nav(): JSX.Element {
                 </div>
               )}
             </Disclosure.Panel>
+            
             <div className="responsive-width">
               {/* Desktop navigation */}
               <div className="grid-flow-cols grid grid-cols-2">

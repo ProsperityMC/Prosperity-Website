@@ -1,6 +1,6 @@
 ---
 title: Markdown tester
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: You shouldn't be able to access this page.
 ---
 

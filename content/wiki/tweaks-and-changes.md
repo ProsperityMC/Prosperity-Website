@@ -1,6 +1,6 @@
 ---
 title: Tweaks and Changes
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: Full mod list and configuration.
 ---
 

@@ -1,28 +1,27 @@
 ---
 title: Technical Information
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: Server specs and other technical information.
 ---
 
-# Current
+Server hardware specs and technical information. Please note that the seed was generated in 1.17.1 originally, and later upgraded to 1.18.1, so some generation features may be different.
 
-Server version: 1.17.1 (Fabric)
+# Software
 
-Java version: Java 16 HotSpot
+- **Game version** 1.18.1
+- **JDK version** Adoptium Java 17
+- **Server software** Fabric
 
-View Distance:
+# Hardware
 
-- 21 in the Overworld
-- 10 in the Nether
-- 12 in the End
+- **CPU** Ryzen 7 3750X
+- **Memory** 12 GB @ 2666 Mhz
+- **Storage** SSD
+- **Location** LA, United States
 
-Spawn Chunks: Disabled
+# Game
 
-Seed: -6265140814097726510 (Default world generation)
-
-Server Specs:
-
-- Ryzen 7 5700X
-- 12GB of RAM (8GB allocated to main server, 4GB to CMP)
-- Whatever SSD
-- Hosted in LA
+- **Seed** -6265140814097726510
+- **Difficulty** Hard
+- **View distance** 14 - 26 (dynamic)
+- **Simulation distance** 14

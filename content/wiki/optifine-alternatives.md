@@ -1,6 +1,6 @@
 ---
 title: OptiFine Alternatives
-authors: CarbonGhost
+authors: [CarbonGhost]
 description: A list of mods you can use instead of OptiFine.
 ---
 
