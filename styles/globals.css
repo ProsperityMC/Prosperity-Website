@@ -39,13 +39,13 @@
     @apply leading-relaxed;
   }
   .text-content h1 {
-    @apply text-4xl my-6;
+    @apply text-4xl my-4;
   }
   .text-content h2 {
-    @apply text-3xl my-6;
+    @apply text-3xl my-4;
   }
   .text-content h3 {
-    @apply text-2xl my-6 font-semibold;
+    @apply text-2xl my-4 font-semibold;
   }
   .text-content h4 {
     @apply text-xl my-4 font-semibold text-gray-100;
@@ -63,16 +63,16 @@
     @apply my-4 border-gray-400;
   }
   .text-content code {
-    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm;
+    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold;
   }
   .text-content pre {
-    @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4;
+    @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4 drop-shadow-md leading-tight;
   }
   .text-content pre * {
     @apply p-0 mb-0;
   }
   .text-content pre * code {
-    @apply text-base;
+    @apply text-base drop-shadow-none;
   }
   .text-content blockquote {
     @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
@@ -94,13 +94,13 @@
     @apply list-decimal;
   }
   .text-content table {
-    @apply bg-gray-600 rounded-md mb-4 table-auto w-full;
+    @apply bg-gray-600 rounded-md mb-4 table-auto w-full drop-shadow-md;
   }
   .text-content table * {
-    @apply p-2 px-4 text-left align-top;
+    @apply py-2 px-4 text-left align-top;
   }
   .text-content table * code {
-    @apply align-baseline;
+    @apply align-baseline shadow-none bg-transparent p-0;
   }
   .text-content thead {
     @apply text-gray-50 align-middle;
