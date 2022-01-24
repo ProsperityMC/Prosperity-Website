@@ -4,15 +4,13 @@ authors: [CarbonGhost]
 description: Full mod list and configuration.
 ---
 
-> Please note that as the server has updated to the latest version of the game not all mods are available. This _does not_ include mods that affect gameplay, like Carpet. These mods will most likely be performance mods, which will be added to the server again when they're available.
-
 This is a comprehensive list of changes made to the vanilla game. All of these changes were made to improve the gameplay experience. Some mods require you to install them on the client to be used, [see here](#Client-mods).
 
 ## Client mods
 
 You can play on the server with a vanilla client, OptiFine, or using different mods, but you have to install these mods if you want to use their associated features. It is recommended, if not your only choice, that you use the Fabric versions of these mods.
 
-- **SimpleVoiceChat**
+- **Simple Voice Chat**
 
   [Downloads](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
 

@@ -58,7 +58,7 @@ Note that you need to use both mods together in order for them to work.
 
 Carpet is used on the server to add additional gameplay features. You don't need this mod in order to play, but it's a good idea to familiarize yourself with it's features. This mod will be good to have if you wish to test something in singleplayer.
 
-You can learn more about exactly which features are being used, and find configuration files on the [mods page]().
+You can learn more about exactly which features are being used, and find configuration files on the [mods page](/wiki/tweaks-and-changes).
 
 [Carpet on CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet/files)
 
@@ -78,7 +78,7 @@ MiniHUD is a mod that gives you additional information about your game. This inc
 
 ## OptiFine alternatives
 
-This is a Fabric server, and most of these mods are only available for Fabric. It is not recommended that you use OptiFine for various reasons. You can learn why, and what you can do to replace the mod's functionality on the [OptiFine alternatives]() page.
+This is a Fabric server, and most of these mods are only available for Fabric. It is not recommended that you use OptiFine for various reasons. You can learn why, and what you can do to replace the mod's functionality on the [OptiFine alternatives](/wiki/optifine-alternatives) page.
 
 # On the server
 
@@ -90,7 +90,7 @@ Prosperity is heavily focused around individual bases, similar to servers like H
 
 ## Points of interest
 
-If you're looking for a specific farm, base, or biome, there's a good chance it already exists. You can check the `#points-of-interest` channel on Discord, or the [wiki page with the same name](), which contain a list of farms and builds which you should be aware of.
+If you're looking for a specific farm, base, or biome, there's a good chance it already exists. You can check the `#points-of-interest` channel on Discord, or the [wiki page with the same name](/wiki/points-of-interest), which contain a list of farms and builds which you should be aware of.
 
 ### Important points of interest
 

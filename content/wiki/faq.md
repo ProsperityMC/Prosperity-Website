@@ -1,7 +1,7 @@
 ---
 title: FAQ
 authors: [CarbonGhost]
-description: Common questions and useful information about the server.
+description: Common questions and **useful** information about the server.
 ---
 
 Common questions about the server will be answered here.
@@ -14,29 +14,29 @@ No, you can join with OptiFine, vanilla, or any client mod that you like. The mo
 
 ## How do I use voice chat?
 
-You can use the [SimpleVoiceChat]() mod to use proximity voice-chat on the server.
+You can use the [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/) mod to use proximity voice-chat on the server.
 
 ## How do I see shared schematics?
 
-You must have the [Litematica]() and [Syncmatica]() mods in order to view shared schematics.
+You must have the [Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica) and [Syncmatica](https://www.curseforge.com/minecraft/mc-mods/syncmatica) mods in order to view shared schematics.
 
 ## What mods do I need to test in singleplayer?
 
-All the required mods in order to test things on singleplayer are listed on the [mods page]().
+All the required mods in order to test things on singleplayer are listed on the [mods page](/wiki/tweaks-and-changes).
 
 ## How do I get OptiFine features on Fabric?
 
-Many of the commonly used mods on the server are only available for Fabric, and are thus unable to be used with OptiFine. I have created a list of OptiFine feature replacements you can find [here]().
+Many of the commonly used mods on the server are only available for Fabric, and are thus unable to be used with OptiFine. I have created a list of OptiFine feature replacements you can find [here](/wiki/optifine-alternatives).
 
 # Server
 
 ## What is the world seed?
 
-You can find this information on the [technical info]() page.
+You can find this information on the [technical info](/wiki/technical-information) page.
 
 ## What are the server specs?
 
-You can also find this information on the [technical info]() page.
+You can also find this information on the [technical info](/wiki/technical-information) page.
 
 ## When did the server start?
 
@@ -48,7 +48,7 @@ TODO.
 
 ## How do I add custom item textures?
 
-You can send a file in the `#custom-textures` channel in Discord, or create a pull request for the [resource pack repository]() on GitHub. Please note that these textures cannot override default textures, and are quire limited, see the GitHub README for more info.
+You can send a file in the `#custom-textures` channel in Discord, or create a pull request for the [resource pack repository](https://github.com/ProsperityMC/Prosperity-Resource-Pack) on GitHub. Please note that these textures cannot override default textures, and are quire limited, see the GitHub README for more info.
 
 ## How do I join the Trello board?
 

@@ -6,9 +6,6 @@ description: Server rules and guideliens.
 
 This is a not a comprehensive list of rules, there are no loopholes. 
 
-<!--
-# Prosperity rules
-
 This is not a comprehensive set of rules, you are responsible for your actions and should use common sense, if you think you shouldn't be doing something then don't do it. As of right now, I'm hoping these shouldn't have to be heavily enforced.
 
 These rules are subject to change, and punishments are subject to the judgment of admins. If you have a suggestion or think that a rule needs to be changed please [please submit a feedback form](https://forms.gle/D5ebS5zFmLNCyuSTA).
@@ -60,4 +57,3 @@ These rules exist but aren't likely to be frequently enforced or aren't particul
 2.  ### Stay on the Discord
 
     If you leave the Discord server moderation gets significantly more difficult on my end, you are likely to be removed from the whitelist if you leave, but are welcome to play again when you re-join the Discord server.
--->

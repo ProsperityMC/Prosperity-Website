@@ -25,11 +25,9 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
             {wikis.map(({ title, slug }: any) => (
               <>
                 <Link key={slug} href={`/wiki/${slug}`}>
-                  <a>
+                  <a className="hover:text-white text-gray-50 no-underline duration-150">
                     <span className="inline-flex items-baseline content-center gap-1">
-                      <a className="hover:text-white text-gray-50 no-underline duration-150">
-                        {title}
-                      </a>
+                      {title}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="fill-gray-50 w-4 h-4"
