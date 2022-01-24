@@ -1,33 +1,3 @@
-import { allWikis } from ".contentlayer/data";
-
-// Generate paths based on wiki content using `slug`.
-export async function getStaticPaths() {
-  const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-// Import wiki content and metadata.
-export async function getStaticProps({ params }: any) {
-  // Return specific wiki from value passed by slug.
-  const wiki = allWikis.find((_) => _._raw.flattenedPath === params.slug);
-  // Return all wikis for sidebar navigation.
-  const wikis = allWikis.map((wiki) => ({
-    slug: wiki._raw.flattenedPath,
-    title: wiki.title,
-    description: wiki.description,
-  }));
-
-  return {
-    props: {
-      wiki,
-      wikis,
-    },
-  };
-}
-
 import Head from "next/head";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
@@ -137,4 +107,33 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
       </div>
     </>
   );
+}
+
+import { allWikis } from ".contentlayer/data";
+
+export async function getStaticPaths() {
+  const paths = allWikis.map((_) => `/wiki/${_._raw.flattenedPath}`);
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+// Import wiki content and metadata.
+export async function getStaticProps({ params }: any) {
+  // Return specific wiki from value passed by slug.
+  const wiki = allWikis.find((_) => _._raw.flattenedPath === params.slug);
+  // Return all wikis for sidebar navigation.
+  const wikis = allWikis.map((wiki) => ({
+    slug: wiki._raw.flattenedPath,
+    title: wiki.title,
+    description: wiki.description,
+  }));
+
+  return {
+    props: {
+      wiki,
+      wikis,
+    },
+  };
 }

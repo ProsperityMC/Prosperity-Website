@@ -1,7 +1,7 @@
 ---
 title: Technical Information
 authors: [CarbonGhost]
-description: Server specs and other technical information.
+description: Server hardware specs, software versions, seed, and related technical information.
 ---
 
 Server hardware specs and technical information. Please note that the seed was generated in 1.17.1 originally, and later upgraded to 1.18.1, so some generation features may be different.
@@ -14,10 +14,19 @@ Server hardware specs and technical information. Please note that the seed was g
 
 # Hardware
 
-- **CPU** Ryzen 7 3750X
-- **Memory** 12 GB @ 2666 Mhz
+## Main server
+
+- **CPU** Ryzen 7 3750X (3 cores)
+- **Memory** 12 GB @ 2666 Mhz (10 GB allocated)
 - **Storage** SSD
 - **Location** LA, United States
+
+## Creative server
+
+- **CPU** Ryzen 9 5900X (1 core)
+- **Memory** 8 GB @ 2666 Mhz
+- **Storage** SSD
+- **Location** Chicago, United States
 
 # Game
 
