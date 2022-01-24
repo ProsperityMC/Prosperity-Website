@@ -62,18 +62,6 @@
   .text-content hr {
     @apply my-4 border-gray-400;
   }
-  .text-content code {
-    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold;
-  }
-  .text-content pre {
-    @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4 drop-shadow-md leading-tight;
-  }
-  .text-content pre * {
-    @apply p-0 mb-0;
-  }
-  .text-content pre * code {
-    @apply text-base drop-shadow-none;
-  }
   .text-content blockquote {
     @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
   }
@@ -108,4 +96,88 @@
   .text-content tr {
     @apply hover:text-gray-50 duration-150;
   }
+  .text-content code {
+    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold;
+  }
+  .text-content pre {
+    @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4 drop-shadow-md leading-tight;
+  }
+  .text-content pre * {
+    @apply p-0 mb-0;
+  }
+  .text-content pre * code {
+    @apply text-base drop-shadow-none;
+  }
+}
+
+.hljs {
+  @apply text-gray-50;
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  @apply text-indigo-200;
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  @apply text-blue-400;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable {
+  @apply text-red-300;
+}
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+  @apply text-green-400;
+}
+.hljs-built_in,
+.hljs-symbol {
+  @apply text-yellow-300;
+}
+.hljs-code,
+.hljs-comment,
+.hljs-formula {
+  @apply text-gray-300;
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-pseudo,
+.hljs-selector-tag {
+  @apply text-red-300;
+}
+.hljs-subst {
+  @apply text-gray-50;
+}
+.hljs-section {
+  @apply text-blue-400 font-bold;
+}
+.hljs-bullet {
+  @apply text-amber-400;
+}
+.hljs-emphasis {
+  @apply text-gray-50 italic;
+}
+.hljs-strong {
+  @apply text-gray-50 font-bold;
+}
+.hljs-addition {
+  @apply text-green-300 bg-green-700 rounded-sm;
+}
+.hljs-deletion {
+  @apply text-red-300 bg-red-700 rounded-sm;
 }

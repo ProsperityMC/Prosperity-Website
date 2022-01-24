@@ -9,6 +9,11 @@ module.exports = withContentlayer()({
         permanent: true,
       },
       {
+        source: "/wiki/tweaks-and-changes",
+        destination: "/wiki/mods",
+        permanent: true,
+      },
+      {
         source: "/mods",
         destination: "/wiki/mods",
         permanent: false,

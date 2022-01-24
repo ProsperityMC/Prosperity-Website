@@ -1,5 +1,5 @@
 ---
-title: Tweaks and Changes
+title: Mods
 authors: [CarbonGhost]
 description: Full mod list and configuration.
 ---
@@ -561,7 +561,7 @@ Various changes to enchanting have been made. I decided to make these changes be
 
 If you want to test farm designs in a singleplayer world or on a different server you can use this configuration for Carpet, Carpet-Extra, Carpet TIS Addition, and MiniTweaks. You can paste this into your world's `carpet.conf` file, or the `carpet.conf` file found in the `config/carpet` folder on a server. If more configurations files are relevant let me know!
 
-```conf
+```
 silverFishDropGravel true
 carpets true
 tooledTNT true

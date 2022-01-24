@@ -4,6 +4,31 @@ authors: [CarbonGhost]
 description: You shouldn't be able to access this page.
 ---
 
+```ts
+// TypeScript
+fucntion say(param: string) {  
+  console.log(param);
+  return;
+}
+
+const myVar: string = "Hello, world!";
+
+say(myVar);
+```
+
+```html
+<div className="mt-[6.5rem] responsive-width">
+  <Component {...pageProps} />
+</div>
+```
+
+```diff
++ Some addition
++ :)
+- Some deletion
+- :O
+```
+
 [Empty link]()
 
 [Internal link](/wiki/faq)
