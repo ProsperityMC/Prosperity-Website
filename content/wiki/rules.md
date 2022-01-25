@@ -2,6 +2,7 @@
 title: Rules
 authors: [CarbonGhost]
 description: Server rules and guideliens.
+category: "info"
 ---
 
 This is a not a comprehensive list of rules, there are no loopholes. 

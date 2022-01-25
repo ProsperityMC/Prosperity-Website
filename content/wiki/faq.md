@@ -2,6 +2,7 @@
 title: FAQ
 authors: [CarbonGhost]
 description: Common questions and **useful** information about the server.
+category: "info"
 ---
 
 Common questions about the server will be answered here.

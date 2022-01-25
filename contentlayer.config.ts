@@ -20,6 +20,13 @@ export const Wiki = defineDocumentType(() => ({
       description: "Brief summary of the page.",
       required: true,
     },
+    category: {
+      type: "enum",
+      options: ["info", "guide", "hidden", "generic"],
+      default: "generic",
+      description: "Wiki content category",
+      required: true,
+    },
   },
 }));
 

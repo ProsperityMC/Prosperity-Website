@@ -2,6 +2,7 @@
 title: New Player Guide
 authors: [CarbonGhost]
 description: New player guide and information.
+category: "guide"
 ---
 
 Welcome to the Prosperity server, if you're new, then this guide will take you through all the things you need to know before joining, and give you all the necessary information to know what's going on.

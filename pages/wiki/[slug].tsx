@@ -23,29 +23,49 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
         When screen is `sm` navigation will display as a row above the wiki content. */}
         <div className="md:order-last">
           <div className="md:float-right md:text-right mb-8 leading-loose">
-            {wikis.map(({ title, slug }: any) => (
-              <>
-                <Link key={slug} href={`/wiki/${slug}`}>
-                  <a className="hover:text-white text-gray-50 no-underline duration-150">
-                    <span className="inline-flex items-baseline content-center gap-1">
-                      {title}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="fill-gray-50 w-4 h-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </Link>
-                <br />
-              </>
+            {wikis.map(({ title, slug, category }: any) => (
+              <div key={title}>
+                {category === "generic" && (
+                  <>
+                    <Link href={`/wiki/${slug}`}>
+                      <a className="hover:text-white text-gray-50 no-underline duration-150">
+                        {title}
+                      </a>
+                    </Link>
+                    <br />
+                  </>
+                )}
+              </div>
+            ))}
+            <p className="text-white text-lg my-2">Information</p>
+            {wikis.map(({ title, slug, category }: any) => (
+              <div key={title}>
+                {category === "info" && (
+                  <>
+                    <Link href={`/wiki/${slug}`}>
+                      <a className="hover:text-white text-gray-50 no-underline duration-150">
+                        {title}
+                      </a>
+                    </Link>
+                    <br />
+                  </>
+                )}
+              </div>
+            ))}
+            <p className="text-white text-lg my-2">Guides</p>
+            {wikis.map(({ title, slug, category }: any) => (
+              <div key={title}>
+                {category === "guide" && (
+                  <>
+                    <Link href={`/wiki/${slug}`}>
+                      <a className="hover:text-white text-gray-50 no-underline duration-150">
+                        {title}
+                      </a>
+                    </Link>
+                    <br />
+                  </>
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -166,11 +186,14 @@ export async function getStaticProps({ params }: any) {
   // Return specific wiki from value passed by slug.
   const wiki = allWikis.find((_) => _._raw.flattenedPath === params.slug);
   // Return all wikis for sidebar navigation.
-  const wikis = allWikis.map((wiki) => ({
-    slug: wiki._raw.flattenedPath,
-    title: wiki.title,
-    description: wiki.description,
-  }));
+  const wikis = allWikis
+    .map((wiki) => ({
+      slug: wiki._raw.flattenedPath,
+      title: wiki.title,
+      description: wiki.description,
+      category: wiki.category,
+    }))
+    .sort();
 
   return {
     props: {

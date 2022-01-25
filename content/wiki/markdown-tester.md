@@ -2,6 +2,7 @@
 title: Markdown Tester
 authors: [CarbonGhost]
 description: You shouldn't be able to access this page.
+category: "hidden"
 ---
 
 ```ts

@@ -2,6 +2,7 @@
 title: Points of Interest
 authors: [CarbonGhost]
 description: Useful locations and points of interest accross the server.
+category: "info"
 ---
 
 This is a collection of points of interest on the server, each entry will credit the Discord username of the person who built it, and will contain the coordinates, dimension, and status. The _public_ status means that you are free to take any drops produced by the farm. The _semi-public_ status means you can take only the specified drops. The _private_ status means you can only use the farm if you have direct permission.

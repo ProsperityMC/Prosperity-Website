@@ -2,6 +2,7 @@
 title: OptiFine Alternatives
 authors: [CarbonGhost]
 description: A list of mods you can use instead of OptiFine.
+category: "guide"
 ---
 
 This is an exhastive list of all the mods you can use to replace OptiFine's functionality.

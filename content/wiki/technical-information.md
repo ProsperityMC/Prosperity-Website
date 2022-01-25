@@ -2,6 +2,7 @@
 title: Technical Information
 authors: [CarbonGhost]
 description: Server hardware specs, software versions, seed, and related technical information.
+category: "info"
 ---
 
 Server hardware specs and technical information. Please note that the seed was generated in 1.17.1 originally, and later upgraded to 1.18.1, so some generation features may be different.

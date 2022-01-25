@@ -2,6 +2,7 @@
 title: Mods
 authors: [CarbonGhost]
 description: Full mod list and configuration.
+category: "info"
 ---
 
 This is a comprehensive list of changes made to the vanilla game. All of these changes were made to improve the gameplay experience. Some mods require you to install them on the client to be used, [see here](#Client-mods).

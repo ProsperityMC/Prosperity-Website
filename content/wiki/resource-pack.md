@@ -2,6 +2,7 @@
 title: Resource Pack
 authors: [CarbonGhost]
 description: Information about the Prosperity server resource pack.
+category: "info"
 ---
 
 Prosperity makes use of a server resource pack with is used to add custom item variations using vanilla features. This method can only be used to replace item textures. Note that this pack doesn't replace any vanilla textures, only adding item variations.
