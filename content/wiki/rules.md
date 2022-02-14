@@ -1,60 +1,60 @@
 ---
 title: Rules
 authors: [CarbonGhost]
-description: Server rules and guideliens.
+description: Minecraft and Discord server rules.
 category: "info"
 ---
 
-This is a not a comprehensive list of rules, there are no loopholes. 
+This is not a comprehensive list of rules, and the specifics of enforcement are left up to the judgment of staff. There are no loopholes. That being said, this server is not very strict and we are happy to clarify things if needed.
 
-This is not a comprehensive set of rules, you are responsible for your actions and should use common sense, if you think you shouldn't be doing something then don't do it. As of right now, I'm hoping these shouldn't have to be heavily enforced.
+Please be aware they you are free to use any technical mechanics that you wish, such as light suppression, large scale farms, chunk loaders, etc. as long as they do not conflict with any other rules. This does not cover duping in any form.
 
-These rules are subject to change, and punishments are subject to the judgment of admins. If you have a suggestion or think that a rule needs to be changed please [please submit a feedback form](https://forms.gle/D5ebS5zFmLNCyuSTA).
+# Chat rules
 
-## Server rules
+These rules apply to the in-game chat, voice-chat, and Discord server.
 
-These rules are related to playing on the Minecraft server, Discord rules are listed there.
+#### 1. Don't spam
 
-1.  ### Greifing is prohibited
+Don't spam emojis or use excessive GIFs, and try to avoid sending several single word messages instead of a complete sentence.
 
-    Causing excessive damage to builds, taking items without permission, and intentionally causing excessive harm to other players is not allowed. This does not prohibit pranks and good matured trolling.
+#### 2. Don't post or link to NSFW content
 
-2.  ### Be considerate of server performance
+Don't post or link to content that is not safe for work, this includes offensive content, gore, or in appropriate content.
 
-    Using excessive tile entities, leaving large machines running for long periods of time, and doing other things that cause server lag should be avoided.
+#### 3. Don't discuss sensitive topics
 
-3.  ### Be respectful to other players
+Please do not discuss serious topics here, primarily politics. As important and relevant as these issues may be, this is not the place to talk about them.
 
-    Be respectful when interacting with other players, banter is fine, but if it devolves into general toxicity then it needs to stop.
+#### 4. Act mature
 
-4.  ### Don't use illegal modifications
+Try your best to be mature and polite when having conversations. Avoid spamming or misusing Discord channels.
 
-    Hacked clients, x-ray mods and resource packs, and exploits are prohibited, a list of allowed mods can be found [here](https://github.com/CarbonGhost/Prosperity/wiki/Allowed-mods).
+# Minecraft rules
 
-5.  ### Don't ask for special treatment
+#### 1. Be respectful to other players
 
-    Don't ask admins to give you items, teleport you, etc. In most cases these commands are disabled for OP players anyways.
+Please be considerate of others on the server, do not modify other's builds without permission or cause drama.
 
-## Wiki rules
+#### 2. Be considerate of server performance
 
-These rules pertain to the wiki on GitHub, you know, the one you're reading right now.
+Please do your best to build lag efficient farms and be aware of any lag that you may cause on the server. You are allowed to use chunk loaders, but please avoid constantly loading an excess number of chunks and entities.
 
-1.  ### Don't edit if you don't know what you're doing
+#### 3. Don't abuse server features
 
-    If you're unfamiliar with markdown, or GitHub in general, please don't attempt to edit the Wiki. If there is a change you wish to be made then ask somebody who knows what they're doing, or ask me.
+Do not abuse server features, like `/cam` or Carpet fake players. This includes using camera mode to find resources and spawning excess numbers of bots.
 
-2.  ### Don't add low quality submissions
+#### 4. Don't use illegal modifications
 
-    Submissions with excessive typos, wrong or poorly explained information, or redundant submissions are not allowed.
+Do not use any illegal mods, you can find a list of explicitly banned mods on the [allowed mods](allowed-mods) page. If you feel unsure about a mod, feel free to ask about it.
 
-## Soft rules
+#### 5. Don't ask for special treatment
 
-These rules exist but aren't likely to be frequently enforced or aren't particularly strict.
+Don't ask for special treatment from staff members, this includes asking for a new player to be whitelisted regardless of their application or running admin commands like `/tp` or `/give`.
 
-1.  ### Keep standards high
+#### 6. Report any exploits
 
-    Meme builds, NSFW map art, and low effort projects don't belong on this server. You're not going to be banned for having an ugly house, but please try your best to finish projects and keep a high standard of building.
+Please report any issues that are found with the server configuration or system, such as allowing you to run admin commands, access server data, or duplicate or modify items in a way that is unintentional. If you find and report an exploit without abusing it you will not be punished.
 
-2.  ### Stay on the Discord
+#### 7. Keep standards high
 
-    If you leave the Discord server moderation gets significantly more difficult on my end, you are likely to be removed from the whitelist if you leave, but are welcome to play again when you re-join the Discord server.
+Do your best to repair any broken community builds, and avoid creating low effort or ugly builds.
