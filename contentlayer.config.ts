@@ -22,7 +22,7 @@ export const Wiki = defineDocumentType(() => ({
     },
     category: {
       type: "enum",
-      options: ["info", "guide", "hidden", "generic"],
+      options: ["admin", "info", "guide", "hidden", "generic"],
       default: "generic",
       description: "Wiki content category",
       required: true,

@@ -2,7 +2,7 @@
 title: Rules
 authors: [CarbonGhost]
 description: Minecraft and Discord server rules.
-category: "info"
+category: "admin"
 ---
 
 This is not a comprehensive list of rules, and the specifics of enforcement are left up to the judgment of staff. There are no loopholes. That being said, this server is not very strict and we are happy to clarify things if needed.

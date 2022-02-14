@@ -37,6 +37,21 @@ export default function WikiPage({ wiki, wikis }: any): JSX.Element {
                 )}
               </div>
             ))}
+            <p className="text-white text-lg my-2">Administration</p>
+            {wikis.map(({ title, slug, category }: any) => (
+              <div key={title}>
+                {category === "admin" && (
+                  <>
+                    <Link href={`/wiki/${slug}`}>
+                      <a className="hover:text-white text-gray-50 no-underline duration-150">
+                        {title}
+                      </a>
+                    </Link>
+                    <br />
+                  </>
+                )}
+              </div>
+            ))}
             <p className="text-white text-lg my-2">Information</p>
             {wikis.map(({ title, slug, category }: any) => (
               <div key={title}>
