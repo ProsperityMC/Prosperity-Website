@@ -6,12 +6,54 @@ export default function GalleryPage(): JSX.Element {
   // For each item in the array, an element is created on the page.
   // Paths are relitive to the `/public/gallery` directory.
   const galleryImages: Array<Array<string>> = [
-    ["Image #1", "/img_0", "CarbonGhost's mountain.", "CarbonGhost"],
-    ["Image #2", "/img_1", "Spawn town.", "CarbonGhost"],
-    ["Image #3", "/img_2", "Spawn town.", "CarbonGhost"],
-    ["Image #4", "/img_3", "CarbonGhost's base.", "CarbonGhost"],
-    ["Image #5", "/img_4", "Sand shop.", "CarbonGhost"],
+    [
+      "CarbonGhost's mountain",
+      "/carbonghost-base",
+      "CarbonGhost's base mountain.",
+      "CarbonGhost",
+    ],
+    ["Mazen's base", "/mazen-base", "Mazen's base exterior.", "CarbonGhost"],
+    ["Sand shop", "/sand-shop", "CarbonGhost's sand shop.", "CarbonGhost"],
+    [
+      "The Redstone Factory",
+      "/redstone-shop",
+      "CarbonGhost's redstone shop.",
+      "CarbonGhost",
+    ],
+    [
+      "Mazen's guardian farm",
+      "/guardian-farm",
+      "Mazen's guardian farm..",
+      "CarbonGhost",
+    ],
+    ["Raid farm", "/raid-farm", "Terracom's raid farm.", "CarbonGhost"],
+    [
+      "Terracom's base",
+      "/terracom-base-interior",
+      "Terracom's temporary base interior.",
+      "CarbonGhost",
+    ],
+    [
+      "Terracom's base",
+      "/terracom-base-exterior",
+      "Terracom's temporary base exterior.",
+      "CarbonGhost",
+    ],
+    [
+      "Totem shop",
+      "/totem-shop",
+      "CarbonGhost and Terracom's totem shop.",
+      "CarbonGhost",
+    ],
+    [
+      "Concrete blaster",
+      "/concrete-blaster",
+      "Concrete blaster from CarbonGhost's industrial area.",
+      "CarbonGhost",
+    ],
+    // ["", "/", "", ""],
   ];
+
   return (
     <>
       <Head>
@@ -32,8 +74,8 @@ export default function GalleryPage(): JSX.Element {
                 className="hover:brightness-110 w-full p-0 m-0 duration-150 bg-gray-600 rounded-md cursor-pointer"
                 onClick={async () => {}}
                 src={`/gallery${url}.png`}
-                width={1920}
-                height={1080}
+                width={2560}
+                height={1440}
                 alt={description}
               />
             </div>
