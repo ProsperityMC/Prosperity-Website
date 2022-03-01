@@ -29,7 +29,7 @@ A substantial amount of terrain has been generated before the new 1.18+ terrain 
 
 #### Do I have to install mods to play on the server?
 
-No, all the mods used are entirely server side, however, it is recommended that you do use a [few select mods](new-player-guide/#mods--useful-tools) for the best experience.
+No, all the mods used are entirely server-side, however, it is recommended that you do use a [few select mods](new-player-guide/#mods--useful-tools) for the best experience.
 
 #### How do I use voice chat?
 

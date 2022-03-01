@@ -97,10 +97,10 @@
     @apply hover:text-gray-50 duration-150;
   }
   .text-content code {
-    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold;
+    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold whitespace-pre-wrap;
   }
   .text-content pre {
-    @apply p-2 bg-gray-600 w-full mb-4 rounded-md px-4 drop-shadow-md leading-tight;
+    @apply p-2 bg-gray-600 mb-4 rounded-md px-4 drop-shadow-md leading-tight;
   }
   .text-content pre * {
     @apply p-0 mb-0;

@@ -1,599 +1,400 @@
 ---
 title: Mods
 authors: [CarbonGhost]
-description: Full mod list and configuration.
+description: Full list of server mods, datapacks, and configurations.
 category: "info"
 ---
 
-This is a comprehensive list of changes made to the vanilla game. All of these changes were made to improve the gameplay experience. Some mods require you to install them on the client to be used, [see here](#Client-mods).
+This is a comprehensive list of all server mods, datpacks, and relevant configurations, along with an explanation of each feature and why it was added.
 
-## Client mods
+# Client mods
 
-You can play on the server with a vanilla client, OptiFine, or using different mods, but you have to install these mods if you want to use their associated features. It is recommended, if not your only choice, that you use the Fabric versions of these mods.
+You can join the server using a vanilla client, or with whatever mods you wish. However, if you wish to use some server features you will need to download mods for your client. Note that there are several additional mods we recommend, which you can find [here](new-player-guide/#mods--useful-tools).
 
-- **Simple Voice Chat**
+If you are looking to see if the mod you want to use is allowed on the server, check out [this page](allowed-mods).
 
-  [Downloads](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
+#### Simple Voice Chat
 
-- **Inventory Sorting**
+This mod is required for you to use the in-game proximity chat.
 
-  [Downloads](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
+[Download from CurseForge](https://modrinth.com/mod/simple-voice-chat)
 
-- **Xaero's World Map**
+#### Syncmatica
 
-  [Downloads](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map)
+This mod is required to view and share synced schematics.
 
-- **TPS Graph**
+[Download from CurseForge]()
 
-  [Downloads](https://www.curseforge.com/minecraft/mc-mods/servertick)
+#### Inventory Sorting
+
+This mod allows you to automatically sort your inventory.
+
+[Download from CurseForge]()
+
+#### Server Tick
+
+This mod reintroduces the singleplayer TPS graph for dedicated servers, not sure how useful this is, but you can use it.
+
+[Download from Modrinth](https://modrinth.com/mod/servertick)
+
+# Datapacks
+
+#### Custom armor stands
+
+Name a book "Statues" to get an interface where you can greatly customize armor stands' attributes, like poses, rotation, and more.
+
+#### Wandering trader mini-blocks
+
+Wandering traders have new trades for mini-blocks, which are textured mob heads for decoration.
+
+#### Players drop heads
+
+When players are killed they will drop their heads.
+
+#### Mobs drop heads
+
+When mobs are killed they have a chance to drop their heads.
+
+#### Custom nether portals
+
+Nether portals can now be made into arbitrary shapes and can use crying obsidian as frame blocks.
 
 ## Crafting tweaks
 
-These are custom variations made to the vanilla recipes, they improve some recipes and make some items farmable that previously weren't.
+Work in progress...
 
-- **Better crafting**
+# Mods
 
-  - Blackstone can be used in place of cobblestone.
-  - Concrete powder can be smelted to make the corresponding color of glass..
-  - Rotten flesh can be smelted to be turned into leather.
-  - Droppers can be converted to dispensers by crafting them with a bow.
-  - Shulker boxes can be crafted in a 2x2 crafting grid.
-  - You can craft single blocks into 2 slabs.
-  - You can craft full blocks from appropriate numbers of stairs and slabs.
-  - You get more trapdoors per craft.
-  - You get more wood blocks per craft.
-  - You get more stairs per craft.
-  - You get more bricks per craft.
-  - You can craft coral blocks using coral in a 3x3 grid.
-  - You can craft bundles using rabbit hides and string.
-  - You can craft bundles using leather and string.
-  - You can craft horse armor.
-  - You can craft name tags.
-  - You can craft gravel with flint.
-  - Get an appropriate number of packed ice back when crafting blue ice, packed ice from ice, etc.
-  - Get an appropriate number of string from wool.
-  - Get an appropriate number of nether wart from nether wart blocks.
+Note that the following mods are exclusively server-side, meaning you don't need to configure or download anything to use their features. Relevant configs can be found [here](#configs), if you wish to test in singleplayer or download the world. Specific Carpet features can be found [here](#carpet-features).
 
-  [[VanillaTweaks]](https://vanillatweaks.net/share#jSNKDa)
+Mods are ranked by order of relevance, some mods, like libraries and dependencies are not listed.
 
-- **Convert items back to ores**
+#### Carpet
 
-  You can now convert ore drops back to their original ore form, please note that you cannot dupe with this.
+Carpet is the most important mod here, adding the majority of new features to the server. There are also several mods extending Carpet's features.
 
-  [[Back To Ores]](https://www.planetminecraft.com/data-pack/back-to-ores-5337263/#)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet)
 
-## Datapacks
+##### Carpet Extra
 
-### Building
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet-extra)
 
-- **Customizable armor stands**
+##### Carpet Fixes
 
-  Sign a book "Statues" to get a custom item that allows you to customize armor stand poses.
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet-fixes)
 
-  [[VanillaTweaks - Armor Statues]](https://vanillatweaks.net/share#ksMiNq)
+##### Carpet TCTC Addition
 
-- **Wandering traders sell miniblocks**
+[Modrinth](https://modrinth.com/mod/carpet-tctc-addition)
 
-  In addition to their normal trades, wandering traders also sell mini-blocks (custom heads with block textures).
+##### Carpet TIS Addition
 
-  [[VanillaTweaks - Wandering Trades]](https://vanillatweaks.net/share#AoWABF)
+[Modrinth](https://modrinth.com/mod/carpet-tis-addition)
 
-- **Players drop their heads**
+##### Carpet Essential Addons
 
-  Players drop their heads when killed, can be used with custom skins for interesting building blocks.
+[GitHub](https://github.com/Super-Santa/EssentialAddons)
 
-  [[VanillaTweaks - Player Head Drops]](https://vanillatweaks.net/share#flGepK)
+##### Ivan Carpet Addition
 
-- **More mobs drop heads**
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/ivan-carpet-addition)
 
-  More mobs have a chance to drop their head when killed.
+##### MiniTweaks
 
-  [[VanillaTweaks - More Mob Heads]](https://vanillatweaks.net/share#XxZ9nY)
+[GitHub](https://github.com/manyrandomthings/minitweaks)
 
-- **Nether portals are more customizable**
+#### Expanded Trident Enchanting
 
-  Nether portals can now be made in different shapes, use crying obsidian, and larger than before.
+[Modrinth](https://modrinth.com/mod/expanded-trident-enchanting)
 
-  [[VanillaTweaks - Custom Nether Portals]](https://vanillatweaks.net/share#n0VZiH)
+#### Syncmatica
 
-### Quality of Life
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/syncmatica)
 
-- **Mobs can be muted**
+#### Simple Voice Chat
 
-  Give a mob a nametag with the text "silence_me" and it will stop making noise.
+[Modrinth](https://modrinth.com/mod/simple-voice-chat)
 
-  [[VanillaTweaks - Silenced Mobs]](https://vanillatweaks.net/share#gdjcTb)
+#### Freedom of Insomnia
 
-- **Shulkers drop two shells**
+[Modrinth](https://modrinth.com/mod/freedomofinsomnia)
 
-  Shulkers will always drop two shells.
+#### Inventory Sorter
 
-  [[VanillaTweaks - Double Shulker Shells]](https://vanillatweaks.net/share#mZG9cN)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
 
-- **Creepers won't damage blocks**
+#### Lithium
 
-  Creepers don't blow up your beautiful builds.
+[Modrinth](https://modrinth.com/mod/lithium)
 
-  [[Anti-Creeper Greif]](https://vanillatweaks.net/share#TAn3cJ)
+#### ServerCore
 
-- **Ghasts won't damage blocks**
+[Modrinth](https://modrinth.com/mod/servercore)
 
-  Ghasts don't break blocks.
+#### Starlight
 
-  [[Anti-Ghast Greif]](https://vanillatweaks.net/share#VsH02e)
+[Modrinth](https://modrinth.com/mod/starlight)
 
-## Modded Changes
+#### FerriteCore
 
-This is a comprehensive list of all mods and mod related changes made on the server, with the exception of the voice chat feature, all of these features are able to be used even if you are connecting with a vanilla client. Any world downloads made are completely compatible with vanilla, though some redstone contraptions and farms that use the new mechanics may break.
+[Modrinth](https://modrinth.com/mod/ferrite-core)
 
-These mods were chosen to improve the gameplay without sacrificing the vanilla feel of the game.
+#### LazyDFU
 
-### Multiplayer Changes
+[Modrinth](https://modrinth.com/mod/lazydfu)
 
-- **Use proximity chat**
+#### Krypton
 
-  You must install this mod on the client to be able to send or receive voice chat! Use your microphone with proximity chat.
+[Modrinth](https://modrinth.com/mod/krypton)
 
-  [[Simple Voice Chat]](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat?__cf_chl_captcha_tk__=19dbb492b5b788c12d9774875867a90b39680bd5-1623308470-0-AaRK45VAPHMoHPQT253ubTYJX8QuNaDMFf9VRAWsC1qofQCbGeMhwznFeCHUg5qpZyRJxBKt7W-q84Huv76DBvkrqxB79FRT6yJkrwJooBWJDDd6mJSmsfQ4TYCU_VqqAzwoVYClHdBRCXNP9FERbsNJ9ncJSHMQc50RIoWw4q0Lebx0uHgMP8Q50GJV5Ma9fzW2P4cVWGfSbn-aiJLrBK0GvrgIUbchcfpPCRxDNflWoXjlhjN82LMbvnjqPLhXg1lrU8XwUCnbNlcrviGpvicz1piPF_aQmZc52WF5QIEEECBsx9ROoGnuK5-CUrEFro6JqkR_6V_4z1-mPgevB8Q9FMhh3Itbd60BzlJFJRMPhiYeTDoutAYUj199V0qOjSHl7EFsgZHrbCBW4mdEDhnoqWushlT_VFqFgbzHUvtRCj88QG0_XJO4-2d2tqTA7lm_zwVBdezbeIKhxs1wm7ut1iaPmYBN_PY7kMBN89-U_hK-xW-EJUcefjPo6sXmfvGbxcFkysCkv5r-PrFFYn3ts3evrZq88GJZyz5b8lBh4cr3h_yIG7hMzhLkbBOMXVEbtSooRh_tYYQ981uLQEz3-n4jRqCAeC57hBNtChgrZOoDcZ38TEAV1kjXeD9vivbKqiHZXf33XGdimSE48_qtDxqVo7uGzftv6b5dWljPUa30Vo57mlZoe-P1VHvNoLfz1eU1t_8MosZlYJ1wXIw)
+#### Ledger
 
-- **Show off your items**
+[Modrinth](https://modrinth.com/mod/ledger)
 
-  Type /flex to post information about the item you're holding to chat.
+##### Ledger Databases
 
-  [[ItemFlexer]](https://www.curseforge.com/minecraft/mc-mods/itemflexer/files?__cf_chl_jschl_tk__=1ed3abee964e73233ea35dbf55cbc16b5916a214-1623307879-0-Ad5-1OwTGgmgNsxUrTVCUCt5rxsaHIXCcvWcxjaQrMCzPVAYJpvH4W5xrIwmYUELA-Bav_pQ3spm_K8Z8ilIE1p-6Ne2AY8mXSoKIrZ5RC88UGWg6WI5oQJJlI68WFaaOqXIaxDFA9ujT3EjMGxxOo6RHZjhFgymoK861-4KpKFRsidCEjY64ztuIAxUL2qq4y2KdXvYMiXYFx3cubuGNfhwJdmnQWAfKHMUlC3P1-LkdWKtYEajhsZRuYlDsMSJZ5nW0tj-fgirVqT802kIIovvqLPApMXkiYYhoolpyBTWt4lf7q-Ys_s1TVtWQCjsCLxitpjMyr-QpVvZeaWOGNreE5j3P8jLO9C2A7-f2F31vw9sqJ6sdig5vICbb71dLpw8XHZTosdvvpVdzsOZQm30JXxzNWgFCKrpXMr1V3a4oekHCK0ccku-1jx9aTQtBp9AP4TLUD05CTfKDhfiztvqjh9-zCxx92_Ak6l2BsR29-QNYJWna4TqY-mjBFiCMQ)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/ledger-databases)
 
-### Quality of life
+#### MiniMOTD
 
-- **Sort inventories easily**
+[Modrinth](https://modrinth.com/mod/minimotd)
 
-  Sort chests and inventories with one click. Requires the mod to be installed on the client.
-  [[Inventory Sorting]](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
+#### InvView
 
-- **See mobs that are preventing you from sleeping**
+[Modrinth](https://modrinth.com/mod/invview)
 
-  Clicking on a bed will highlight nearby monsters that are preventing you from sleeping.
+#### Chunky
 
-  [[Monsters in the Closet]](https://www.curseforge.com/minecraft/mc-mods/monsters-in-the-closet)
+[Modrinth](https://modrinth.com/mod/chunky)
 
-- **Don't trample your crops**
+#### Server Tick
 
-  Crops can't be trampled if you're wearing feather falling boots.
+[Modrinth](https://modrinth.com/mod/servertick)
 
-  [[MiniTweaks - noFeatherFallingTrample]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#nofeatherfallingtrample)
+#### Banhammer
 
-- **Anti-cheat is disabled**
+[Modrinth](https://modrinth.com/mod/banhammer)
 
-  The vanilla anti-cheat system is disabled to improve the experience of players with slower connections and reduce rubberbanding in some scenarios.
+#### Textile Backup
 
-  [[Carpet - antiCheatDisabled]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#anticheatdisabled)
+[Modrinth](https://modrinth.com/mod/textile_backup)
 
-- **Harvest crops with one click**
+#### Reload server.properties
 
-  You can harvest and replant a crop when right clicking with a hoe.
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/reload-server-properties)
 
-  [[MiniTweaks - quickHarvesting]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#quickharvesting)
+#### Unified Metrics
 
-- **Mobs drop their nametag when killed**
+[Modrinth](https://modrinth.com/mod/unifiedmetrics)
 
-  Named mobs will drop a nametag when they're killed.
+#### LuckPerms
 
-  [[MiniTweaks - mobsDropNametag]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#mobsdropnametag)
+[Modrinth](https://modrinth.com/mod/luckperms)
 
-- **Ctrl + Q now works from the crafting table**
+##### Minecraft Command Permissions
 
-  Drop full stacks from crafting table slots.
+[GitHub](https://github.com/lucko/minecraft-command-permissions-fabric)
 
-  [[Carpet - ctrlQCraftingFix]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#ctrlqcraftingfix)
-
-- **Cactuses rotate blocks**
-
-  When you use a cactus on a block it will rotate that block without causing an update.
-
-  [[Carpet - flippinCactus]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#flippincactus)
-
-- **Lead consistency**
-
-  Fixes leads breaking when going into unloaded chunks.
-
-  [[Carpet - leadFix]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#leadfix)
-
-- **Lightning fixes**
-
-  Fixes a bug where lighting kills all drops, comes in handy when dealing with lightning rods.
-
-  [[Carpet - lightningKillsDropsFix]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#lightningkillsdropsfix)
-
-- **Improved tool consistency**
-
-  Glass is able to be broken faster when using a pickaxe.
-
-  [[Carpet - missingTools]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#missingtools)
-
-- **Rotation consistency improvements**
-
-  Block rotation is now more accurate when moving quickly
-
-  [[Carpet - placementRotationFix]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#placementrotationfix)
-
-- **XP has no pickup cooldown**
-
-  XP is picked up instantly.
-
-  [[Carpet - xpNoCooldown]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#xpnocooldown)
-
-- **Empty shulkers can stack**
-
-  Empty shulker boxes can stack to 64 when dropped on the ground.
-
-  [[Carpet Extra - stackableShulkerBoxes]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#stackableshulkerboxes)
-
-- **Ender pearls load chunks**
-
-  Horizontally moving ender pearls will load chunks allowing for long distance ender pearl cannons.
-
-  [[Carpet Extra - enderPearlChunkLoading]](https://github.com/gnembon/carpet-extra#enderpearlchunkloading)
-
-- **Vexes aren't (as) annoying**
-
-  Vex slowly die after the evoker is killed.
-
-  [[MiniTweaks - vexesNerf]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#vexesnerf)
-
-### Farms
-
-This is probably the most game-changing set of changes, all of these changes were made to allow you to farm new items, or to create alternative designs for existing farms.
-
-- **Husks spawn in desert temples**
-
-  Husks are now the only mob that will spawn in desert temples allowing you to construct husk farms.
-
-  [[Carpet - huskSpawningInTemples]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#huskspawningintemples)
-
-- **Blackstone is now renewable**
-
-  You are now able to make a renewable blackstone generator, use the same design as a basalt generator, minus the soul-sand.
-
-  [[Carpet - renewableBlackstone]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewableblackstone)
-
-- **Coral is now renewable**
-
-  You can now bonemeal coral plans to generate coral structures.
-
-  [[Carpet - renewableCoral]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewablecoral)
-
-- **Sponges are now renewable**
-
-  You can create new elder guardians when a guardian is struck by lightning.
-
-  [[Carpet - renewableSponges]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewablesponges)
-
-- **Gravel is now renewable**
-
-  Silverfish drop gravel when breaking out of a block.
-
-  [[Carpet - silverFishDropGravel]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#silverfishdropgravel)
-
-- **Falling block duplication fixed**
-
-  Sand, dragon egg, and other falling block duplication is patched. TNT duping is still enabled.
-
-  [[Carpet TIS Addition - sandDupingFix]](https://github.com/TISUnion/Carpet-TIS-Addition#sanddupingfix)
-
-- **Rail duplication fixed**
-
-  The rail duplication exploit has been patched.
-
-  [[Carpet TIS Addition - railDupingFix]](https://github.com/TISUnion/Carpet-TIS-Addition#raildupingfix)
-
-- **Grow nether wart faster**
-
-  Blaze powder will grow nether wart like bonemeal.
-
-  [[Carpet Extra - blazeMeal]](https://github.com/gnembon/carpet-extra#blazemeal)
-
-- **Better nether wart farming**
-
-  Cleric villagers will farm nether warts.
-
-  [[Carpet Extra - clericsFarmWarts]](https://github.com/gnembon/carpet-extra#clericsfarmwarts)
-
-- **Alternative creeper farms**
-
-  Creepers are the only mob that will spawn in jungle temples.
-
-  [[Carpet Extra - creeperSpawningInJungleTemples]](https://github.com/gnembon/carpet-extra#creeperspawninginjungletemples)
-
-- **Renewable Endstone**
-
-  Dispensers containing dragon's breath will convert cobblestone to endstone allowing for renewable endstone.
-
-  [[Carpet Extra - dragonsBreathConvertsCobbleToEndstone]](https://github.com/gnembon/carpet-extra#dragonsbreathconvertscobbletoendstone)
-
-- **Renewable netherrack**
-
-  Fire charges from dispensers will convert cobblestone to netherrack.
-
-  [[Carpet Extra - fireChargeConvertsToNetherrack]](https://github.com/gnembon/carpet-extra#firechargeconvertstonetherrack)
-
-- **Sand is now renewable**
-
-  Cobblestone hit by a falling anvil will turn into sand.
-
-  [[Carpet Extra - renewableSand]](https://github.com/gnembon/carpet-extra#renewablesand)
-
-- **Alternative wither skeleton farms**
-
-  Skeletons will turn into wither skeletons when hit by lighting enabling alternative wither skeleton farm designs.
-
-  [[Carpet Extra - renewableWitherSkeletons]](https://github.com/gnembon/carpet-extra#renewablewitherskeletons)
-
-- **Stray farms**
-
-  Strays are the only mob that will spawn in igloos allowing you to create stray farms.
-
-  [[Carpet Extra - straySpawningInIgloos]](https://github.com/gnembon/carpet-extra#strayspawninginigloos)
-
-### Commands & Info
-
-All of these features are to give you more information. None of these commands broadcast to all players, so don't hesitate to run them.
-
-- **View the entire server map**
-
-  See the entire server map when a client mod is installed.
-  [[Xaero's World Map]](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map)
-
-- **See entity health clearly**
-
-  See entity health clearly in that entity's nametag. This is customizable, see link below.
-
-  [[HealthCare]](https://github.com/samolego/HealthCare)
-
-- **Carpets are enabled**
-
-  Placing certain carpet blocks will print information.
-
-  [[Carpet - carpets]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#carpets)
-
-- **The command /distance is enabled**
-
-  This feature allows you to easily measure the distance between two points.
-
-  [[Carpet - commandDistance]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commanddistance)
-
-- **The command /log is enabled**
-
-  This command allows you to view server statistics in the UI.
-
-  [[Carpet - commandLog]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commandlog)
-
-- **The command /perimeterinfo is enabled**
-
-  This is a command that allows you to check for spawning spots for a mob in a given radios.
-
-  [[Carpet - commandPerimeterInfo]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commandperimeterinfo)
-
-- **The command /spawn is enabled**
-
-  This command allows you to track data about entity spawning.
-
-  [[Carpet - commandSpawn]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commandspawn)
-
-- **The command /track is enabled**
-
-  This command allows you to track certain entity AI behaviors.
-
-  [[Carpet - commandTrackAI]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commandtrackai)
-
-- **The command /ping is enabled**
-
-  Type /ping to get your ping.
-
-  [[Carpet Extra - commandPing]](https://github.com/gnembon/carpet-extra#commandping)
+## Carpet features
 
 ### Redstone
 
-Many changes have been made to redstone features, including movable tile entities and auto-crafting.
+#### dispensersFireDragonBreath
 
-- **Movable tile entities**
+#### tooledTNT
 
-  Tile-entities like chests and hoppers can now be safely moved by pistons. Warning, this may break some redstone contraptions that rely on tile-entities as non-movable blocks.
+#### renewableWitherSkeletons
 
-  [[Carpet - movableBlockEntities]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#movableblockentities)
+#### railDupingFix
 
-- **Cactuses rotate blocks when in dispensers**
+#### movableBlockEntities
 
-  When put in a dispenser a cactus will rotate the block it's facing.
+#### renewableCoral
 
-  [[Carpet - rotatorBlock]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#rotatorblock)
+#### dispensersStripBlocks
 
-- **New auto-crafting mechanics**
+#### clericsFarmWarts
 
-  A hopper will load a crafting table, and powering it will drop the crafted item.
+#### autoCraftingDropper
 
-  [[Carpet autoCraftingTable]](https://github.com/gnembon/carpet-autoCraftingTable)
+#### sandDupingFix
 
-- **Dispensers create jack o' lanterns**
+#### renewableBlackstone
 
-  Dispensers containing shears will carve pumpkins which they are facing.
+#### dispensersPlayRecords
 
-  [[Carpet Extra - dispensersCarvePumpkins]](https://github.com/gnembon/carpet-extra#dispenserscarvepumpkins)
+#### renewableElytra
 
-- **Dispensers can place/remove records**
+#### renewableSponges
 
-  Dispensers will place records in a jukebox they're facing, and will remove them when powered again.
+#### chainStone
 
-  [[Carpet Extra - dispensersPlayRecords]](https://github.com/gnembon/carpet-extra#dispensersplayrecords)
+#### updateSuppressionCrashFix
 
-### Optimization
+#### huskSpawningInTemples
 
-All of these changes were made for the sake of improving server performance, without impacting world generation or other vanilla mechanics that they shouldn't be.
+#### dispensersCarvePumpkins
 
-- **Multiple dimensions are faster**
+#### comparatorReadsClock
 
-  Dimensions get their own CPU thread, this makes the game better optimized.
+#### renewableDeepslate
 
-  [[DimensionalThreading]](https://github.com/WearBlackAllDay/DimensionalThreading)
+#### blazeMeal
 
-- **View distance changes based on dimension**
+#### renewableSand
 
-  View distance is now dimension dependent for performance reasons.
+#### dispensersTillSoil
 
-  [[World Specific View Distance]](https://github.com/BasiqueEvangelist/worldspecificviewdistance-fabric/)
+### Gameplay
 
-- **General server performance is improved**
+#### carpets
 
-  We use Lithium to improve general game performance.
+#### commandTrackAI
 
-  [[Lithium]](https://github.com/CaffeineMC/lithium-fabric)
+#### commandDistance
 
-- **Networking performance is improved**
+#### missingTools
 
-  Various networking aspects of the game are optimized using Krypton.
+#### creeperDropCompletely
 
-  [[Krypton]](https://github.com/astei/krypton)
+#### dragonBlockDamage
 
-- **Furnaces are better optimized**
+#### stackableShulkerBoxes
 
-  Makes the server have better TPS.
+#### ghastBlockDamage
 
-  [[Fast Furnace for Fabric]](https://www.curseforge.com/minecraft/mc-mods/fast-furnace-for-fabric)
+#### infinityMendingStacking
 
-- **Memory usage is reduced**
+#### quickHarvesting
 
-  The memory usage of the server is reduced, making the server faster.
+#### vexesNerf
 
-  [[Hydrogen]](https://modrinth.com/mod/hydrogen)
+#### mobsDropNametag
 
-- **Memory usage is reduced, again**
+#### xpNoCooldown
 
-  The memory usage of the server is reduced, making the server faster.
+#### ctrlQCraftingFix
 
-  [[FerriteCore]](https://modrinth.com/mod/ferrite-core)
+#### rotatorBlock
 
-- **XP orbs are combined**
+#### protectionStacking
 
-  This reduces the number of entities and increases server performance.
+#### creeperBlockDamage
 
-  [[Carpet - combineXPOrbs]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#combinexporbs)
+#### slimeLooting
 
-- **Spawning is more efficient**
+#### editableSigns
 
-  I mean, why wouldn't you enable this?
+#### noFeatherFallingTrample
 
-  [[Carpet - lagFreeSpawning]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#lagfreespawning)
+#### enderPearlChunkLoading
 
-- **TNT performance improvements**
+#### flippinCactus
 
-  TNT is better optimized.
+### Utility
 
-  [[Carpet - optimizedTNT]](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#optimizedtnt)
+#### commandPlayer
 
-- **Fast entity optimization**
+#### commandPing
 
-  Entities moving quickly are more performant. Helps with TNT cannon performance.
+#### accurateBlockPlacement
 
-  [[Carpet TIS Addition - optimizedFastEntityMovement]](https://github.com/TISUnion/Carpet-TIS-Addition#optimizedfastentitymovement)
+#### commandSpawn
 
-- **Hit box optimizations**
+#### commandLog
 
-  Entities with hard hitboxes have better performance.
+#### commandPerimeterInfo
 
-  [[Carpet TIS Addition - optimizedHardHitBoxEntityCollision]](https://github.com/TISUnion/Carpet-TIS-Addition#optimizedhardhitboxentitycollision)
+#### commandProfile
 
-- **Even more optimized TNT**
+### Optimization / fixes
 
-  Makes TNT even more optimized. ¯\_(ツ)\_/¯.
+#### optimizedTNTHighPriority
 
-  [[Carpet TIS Addition - optimizedTNTHighPriority]](https://github.com/TISUnion/Carpet-TIS-Addition#optimizedtnthighpriority)
+#### spectatorPotionNoCountdown
 
-- **Fixed update suppression crashes**
+#### spawnChunksSize
 
-  Fixes a bug where update suppression causes a server crash.
+#### placementRotationFix
 
-  [[Carpet Extra - updateSuppressionCrashFix]](https://github.com/gnembon/carpet-extra#updatesuppressioncrashfix)
+#### optimizedTNT
 
-### Item Changes
+#### optimizedFastEntityMovement
 
-Various changes to enchanting have been made. I decided to make these changes because I believe that the player should have the option to be overpowered, especially since the server doesn't have a strong focus on PvP and competition.
+#### antiCheatDisabled
 
-- **Armor enchantments can now be mixed**
+#### optimizedHardHitBoxEntityCollision
 
-  Different armor enchantments can now be put on the same piece of armor, for example, blast protection, fire protection, and normal protection can be put on one piece of armor.
+#### lightningKillsDropsFix
 
-  [[Expanded Armor Enchanting]](https://modrinth.com/mod/expanded-armor-enchanting/)
+#### reloadSuffocationFix
 
-- **Axes now support more enchantments**
+#### commandInfo
 
-  Axes can now use enchantments like looting or fire aspect.
+#### lagFreeSpawning
 
-  [[Expanded Axe Enchanting]](https://modrinth.com/mod/expanded-axe-enchanting/)
+#### commandMods
 
-- **Swords now support mixed enchantments**
+### Scarpet apps
 
-  You can now put multiple types of enchantments on one weapon, like sharpness and smite.
+Carpet provides a useful script system, which we use to add some small features.
 
-  [[Expanded Weapon Enchanting]](https://modrinth.com/mod/expanded-weapon-enchanting)
+#### Cam
 
-- **Tridents support more enchantments**
+You can run `/cam` to enter spectator mode, then run the command again to return to survival mode.
 
-  Tridents can now be enchanted with sword enchantments such as looting, sharpness, or knockback.
+[Source Code](https://raw.githubusercontent.com/gnembon/scarpet/master/programs/survival/cam.sc)
 
-  [[Expanded Trident Enchanting]](https://www.curseforge.com/minecraft/mc-mods/expanded-trident-enchanting)
+#### Stat
 
-- **Axes take proper durability loss**
+Various statistics are tracked, and can be displayed on a scoreboard with the `/stat` command.
 
-  Axes take the same amount of durability loss as swords when used for attacking.
+[Source Code](https://raw.githubusercontent.com/CommandLeo/scarpet/main/programs/stat.sc)
 
-  [[Axes Are Weapons]](https://www.curseforge.com/minecraft/mc-mods/axes-are-weapons)
+# Configs
 
-- **Enchant bows with mending and infinity**
-
-  You can now enchant bows with mending as well as infinity because balance isn't a thing that should exist in Minecraft.
-
-  [[MiniTweaks - infinityMendingStacking]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#infinitymendingstacking)
-
-- **Old armor stacking**
-
-  Brings back armor enchantment stacking from 1.14.
-
-  [[MiniTweaks - protectionStacking]](https://github.com/manyrandomthings/minitweaks/tree/1.1.0#protectionstacking)
-
-### Configs
-
-If you want to test farm designs in a singleplayer world or on a different server you can use this configuration for Carpet, Carpet-Extra, Carpet TIS Addition, and MiniTweaks. You can paste this into your world's `carpet.conf` file, or the `carpet.conf` file found in the `config/carpet` folder on a server. If more configurations files are relevant let me know!
+#### carpet.conf
 
 ```
-silverFishDropGravel true
+dispensersFireDragonBreath true
 carpets true
 tooledTNT true
-combineXPOrbs true
 protectionStacking true
 commandTrackAI true
 renewableWitherSkeletons true
 optimizedTNTHighPriority true
+creeperBlockDamage none
 railDupingFix true
 commandDistance true
 renewableBlackstone true
 commandPlayer true
+spectatorPotionNoCountdown true
 missingTools true
+creeperDropCompletely true
+commandFreecam false
+dragonBlockDamage none
 commandSpawn false
 movableBlockEntities true
-renewableCoral true
+renewableCoral expanded
 stackableShulkerBoxes true
+ghastBlockDamage none
 spawnChunksSize 0
 fakePlayerNameSuffix _bot
+dispensersStripBlocks true
+persistentLoggerSubscription true
 infinityMendingStacking true
 slimeLooting false
 clericsFarmWarts true
+autoCraftingDropper true
 sandDupingFix true
 opPlayerNoCheat true
 commandScript ops
 commandPing true
 defaultLoggers "tps"
-straySpawningInIgloos true
 placementRotationFix true
 optimizedTNT true
 quickHarvesting true
+viewDistance 18
 vexesNerf true
 commandLog true
 commandPerimeterInfo true
@@ -601,26 +402,32 @@ mobsDropNametag true
 dispensersPlayRecords true
 xpNoCooldown true
 ctrlQCraftingFix true
+commandProfile ops
 optimizedFastEntityMovement true
 rotatorBlock true
+renewableElytra 0.2
 renewableSponges true
 chainStone true
 updateSuppressionCrashFix true
+reloadSuffocationFix true
 antiCheatDisabled true
 optimizedHardHitBoxEntityCollision true
+editableSigns true
 lightningKillsDropsFix true
 accurateBlockPlacement true
 noFeatherFallingTrample true
 huskSpawningInTemples true
 dispensersCarvePumpkins true
+comparatorReadsClock true
 renewableDeepslate true
 enderPearlChunkLoading true
 blazeMeal true
 autoCraftingTable true
 renewableSand true
 scriptsAutoload true
+dispensersTillSoil true
+commandInfo true
 flippinCactus true
 lagFreeSpawning true
-creeperSpawningInJungleTemples true
 commandMods true
 ```
