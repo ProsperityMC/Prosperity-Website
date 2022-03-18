@@ -4,7 +4,7 @@ export default function Document(): JSX.Element {
       <Head>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=jetbrains+mono|montserrat|inter&display=optional"
+          href="https://fonts.googleapis.com/css?family=JetBrains+Mono|Montserrat|Inter&display=optional"
         />
       </Head>
       <body>
