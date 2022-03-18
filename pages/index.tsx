@@ -1,8 +1,4 @@
-import Link from "next/link";
-import Head from "next/head";
-import JoinBtn from "../components/join-btn";
-
-export default function Home(): JSX.Element {
+export default function HomePage(): JSX.Element {
   return (
     <>
       <Head>
@@ -13,14 +9,11 @@ export default function Home(): JSX.Element {
         <div>
           <p className="text-6xl">Prosperity</p>
           <div className="flex items-center gap-8 my-4">
-            <JoinBtn></JoinBtn>
-            {/* <Link href="/wiki/home">
-              <a>Wiki</a>
-            </Link> */}
+            <JoinBtn />
             <span className="inline-flex content-center gap-1">
-              <Link href="/wiki/home">
+              <DynLink href="/wiki/home">
                 <a>Wiki</a>
-              </Link>
+              </DynLink>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="fill-gray-50 self-center w-4 h-4"
@@ -36,13 +29,18 @@ export default function Home(): JSX.Element {
             </span>
           </div>
         </div>
-        <p className="flex items-center float-right leading-relaxed">
+        <Format className="flex items-center float-right leading-relaxed">
           Prosperity is a survival-multiplayer Minecraft server with a focus
           enabling players to work on large projects easily. To achieve this the
           server has many quality of life improvements, and changes that allow
           you to farm more items, and have an easier time than a vanilla server.
-        </p>
+        </Format>
       </div>
     </>
   );
 }
+
+import DynLink from "next/link";
+import Head from "next/head";
+import JoinBtn from "@components/join-btn";
+import Format from "@components/format";

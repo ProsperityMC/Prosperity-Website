@@ -1,5 +1,10 @@
-import Link from "next/link";
-
+/**
+ * # Brand component
+ *
+ * ---
+ *
+ * @returns React component
+ */
 export default function Brand(): JSX.Element {
   return (
     <Link href="/">
@@ -9,3 +14,5 @@ export default function Brand(): JSX.Element {
     </Link>
   );
 }
+
+import Link from "next/link";

@@ -1,9 +1,3 @@
-import Head from "next/head";
-import Nav from "../components/nav";
-import type { AppProps } from "next/app";
-import "tailwindcss/tailwind.css";
-import "../styles/globals.css";
-
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
@@ -33,3 +27,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     </>
   );
 }
+
+import Head from "next/head";
+import Nav from "@components/nav";
+import type { AppProps } from "next/app";
+import "tailwindcss/tailwind.css";
+import "@styles/globals.css";

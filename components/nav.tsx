@@ -1,15 +1,17 @@
-import Link from "next/link";
-import JoinBtn from "./join-btn";
-import Brand from "./brand";
-import { Disclosure } from "@headlessui/react";
-
+/**
+ * # Navigation
+ *
+ * ---
+ *
+ * @returns React component
+ */
 export default function Nav(): JSX.Element {
-  const internalNavLinks: Array<Array<string>> = [
+  const lNavLinks: Array<Array<string>> = [
     ["Home", "/"],
     ["Gallery", "/gallery"],
     ["Wiki", "/wiki/home"],
   ];
-  const externalNavLinks: Array<Array<string>> = [
+  const rNavLinks: Array<Array<string>> = [
     ["GitHub", "https://github.com/ProsperityMC"],
   ];
   return (
@@ -17,14 +19,14 @@ export default function Nav(): JSX.Element {
       {({ open }) => (
         <>
           <div className="fixed top-0 z-30 w-screen py-8 mt-0 bg-gray-500">
-            <Disclosure.Panel className="float-r md:hidden fixed top-0 left-0 h-full pl-8 sm:pl-24 xl:pl-48 2xl:pl-72 pr-24 duration-150 bg-gray-600 shadow-md">
+            <Disclosure.Panel className="float-r md:hidden sm:pl-24 xl:pl-48 2xl:pl-72 fixed top-0 left-0 h-full pl-8 pr-24 duration-150 bg-gray-600 shadow-md">
               {({ close }) => (
                 <div className="flex flex-col gap-8 mt-8">
                   <div>
                     <Brand />
                   </div>
                   <div className="flex flex-col gap-2">
-                    {internalNavLinks.map(([title, url]) => (
+                    {lNavLinks.map(([title, url]) => (
                       <Link href={url} key={title}>
                         <a
                           className="hover:text-white text-gray-50 no-underline duration-150"
@@ -38,7 +40,7 @@ export default function Nav(): JSX.Element {
                     ))}
                   </div>
                   <div>
-                    {externalNavLinks.map(([title, url]) => (
+                    {rNavLinks.map(([title, url]) => (
                       <a
                         key={title}
                         href={url}
@@ -50,7 +52,7 @@ export default function Nav(): JSX.Element {
                           <p>{title}</p>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-4 h-4 self-center"
+                            className="self-center w-4 h-4"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -72,13 +74,13 @@ export default function Nav(): JSX.Element {
                 </div>
               )}
             </Disclosure.Panel>
-            
+
             <div className="responsive-width">
               {/* Desktop navigation */}
               <div className="grid-flow-cols grid grid-cols-2">
                 <div className="flex items-center gap-12">
                   <Brand />
-                  {internalNavLinks.map(([title, url]) => (
+                  {lNavLinks.map(([title, url]) => (
                     <Link key={title} href={url}>
                       <a className="md:block hover:text-white text-gray-50 hidden no-underline duration-150">
                         {title}
@@ -87,7 +89,7 @@ export default function Nav(): JSX.Element {
                   ))}
                 </div>
                 <div className="justify-self-end flex items-center float-right gap-12">
-                  {externalNavLinks.map(([title, url]) => (
+                  {rNavLinks.map(([title, url]) => (
                     <a
                       key={title}
                       href={url}
@@ -161,3 +163,8 @@ export default function Nav(): JSX.Element {
     </Disclosure>
   );
 }
+
+import Link from "next/link";
+import JoinBtn from "@components/join-btn";
+import Brand from "@components/brand";
+import { Disclosure } from "@headlessui/react";

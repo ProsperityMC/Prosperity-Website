@@ -1,6 +1,4 @@
-import Head from "next/head";
-
-export default function Stats(): JSX.Element {
+export default function StatsPage(): JSX.Element {
   return (
     <>
       <Head>
@@ -15,3 +13,5 @@ export default function Stats(): JSX.Element {
     </>
   );
 }
+
+import Head from "next/head";

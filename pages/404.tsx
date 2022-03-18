@@ -1,6 +1,4 @@
-import Head from "next/head";
-
-export default function NotFound(): JSX.Element {
+export default function FourZeroFourPage(): JSX.Element {
   return (
     <>
       <Head>
@@ -11,3 +9,5 @@ export default function NotFound(): JSX.Element {
     </>
   );
 }
+
+import Head from "next/head";

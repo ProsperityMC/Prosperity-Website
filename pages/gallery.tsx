@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-
 export default function GalleryPage(): JSX.Element {
   // Array of arrays with paths to each imagea, image descriptions, and image authors.
   // For each item in the array, an element is created on the page.
@@ -51,7 +48,6 @@ export default function GalleryPage(): JSX.Element {
       "Concrete blaster from CarbonGhost's industrial area.",
       "CarbonGhost",
     ],
-    // ["", "/", "", ""],
   ];
 
   return (
@@ -91,3 +87,6 @@ export default function GalleryPage(): JSX.Element {
     </>
   );
 }
+
+import Head from "next/head";
+import Image from "next/image";
