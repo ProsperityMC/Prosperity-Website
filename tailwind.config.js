@@ -7,7 +7,7 @@ module.exports = {
     fontFamily: {
       display: '"Inter"',
       body: '"Montserrat"',
-      mono: '"Source Code Pro"',
+      mono: '"JetBrains Mono"',
     },
     extend: {
       colors: {
