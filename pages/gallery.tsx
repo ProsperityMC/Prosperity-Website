@@ -25,7 +25,7 @@ export default function GalleryPage(): JSX.Element {
     ],
     ["Raid farm", "/raid-farm", "Terracom's raid farm.", "CarbonGhost"],
     [
-      "Terracom's base",
+      "Terracom's base interior",
       "/terracom-base-interior",
       "Terracom's temporary base interior.",
       "CarbonGhost",
