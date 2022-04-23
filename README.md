@@ -21,9 +21,8 @@ If you wish to run the site locally you can follow these steps:
 1. [Download Node](https://nodejs.org/en/) (Next.js requires Node 14.x or above).
 2. Clone the latest commit from GitHub.
 3. Run the `npm install` command in the project directory to get any required dependencies.
-4. Run `./node_modules/.bin/contentlayer build` in order to compile the markdown wiki pages.
-5. Run `npm run dev` in order to start the dev server.
-6. Navigate to http://localhost:3000/ in order to connect to the development server.
+4. Run `npm run dev` in order to start the dev server.
+5. Navigate to http://localhost:3000/ in order to connect to the development server.
 
 ## Contributing
 
@@ -34,8 +33,6 @@ In addition, I use the [Prettier](https://marketplace.visualstudio.com/items?ite
 ### Contributing to the wiki
 
 If you wish the contribute to wiki, please follow the development setup instructions. This site uses the standard markdown format in addition to some custom frontmatter, you can see the formatting in the existing wiki pages.
-
-Run `./node_modules/.bin/contentlayer dev` in order to automatically recompile any markdown files in the `/content/wiki/` directory so you can preview your changes on the dev server.
 
 When making any changes, please ensure that you use proper text formatting, spelling, and grammar.
 

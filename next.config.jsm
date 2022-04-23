@@ -1,6 +1,6 @@
-const { withContentlayer } = require("next-contentlayer");
+import { withContentlayer } from "next-contentlayer";
 
-module.exports = withContentlayer()({
+export default withContentlayer({
   async redirects() {
     return [
       // Redirect old "tweaks-and-changes" links to the renamed "mods" page.

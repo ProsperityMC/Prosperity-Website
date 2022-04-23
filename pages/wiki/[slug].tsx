@@ -141,4 +141,4 @@ export async function getStaticProps({ params }: any) {
 import Head from "next/head";
 import Link from "next/link";
 import Format from "@components/format";
-import { allWikis } from ".contentlayer/data";
+import { allWikis } from "contentlayer/generated";
