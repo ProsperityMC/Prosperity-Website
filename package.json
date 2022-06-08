@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
-    "dev": "contentlayer build && next dev",
-=======
     "dev": "next dev",
->>>>>>> dev
     "build": "contentlayer build && next build",
     "start": "next start",
     "lint": "next lint",
