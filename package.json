@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "contentlayer build && next dev",
+=======
+    "dev": "next dev",
+>>>>>>> dev
     "build": "contentlayer build && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "content-dev": "contentlayer dev",
+    "content-build": "contentlayer build"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
