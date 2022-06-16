@@ -127,10 +127,6 @@ Carpet is the most important mod here, adding the majority of new features to th
 
 [Modrinth](https://modrinth.com/mod/lithium)
 
-#### ServerCore
-
-[Modrinth](https://modrinth.com/mod/servercore)
-
 #### Starlight
 
 [Modrinth](https://modrinth.com/mod/starlight)
@@ -197,143 +193,111 @@ Carpet is the most important mod here, adding the majority of new features to th
 
 ## Carpet features
 
-### Redstone
+### carpets
 
-#### dispensersFireDragonBreath
+### commandTrackAI
 
-#### tooledTNT
+### commandDistance
 
-#### renewableWitherSkeletons
+### renewableBlackstone
 
-#### railDupingFix
+### commandPlayer
 
-#### movableBlockEntities
+### missingTools
 
-#### renewableCoral
+### commandSpawn
 
-#### dispensersStripBlocks
+### movableBlockEntities
 
-#### clericsFarmWarts
+### renewableCoral
 
-#### autoCraftingDropper
+### stackableShulkerBoxes
 
-#### sandDupingFix
+### spawnChunksSize
 
-#### renewableBlackstone
+### commandScript
 
-#### dispensersPlayRecords
+### defaultLoggers
 
-#### renewableElytra
+### placementRotationFix
 
-#### renewableSponges
+### optimizedTNT
 
-#### chainStone
+### commandLog
 
-#### updateSuppressionCrashFix
+### commandPerimeterInfo
 
-#### huskSpawningInTemples
+### xpNoCooldown
 
-#### dispensersCarvePumpkins
+### ctrlQCraftingFix
 
-#### comparatorReadsClock
+### commandProfile
 
-#### renewableDeepslate
+### rotatorBlock
 
-#### blazeMeal
+### renewableSponges
 
-#### renewableSand
+### chainStone
 
-#### dispensersTillSoil
+### lightningKillsDropsFix
 
-### Gameplay
+### scriptsAutoload
 
-#### carpets
+### commandInfo
 
-#### commandTrackAI
+### flippinCactus
 
-#### commandDistance
+### lagFreeSpawning
 
-#### missingTools
+### tooledTNT
 
-#### creeperDropCompletely
+### optimizedTNTHighPriority
 
-#### dragonBlockDamage
+### railDupingFix
 
-#### stackableShulkerBoxes
+### persistentLoggerSubscription
 
-#### ghastBlockDamage
+### sandDupingFix
 
-#### infinityMendingStacking
+### opPlayerNoCheat
 
-#### quickHarvesting
+### optimizedFastEntityMovement
 
-#### vexesNerf
+### renewableElytra
 
-#### mobsDropNametag
+### optimizedHardHitBoxEntityCollision
 
-#### xpNoCooldown
+### renewableWitherSkeletons
 
-#### ctrlQCraftingFix
+### dispensersStripBlocks
 
-#### rotatorBlock
+### clericsFarmWarts
 
-#### protectionStacking
+### autoCraftingDropper
 
-#### creeperBlockDamage
+### dispensersPlayRecords
 
-#### slimeLooting
+### reloadSuffocationFix
 
-#### editableSigns
+### accurateBlockPlacement
 
-#### noFeatherFallingTrample
+### dispensersCarvePumpkins
 
-#### enderPearlChunkLoading
+### comparatorReadsClock
 
-#### flippinCactus
+### enderPearlChunkLoading
 
-### Utility
+### blazeMeal
 
-#### commandPlayer
+### renewableSand
 
-#### commandPing
+### dispensersTillSoil
 
-#### accurateBlockPlacement
+### editableSign
 
-#### commandSpawn
+### fakePlayerNameSuggestions
 
-#### commandLog
-
-#### commandPerimeterInfo
-
-#### commandProfile
-
-### Optimization / fixes
-
-#### optimizedTNTHighPriority
-
-#### spectatorPotionNoCountdown
-
-#### spawnChunksSize
-
-#### placementRotationFix
-
-#### optimizedTNT
-
-#### optimizedFastEntityMovement
-
-#### antiCheatDisabled
-
-#### optimizedHardHitBoxEntityCollision
-
-#### lightningKillsDropsFix
-
-#### reloadSuffocationFix
-
-#### commandInfo
-
-#### lagFreeSpawning
-
-#### commandMods
+### icaSyncProtocol
 
 ### Scarpet apps
 
@@ -356,78 +320,57 @@ Various statistics are tracked, and can be displayed on a scoreboard with the `/
 #### carpet.conf
 
 ```
-dispensersFireDragonBreath true
+movableBlockEntities true
 carpets true
-tooledTNT true
-protectionStacking true
 commandTrackAI true
-renewableWitherSkeletons true
-optimizedTNTHighPriority true
-creeperBlockDamage none
-railDupingFix true
 commandDistance true
 renewableBlackstone true
 commandPlayer true
-spectatorPotionNoCountdown true
 missingTools true
-creeperDropCompletely true
-commandFreecam false
-dragonBlockDamage none
-commandSpawn false
-movableBlockEntities true
+commandSpawn true
 renewableCoral expanded
 stackableShulkerBoxes true
-ghastBlockDamage none
-spawnChunksSize 0
-fakePlayerNameSuffix _bot
-dispensersStripBlocks true
-persistentLoggerSubscription true
-infinityMendingStacking true
-slimeLooting false
-clericsFarmWarts true
-autoCraftingDropper true
-sandDupingFix true
-opPlayerNoCheat true
 commandScript ops
-commandPing true
-defaultLoggers "tps"
 placementRotationFix true
 optimizedTNT true
-quickHarvesting true
-viewDistance 18
-vexesNerf true
 commandLog true
 commandPerimeterInfo true
-mobsDropNametag true
-dispensersPlayRecords true
 xpNoCooldown true
 ctrlQCraftingFix true
 commandProfile ops
-optimizedFastEntityMovement true
 rotatorBlock true
-renewableElytra 0.2
 renewableSponges true
 chainStone true
-updateSuppressionCrashFix true
-reloadSuffocationFix true
-antiCheatDisabled true
-optimizedHardHitBoxEntityCollision true
-editableSigns true
 lightningKillsDropsFix true
-accurateBlockPlacement true
-noFeatherFallingTrample true
-huskSpawningInTemples true
-dispensersCarvePumpkins true
-comparatorReadsClock true
-renewableDeepslate true
-enderPearlChunkLoading true
-blazeMeal true
-autoCraftingTable true
-renewableSand true
 scriptsAutoload true
-dispensersTillSoil true
 commandInfo true
 flippinCactus true
 lagFreeSpawning true
-commandMods true
+tooledTNT true
+optimizedTNTHighPriority true
+railDupingFix true
+persistentLoggerSubscription true
+sandDupingFix true
+opPlayerNoCheat true
+optimizedFastEntityMovement true
+renewableElytra 0.2
+optimizedHardHitBoxEntityCollision true
+renewableWitherSkeletons true
+dispensersStripBlocks true
+clericsFarmWarts true
+autoCraftingDropper true
+dispensersPlayRecords true
+reloadSuffocationFix true
+accurateBlockPlacement true
+dispensersCarvePumpkins true
+comparatorReadsClock true
+enderPearlChunkLoading true
+blazeMeal true
+renewableSand true
+dispensersTillSoil true
+editableSign true
+icaSyncProtocol true
+fakePlayerNamePrefix bot_
+fakePlayerPrefixRestriction bot_
+fakePlayerNameSuggestions bot_loader
 ```
