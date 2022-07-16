@@ -18,7 +18,7 @@ Server hardware specs and technical information. Please note that the seed was g
 ## Main server
 
 - **CPU** Ryzen 7 3750X (3 cores)
-- **Memory** 12 GB @ 2666 Mhz (10 GB allocated)
+- **Memory** 12 GB @ 2666 Mhz (9 GB allocated)
 - **Storage** SSD
 - **Location** LA, United States
 
@@ -33,5 +33,5 @@ Server hardware specs and technical information. Please note that the seed was g
 
 - **Seed** -6265140814097726510
 - **Difficulty** Hard
-- **View distance** 14 - 26 (dynamic)
+- **View distance** 18
 - **Simulation distance** 14

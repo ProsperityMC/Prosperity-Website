@@ -13,25 +13,25 @@ You can join the server using a vanilla client, or with whatever mods you wish. 
 
 If you are looking to see if the mod you want to use is allowed on the server, check out [this page](allowed-mods).
 
-#### Simple Voice Chat
+## Simple Voice Chat
 
 This mod is required for you to use the in-game proximity chat.
 
 [Download from CurseForge](https://modrinth.com/mod/simple-voice-chat)
 
-#### Syncmatica
+## Syncmatica
 
 This mod is required to view and share synced schematics.
 
-[Download from CurseForge]()
+[Download from CurseForge](https://www.curseforge.com/minecraft/mc-mods/syncmatica)
 
-#### Inventory Sorting
+## Inventory Sorting
 
 This mod allows you to automatically sort your inventory.
 
 [Download from CurseForge]()
 
-#### Server Tick
+## Server Tick
 
 This mod reintroduces the singleplayer TPS graph for dedicated servers, not sure how useful this is, but you can use it.
 
@@ -39,29 +39,25 @@ This mod reintroduces the singleplayer TPS graph for dedicated servers, not sure
 
 # Datapacks
 
-#### Custom armor stands
+## Custom armor stands
 
 Name a book "Statues" to get an interface where you can greatly customize armor stands' attributes, like poses, rotation, and more.
 
-#### Wandering trader mini-blocks
+## Wandering trader mini-blocks
 
 Wandering traders have new trades for mini-blocks, which are textured mob heads for decoration.
 
-#### Players drop heads
+## Players drop heads
 
 When players are killed they will drop their heads.
 
-#### Mobs drop heads
+## Mobs drop heads
 
 When mobs are killed they have a chance to drop their heads.
 
-#### Custom nether portals
+## Custom nether portals
 
 Nether portals can now be made into arbitrary shapes and can use crying obsidian as frame blocks.
-
-## Crafting tweaks
-
-Work in progress...
 
 # Mods
 
@@ -69,127 +65,205 @@ Note that the following mods are exclusively server-side, meaning you don't need
 
 Mods are ranked by order of relevance, some mods, like libraries and dependencies are not listed.
 
-#### Carpet
+## Carpet
 
-Carpet is the most important mod here, adding the majority of new features to the server. There are also several mods extending Carpet's features.
+The base Carpet mod, which includes many features and optimizations as well as providing for the other Carpet extensions.
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet)
 
-##### Carpet Extra
+## Carpet Fixes
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet-extra)
-
-##### Carpet Fixes
+A Carpet addon fixing a few bugs.
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet-fixes)
 
-##### Carpet TCTC Addition
+## Carpet TIS
 
-[Modrinth](https://modrinth.com/mod/carpet-tctc-addition)
-
-##### Carpet TIS Addition
+A Carpet addon adding various renewable things and quality-of-life features.
 
 [Modrinth](https://modrinth.com/mod/carpet-tis-addition)
 
-##### Carpet Essential Addons
+## Carpet Extra
 
-[GitHub](https://github.com/Super-Santa/EssentialAddons)
+A Carpet addon adding many renewable things and quality-of-life features.
 
-##### Ivan Carpet Addition
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet-extra)
+
+## Ivan Carpet Addition
+
+A Carpet addon.
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ivan-carpet-addition)
 
-##### MiniTweaks
+## Expanded Axe Enchanting
 
-[GitHub](https://github.com/manyrandomthings/minitweaks)
+This mod allows axes to be enchanted with sword enchantments like smite.
 
-#### Expanded Trident Enchanting
+*Note that this mod was ported to the latest version manually so you may not be able to find a suitable version online.*
+
+[Modrinth](https://modrinth.com/mod/expanded-axe-enchanting)
+
+## Expanded Trident Enchanting
+
+Expanded Trident Enchanting allows players to enchant their tridents with multiple types of enchantments at once.
+
+*Note that this mod was ported to the latest version manually so you may not be able to find a suitable version online.*
 
 [Modrinth](https://modrinth.com/mod/expanded-trident-enchanting)
 
-#### Syncmatica
+## Expanded Weapon Enchanting
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/syncmatica)
+A mod which allows the combination of multiple types of enchants on weapons. Such as smite, bane of arthropods, and sharpness.
 
-#### Simple Voice Chat
+*Note that this mod was ported to the latest version manually so you may not be able to find a suitable version online.*
 
-[Modrinth](https://modrinth.com/mod/simple-voice-chat)
+[Modrinth](https://modrinth.com/mod/expanded-weapon-enchanting)
 
-#### Freedom of Insomnia
+## Fabric API
 
-[Modrinth](https://modrinth.com/mod/freedomofinsomnia)
+The most important dependency of them all.
 
-#### Inventory Sorter
+[Modrinth](https://modrinth.com/mod/fabric-api)
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/inventory-sorting)
+## Fabric Language Kotlin
 
-#### Lithium
+A Fabric dependency.
 
-[Modrinth](https://modrinth.com/mod/lithium)
+[Modrinth](https://modrinth.com/mod/fabric-language-kotlin)
 
-#### Starlight
+## Ledger
 
-[Modrinth](https://modrinth.com/mod/starlight)
-
-#### FerriteCore
-
-[Modrinth](https://modrinth.com/mod/ferrite-core)
-
-#### LazyDFU
-
-[Modrinth](https://modrinth.com/mod/lazydfu)
-
-#### Krypton
-
-[Modrinth](https://modrinth.com/mod/krypton)
-
-#### Ledger
+A logging mod which staff can use to investigate griefing and player reports.
 
 [Modrinth](https://modrinth.com/mod/ledger)
 
-##### Ledger Databases
+## Minitweaks
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/ledger-databases)
+A Carpet mod which includes some useful quality-of-life features.
 
-#### MiniMOTD
+[GitHub](https://github.com/manyrandomthings/minitweaks)
 
-[Modrinth](https://modrinth.com/mod/minimotd)
+## WorldEdit
 
-#### InvView
+WorldEdit is a feature rich building utility mod, this is intended for building on the creative server.
+
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/worldedit)
+
+## Inv View
+
+A mod which allows staff to view inventories when investigating player reports.
 
 [Modrinth](https://modrinth.com/mod/invview)
 
-#### Chunky
+## Carpet Discarpet
 
-[Modrinth](https://modrinth.com/mod/chunky)
+A Carpet addon which allows integration between Minecraft and Discord. We use this for our chat link and other features.
 
-#### Server Tick
+[GitHub](https://github.com/replaceitem/carpet-discarpet)
 
-[Modrinth](https://modrinth.com/mod/servertick)
+## Essential Addons
 
-#### Banhammer
+A Carpet addon which adds various features. Mostly intended for the creative server.
+
+[GitHub](https://github.com/Super-Santa/EssentialAddons)
+
+## AudioPlayer
+
+A dependency required by the Simple Voice Chat mod.
+
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/audioplayer)
+
+## Banhammer
+
+A mod which allows staff to keep track of and set durations for server bans.
 
 [Modrinth](https://modrinth.com/mod/banhammer)
 
-#### Textile Backup
+## Cloth Config
 
-[Modrinth](https://modrinth.com/mod/textile_backup)
+A dependency required by another mod.
 
-#### Reload server.properties
+[Modrinth](https://modrinth.com/mod/cloth-config)
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/reload-server-properties)
+## FerriteCore
 
-#### Unified Metrics
+FerriteCore is an optimization mod focused on reducing memory usage.
 
-[Modrinth](https://modrinth.com/mod/unifiedmetrics)
+[Modrinth](https://modrinth.com/mod/ferrite-core)
 
-#### LuckPerms
+## Lithium
 
-[Modrinth](https://modrinth.com/mod/luckperms)
+Lithium is a general purpose optimization mod which does not break vanilla mechanics.
 
-##### Minecraft Command Permissions
+[Modrinth](https://modrinth.com/mod/lithium)
+
+## LuckPerms
+
+LuckPerms lets us set custom permissions for commands.
+
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/luckperms)
+
+## Minecraft Command Permissions
+
+A mod which allows LuckPerms compatibility with vanilla Minecraft commands.
 
 [GitHub](https://github.com/lucko/minecraft-command-permissions-fabric)
+
+## ServerCore
+
+## Simple Voice Chat
+
+This mod adds proximity voice chat to the server. Note that you are required to install it on your client before being able to use it.
+
+[Modrinth](https://modrinth.com/mod/simple-voice-chat)
+
+## Starlight
+
+Starlight is an mod that optimizes the light engine. Note that this reportedly causes issues with things like light suppression.
+
+[Modrinth](https://modrinth.com/mod/starlight)
+
+## Syncmatica
+
+Syncmatica is a mod which allows players to share their Litematica files with others on the server.
+
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/syncmatica)
+
+## Squaremap
+
+Squaremap is a live web-map of the server.
+
+[GitHub](https://github.com/jpenilla/squaremap)
+
+## Chunky
+
+A utility mod for pregenerating the world.
+
+[Modrinth](https://modrinth.com/mod/chunky)
+
+## Item Flexer
+
+A mod which allows you to show off your items to other players by running the `/flex` command.
+
+[Modrinth](https://modrinth.com/mod/itemflexer)
+
+## Krypton
+
+A networking optimization mod.
+
+[Krypton](https://modrinth.com/mod/krypton)
+
+## Spark
+
+A performance profiling mod.
+
+[Spark](https://modrinth.com/mod/spark)
+
+## LazyDFU
+
+An optimization mod to make the server start a bit faster.
+
+[Modrinth](https://modrinth.com/mod/lazydfu)
 
 ## Carpet features
 
@@ -315,62 +389,81 @@ Various statistics are tracked, and can be displayed on a scoreboard with the `/
 
 [Source Code](https://raw.githubusercontent.com/CommandLeo/scarpet/main/programs/stat.sc)
 
+#### Here
+
+You can run `/here` to print your current location in the Overworld and Nether.
+
+#### Link4D
+
+Chat link between Discord and Minecraft.
+
+#### Customize
+
+A script which can be used to customize your items using the resource pack features.
+
 # Configs
 
 #### carpet.conf
 
 ```
-movableBlockEntities true
-carpets true
+carpets false
+tooledTNT true
+protectionStacking false
 commandTrackAI true
+optimizedTNTHighPriority true
+renewableWitherSkeletons true
+creeperBlockDamage none
+railDupingFix true
 commandDistance true
+maxPlayerXpDrop 10000
 renewableBlackstone true
 commandPlayer true
 missingTools true
+dragonBlockDamage none
 commandSpawn true
+movableBlockEntities true
 renewableCoral expanded
 stackableShulkerBoxes true
+fakePlayerNamePrefix bot_
+ghastBlockDamage none
+dispensersStripBlocks true
+persistentLoggerSubscription true
+infinityMendingStacking true
+clericsFarmWarts true
+autoCraftingDropper true
+sandDupingFix true
+opPlayerNoCheat true
 commandScript ops
 placementRotationFix true
 optimizedTNT true
+commandSeed true
+fakePlayerPrefixRestriction bot_
 commandLog true
 commandPerimeterInfo true
+editableSign true
+dispensersPlayRecords true
 xpNoCooldown true
 ctrlQCraftingFix true
+fakePlayerNameSuggestions bot_loader
 commandProfile ops
+optimizedFastEntityMovement true
 rotatorBlock true
+renewableElytra 0.2
 renewableSponges true
 chainStone true
-lightningKillsDropsFix true
-scriptsAutoload true
-commandInfo true
-flippinCactus true
-lagFreeSpawning true
-tooledTNT true
-optimizedTNTHighPriority true
-railDupingFix true
-persistentLoggerSubscription true
-sandDupingFix true
-opPlayerNoCheat true
-optimizedFastEntityMovement true
-renewableElytra 0.2
-optimizedHardHitBoxEntityCollision true
-renewableWitherSkeletons true
-dispensersStripBlocks true
-clericsFarmWarts true
-autoCraftingDropper true
-dispensersPlayRecords true
 reloadSuffocationFix true
+optimizedHardHitBoxEntityCollision true
+lightningKillsDropsFix true
 accurateBlockPlacement true
 dispensersCarvePumpkins true
 comparatorReadsClock true
 enderPearlChunkLoading true
 blazeMeal true
+scriptsAutoload true
 renewableSand true
 dispensersTillSoil true
-editableSign true
+commandInfo true
+flippinCactus true
+lagFreeSpawning true
 icaSyncProtocol true
-fakePlayerNamePrefix bot_
-fakePlayerPrefixRestriction bot_
-fakePlayerNameSuggestions bot_loader
 ```
