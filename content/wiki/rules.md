@@ -25,7 +25,7 @@ Do not under any circumstances post the personal information of others. This inc
 
 Please try avoid discussion of sensitive topics, specifically current events regarding wars and politics. 
 
-While we understand that these topics are 
+While we understand that these topics are important, this isn't the best place to have a constructive discussion about them.
 
 ## 4. Do not post offensive or NSFW content
 
