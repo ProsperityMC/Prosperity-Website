@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import { Atkinson_Hyperlegible } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
+import Menu from "../components/Menu";
 
 const fontInter = Inter({
 	subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div
 			className={`${fontInter.variable} ${fontAtkinsonHyperlegible.variable} ${fontJetBrainsMono.variable}`}>
+			<Menu />
 			<Component {...pageProps} />
 		</div>
 	);
