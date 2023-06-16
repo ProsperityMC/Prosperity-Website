@@ -1,119 +1,19 @@
+/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    fontFamily: {
-      display: '"Inter"',
-      body: '"Montserrat"',
-      mono: '"JetBrains Mono"',
-    },
-    extend: {
-      colors: {
-        current: "currentColor",
-        gray: {
-          50: "#DADADA",
-          100: "#CED0D3",
-          200: "#B8BBC1",
-          300: "#5B5F68",
-          400: "#343539",
-          500: "#242527",
-          600: "#1A1B1C",
-          700: "#141415",
-          800: "#0A0A0B",
-          900: "#060608",
-        },
-        red: {
-          50: "#F9E9E9",
-          100: "#F5C8C8",
-          200: "#F4A1A1",
-          300: "#F56B6B",
-          400: "#FF3B3B",
-          500: "#FF0B0B",
-          600: "#CC0A0A",
-          700: "#980A0A",
-          800: "#7D0707",
-          900: "#610000",
-        },
-        amber: {
-          50: "#FDFAF0",
-          100: "#FCF1D0",
-          200: "#FCEAB5",
-          300: "#FBE091",
-          400: "#FFD457",
-          500: "#FFC10B",
-          600: "#FFA00B",
-          700: "#DA7A00",
-          800: "#C36D00",
-          900: "#A04F00",
-        },
-        lime: {
-          50: "#E9F9EF",
-          100: "#BFF5D2",
-          200: "#75F1A1",
-          300: "#4FF677",
-          400: "#23F835",
-          500: "#0CF400",
-          600: "#0ABF00",
-          700: "#168000",
-          800: "#0F5700",
-          900: "#093600",
-        },
-        blue: {
-          50: "#E9F3F9",
-          100: "#CAE3F3",
-          200: "#9CD2F4",
-          300: "#69C2FB",
-          400: "#2F99FF",
-          500: "#007EF8",
-          600: "#0058C7",
-          700: "#003B85",
-          800: "#001D6B",
-          900: "#001348",
-        },
-        indigo: {
-          50: "#EAE9F9",
-          100: "#CCCBF5",
-          200: "#9694F0",
-          300: "#5F5DF1",
-          400: "#2825FB",
-          500: "#1732FF",
-          600: "#001BE7",
-          700: "#001299",
-          800: "#000C61",
-          900: "#000634",
-        },
-        purple: {
-          50: "#E9ECF9",
-          100: "#CFD6F4",
-          200: "#B9C3F2",
-          300: "#939EF3",
-          400: "#9053FF",
-          500: "#6D1DFF",
-          600: "#4800CB",
-          700: "#360096",
-          800: "#20005A",
-          900: "#180043",
-        },
-        pink: {
-          50: "#F9E9F4",
-          100: "#F8DEEF",
-          200: "#F6CBE6",
-          300: "#F5B0D0",
-          400: "#FC8EC0",
-          500: "#FF3C95",
-          600: "#E20060",
-          700: "#9F0043",
-          800: "#6D002E",
-          900: "#530015",
-        },
-      },
-    },
-  },
-  variants: {
-    extend: {},
-  },
-  corePlugins: { preflight: true },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+	content: [
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}"
+	],
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: ["var(--font-atkinson-hyperlegible)"],
+				header: ["var(--font-inter)"],
+				mono: ["var(--font-jetbrains-mono)"]
+			}
+		}
+	},
+	plugins: []
 };

@@ -1,38 +1,30 @@
 {
-  "name": "prosperity-mc",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "contentlayer build && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "content-dev": "contentlayer dev",
-    "content-build": "contentlayer build"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
-    "@tailwindcss/aspect-ratio": "^0.3.0",
-    "contentlayer": "^0.2.4",
-    "next": "^12.0.7",
-    "next-contentlayer": "^0.2.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-markdown": "^7.1.0",
-    "rehype-autolink-headings": "^6.1.0",
-    "rehype-highlight": "^5.0.2",
-    "rehype-slug": "^5.0.0",
-    "remark-gfm": "^3.0.0",
-    "remark-rehype": "^9.1.0",
-    "remark-toc": "^8.0.1"
+    "next": "13.4.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.26",
-    "autoprefixer": "^10.4.1",
-    "eslint": "7.32.0",
-    "eslint-config-next": "^12.1.0",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.8",
-    "typescript": "4.4.3"
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.6",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.1.3"
   }
 }

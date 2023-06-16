@@ -1,41 +1,34 @@
-# Prosperity Website
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![](https://img.shields.io/badge/framework-next--js-black?logo=next.js)](https://nextjs.org/)
-[![](https://img.shields.io/badge/main--lang-typescript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Discord](https://img.shields.io/discord/844449121376534558?color=%235865F2&label=discord&logo=discord&logoColor=white)](https://discord.gg/hfTxZ4XxYj/)
+## Getting Started
 
-Website and wiki built for the Prosperity Minecraft server. Created with Next.js, TypeScript, and Tailwind. Using markdown for wiki page generation.
+First, run the development server:
 
-## Deployment
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-New commits on `main` are automatically built and deployed to Vercel. You can visit the site with the following URLs.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-[Production site](https://prosperity.vercel.app/)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[Development site](https://prosperity-dev.vercel.app/)
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-## Development
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-If you wish to run the site locally you can follow these steps:
+## Learn More
 
-1. [Download Node](https://nodejs.org/en/) (Next.js requires Node 14.x or above).
-2. Clone the latest commit from GitHub.
-3. Run the `npm install` command in the project directory to get any required dependencies.
-4. Run `npm run dev` in order to start the dev server.
-5. Navigate to http://localhost:3000/ in order to connect to the development server.
+To learn more about Next.js, take a look at the following resources:
 
-## Contributing
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You are free to fork this repository and create a pull request with your changes. It is recommended that you get the latest [PostCSS](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) and [Tailwind](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extensions if you are using Visual Studio Code.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-In addition, I use the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) for code formatting.
+## Deploy on Vercel
 
-### Contributing to the wiki
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-If you wish the contribute to wiki, please follow the development setup instructions. This site uses the standard markdown format in addition to some custom frontmatter, you can see the formatting in the existing wiki pages.
-
-When making any changes, please ensure that you use proper text formatting, spelling, and grammar.
-
-### Contributing to the gallery
-
-_The gallery isn't fully implemented yet, you will be able to contribute to it in the future ..._
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

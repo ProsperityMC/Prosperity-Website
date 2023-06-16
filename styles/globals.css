@@ -1,183 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
 
 @layer base {
-  body {
-    @apply bg-gray-500 text-gray-200 selection:bg-blue-500 selection:text-gray-500 ring-blue-500;
-  }
-  .text-xs,
-  .text-sm {
-    @apply text-gray-200;
-  }
-  .text-base,
-  .text-lg,
-  .text-xl,
-  .text-2xl,
-  .text-3xl,
-  .text-4xl,
-  .text-5xl,
-  .text-6xl,
-  .text-7xl,
-  .text-8xl,
-  .text-9xl {
-    @apply font-bold text-gray-50 font-display;
-  }
-  a {
-    @apply underline text-amber-500 hover:text-amber-400 duration-150;
-  }
-}
-@layer components {
-  /* Standard horizontal margins for the app. */
-  .responsive-width {
-    @apply mx-8 sm:mx-24 xl:mx-48 2xl:mx-72;
-  }
+	html {
+		font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+        @apply bg-stone-900 text-stone-200;
+	}
 
-  /* A long list of custom styles that are applied to markdown content. */
-  .text-content {
-    @apply leading-relaxed;
-  }
-  .text-content h1 {
-    @apply text-4xl my-4;
-  }
-  .text-content h2 {
-    @apply text-3xl my-4;
-  }
-  .text-content h3 {
-    @apply text-2xl my-4 font-semibold;
-  }
-  .text-content h4 {
-    @apply text-xl my-4 font-semibold text-gray-100;
-  }
-  .text-content h5 {
-    @apply text-lg my-4 font-medium text-gray-200;
-  }
-  .text-content h6 {
-    @apply text-sm my-4 font-medium text-gray-200;
-  }
-  .text-content p {
-    @apply my-2;
-  }
-  .text-content hr {
-    @apply my-4 border-gray-400;
-  }
-  .text-content blockquote {
-    @apply p-2 w-full mb-4 px-4 border-l border-gray-400 text-gray-100 font-semibold;
-  }
-  .text-content blockquote * {
-    @apply mb-0;
-  }
-  .text-content ul,
-  ol {
-    @apply ml-8 mb-4;
-  }
-  .text-content ul {
-    @apply list-disc;
-  }
-  .text-content li {
-    @apply list-item;
-  }
-  .text-content ol {
-    @apply list-decimal;
-  }
-  .text-content table {
-    @apply bg-gray-600 rounded-md mb-4 table-auto w-full drop-shadow-md;
-  }
-  .text-content table * {
-    @apply py-2 px-4 text-left align-top;
-  }
-  .text-content table * code {
-    @apply align-baseline shadow-none bg-transparent p-0;
-  }
-  .text-content thead {
-    @apply text-gray-50 align-middle;
-  }
-  .text-content tr {
-    @apply hover:text-gray-50 duration-150;
-  }
-  .text-content code {
-    @apply bg-gray-600 px-1 py-1 rounded-md text-gray-50 font-mono text-sm drop-shadow-md font-semibold whitespace-pre-wrap;
-  }
-  .text-content pre {
-    @apply p-2 bg-gray-600 mb-4 rounded-md px-4 drop-shadow-md leading-tight;
-  }
-  .text-content pre * {
-    @apply p-0 mb-0;
-  }
-  .text-content pre * code {
-    @apply text-base drop-shadow-none;
-  }
-}
+	header {
+		font-family: "Inter", Arial, Helvetica, sans-serif;
+		@apply font-bold;
+	}
 
-.hljs {
-  @apply text-gray-50;
-}
-.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_ {
-  @apply text-indigo-200;
-}
-.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_ {
-  @apply text-blue-400;
-}
-.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id,
-.hljs-variable {
-  @apply text-red-300;
-}
-.hljs-meta .hljs-string,
-.hljs-regexp,
-.hljs-string {
-  @apply text-green-400;
-}
-.hljs-built_in,
-.hljs-symbol {
-  @apply text-yellow-300;
-}
-.hljs-code,
-.hljs-comment,
-.hljs-formula {
-  @apply text-gray-300;
-}
-.hljs-name,
-.hljs-quote,
-.hljs-selector-pseudo,
-.hljs-selector-tag {
-  @apply text-red-300;
-}
-.hljs-subst {
-  @apply text-gray-50;
-}
-.hljs-section {
-  @apply text-blue-400 font-bold;
-}
-.hljs-bullet {
-  @apply text-amber-400;
-}
-.hljs-emphasis {
-  @apply text-gray-50 italic;
-}
-.hljs-strong {
-  @apply text-gray-50 font-bold;
-}
-.hljs-addition {
-  @apply text-green-300 bg-green-700 rounded-sm;
-}
-.hljs-deletion {
-  @apply text-red-300 bg-red-700 rounded-sm;
+	code {
+		font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+	}
 }

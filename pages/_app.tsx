@@ -1,32 +1,34 @@
-export default function App({ Component, pageProps }: AppProps): JSX.Element {
-  return (
-    <>
-      <Head>
-        <title>Prosperity</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="The Prosperity Minecraft server." />
-        <meta
-          name="keywords"
-          content="Prosperity, Prosperity MC, Prosperity SMP, Prosperity Wiki, Minecraft, Minecraft server"
-        />
-        <meta property="og:site_name" content="Prosperity MC" />
-        <meta name="theme-color" content="#FFC10B" />
-        <meta property="og:type" content="website" />
-      </Head>
-      <Nav />
-      <div className="mt-[6.5rem] responsive-width">
-        <Component {...pageProps} />
-      </div>
-    </>
-  );
-}
-
-import Head from "next/head";
-import Nav from "@components/nav";
+/* eslint-disable camelcase */
+import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import "tailwindcss/tailwind.css";
-import "@styles/globals.css";
+import { Inter } from "next/font/google";
+import { Atkinson_Hyperlegible } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
+
+const fontInter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
+	preload: true
+});
+const fontAtkinsonHyperlegible = Atkinson_Hyperlegible({
+	subsets: ["latin"],
+	variable: "--font-atkinson-hyperlegible",
+	weight: ["400", "700"],
+	style: ["normal", "italic"],
+	preload: true
+});
+const fontJetBrainsMono = JetBrains_Mono({
+	subsets: ["latin"],
+	variable: "--font-jetbrains-mono",
+	weight: ["400"],
+	style: ["normal"]
+});
+
+export default function MyApp({ Component, pageProps }: AppProps) {
+	return (
+		<div
+			className={`${fontInter.variable} ${fontAtkinsonHyperlegible.variable} ${fontJetBrainsMono.variable}`}>
+			<Component {...pageProps} />
+		</div>
+	);
+}
