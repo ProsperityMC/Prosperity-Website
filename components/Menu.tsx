@@ -34,11 +34,13 @@ export default function Menu() {
 				className={`flex justify-between duration-200 items-center container mx-auto px-20 border-stone-700 select-none ${
 					hasScrolled ? "bg-stone-950/75 backdrop-blur-md py-3 border-b" : "py-5"
 				}`}>
-				<span className="flex gap-12 items-center">
-					<header className="items-center inline-flex overflow-hidden">
+				<span className="flex gap-10 items-center">
+					<Link
+						href={"/"}
+						className="items-center inline-flex overflow-hidden font-bold font-header">
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
-						<span className="overflow-hidden">Prosperity MC</span>
-					</header>
+						<span>Prosperity MC</span>
+					</Link>
 					{links.map((link) => (
 						<>
 							<Link className="font-header font-medium" href={link.href}>

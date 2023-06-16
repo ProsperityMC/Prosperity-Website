@@ -10,10 +10,22 @@
 
 	header {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-bold;
+		@apply font-bold font-header text-stone-50;
 	}
 
 	code {
 		font-family: "JetBrains Mono", "Courier New", Courier, monospace;
 	}
+}
+
+.type-nav-link {
+	@apply font-header text-stone-50 font-medium;
+}
+
+.type-header {
+	@apply font-header text-stone-50 font-bold;
+}
+
+.type-sub-header {
+	@apply font-header font-bold text-xs uppercase;
 }
