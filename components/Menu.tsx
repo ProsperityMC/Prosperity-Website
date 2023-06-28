@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 import logo from "../public/prosperity.svg";
+import A from "./A";
 
 export default function Menu() {
 	const links = [
@@ -42,11 +43,9 @@ export default function Menu() {
 						<span>Prosperity MC</span>
 					</Link>
 					{links.map((link) => (
-						<>
-							<Link className="font-header font-medium" href={link.href}>
-								{link.text}
-							</Link>
-						</>
+						<A className="font-header font-medium" href={link.href}>
+							{link.text}
+						</A>
 					))}
 				</span>
 				<button className="bg-yellow-500 text-stone-900 px-8 py-1 rounded justify-items-end">
