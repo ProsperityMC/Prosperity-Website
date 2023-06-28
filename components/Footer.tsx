@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import logo from "../public/prosperity.svg";
-import A from "./A";
+import logo from "@public/prosperity.svg";
+import A from "@components/A";
 
 export default function Footer() {
 	const content = [

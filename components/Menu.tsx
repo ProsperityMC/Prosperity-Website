@@ -2,8 +2,8 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 
-import logo from "../public/prosperity.svg";
-import A from "./A";
+import logo from "@public/prosperity.svg";
+import A from "@components/A";
 
 export default function Menu() {
 	const links = [

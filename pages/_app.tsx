@@ -1,11 +1,12 @@
 /* eslint-disable camelcase */
-import "../styles/globals.css";
+import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import { Atkinson_Hyperlegible } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
+
+import Menu from "@components/Menu";
+import Footer from "@components/Footer";
 
 const fontInter = Inter({
 	subsets: ["latin"],
