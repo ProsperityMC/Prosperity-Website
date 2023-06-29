@@ -11,8 +11,8 @@ export default function Menu() {
 		{ href: "/projects", text: "Projects" },
 		{ href: "/wiki", text: "Wiki" },
 		{ href: "/database", text: "Database" },
-		{ href: "https://map.prosperitymc.net", text: "Map" },
-		{ href: "/donate", text: "Donate" }
+		{ href: "/donate", text: "Donate" },
+		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -20,12 +20,7 @@ export default function Menu() {
 	// with a saved scroll position.
 	if (typeof window != "undefined") {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY >= 10) {
-				setHasScrolled(true);
-				console.log("Hi");
-			} else {
-				setHasScrolled(false);
-			}
+			setHasScrolled(window.scrollY >= 10 ? true : false);
 		});
 	}
 
@@ -43,7 +38,7 @@ export default function Menu() {
 						<span>Prosperity MC</span>
 					</Link>
 					{links.map((link) => (
-						<A className="font-header font-medium" href={link.href}>
+						<A key={link.text} className="font-header font-medium" href={link.href}>
 							{link.text}
 						</A>
 					))}

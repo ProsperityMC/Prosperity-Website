@@ -27,12 +27,14 @@ const fontJetBrainsMono = JetBrains_Mono({
 	style: ["normal"]
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div
 			className={`${fontInter.variable} ${fontAtkinsonHyperlegible.variable} ${fontJetBrainsMono.variable}`}>
 			<Menu />
-			<Component {...pageProps} />
+			<div className="px-20">
+				<Component {...pageProps} />
+			</div>
 			<Footer />
 		</div>
 	);

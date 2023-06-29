@@ -16,12 +16,14 @@
 		"incremental": true,
 		"baseUrl": ".",
 		"paths": {
-			"@styles/*": ["./styles/*"],
+			"@styles/*":	 ["./styles/*"],
 			"@components/*": ["./components/*"],
-			"@pages/*": ["./pages/*"],
-			"@public/*": ["./public/*"]
+			"@pages/*":		 ["./pages/*"],
+			"@public/*":	 ["./public/*"],
+			"@wiki/*":		 ["./wiki/*"],
+			"@lib/*":		 ["./lib/*"]
 		}
 	},
-	"include": ["../next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["../next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/wiki/[slug].not_tsx"],
 	"exclude": ["node_modules"]
 }

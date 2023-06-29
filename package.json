@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.7",
+    "@types/mdx": "^2.0.5",
     "next": "13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -21,8 +25,8 @@
     "@typescript-eslint/parser": "^5.59.11",
     "autoprefixer": "^10.4.14",
     "eslint": "8.42.0",
-    "eslint-config-next": "13.4.6",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-config-next": "^12.0.4",
+    "eslint-plugin-react": "^7.25.3",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "typescript": "5.1.3"

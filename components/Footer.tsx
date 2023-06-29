@@ -34,10 +34,10 @@ export default function Footer() {
 			</div>
 			<div className="flex gap-16">
 				{content.map((entry) => (
-					<div className="flex flex-col gap-y-2">
+					<div key={entry.header} className="flex flex-col gap-y-2">
 						<header className="type-sub-header text-stone-400">{entry.header}</header>
 						{entry.links.map((link) => (
-							<A className="type-nav-link" href={link.href}>
+							<A key={link.text} className="type-nav-link" href={link.href}>
 								{link.text}
 							</A>
 						))}
