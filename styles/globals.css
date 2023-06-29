@@ -5,12 +5,12 @@
 @layer base {
 	html {
 		font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
-		@apply bg-stone-900 text-stone-200;
+		@apply bg-stone-900 text-stone-300;
 	}
 
 	header {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-bold font-header text-stone-50;
+		@apply font-bold font-header text-stone-100;
 	}
 
 	code {
@@ -18,14 +18,16 @@
 	}
 }
 
-.type-nav-link {
-	@apply font-header text-stone-50 font-medium;
-}
+@layer utilities {
+	.type-nav-link {
+		@apply font-header text-stone-200 font-medium;
+	}
 
-.type-header {
-	@apply font-header text-stone-50 font-bold;
-}
+	.type-header {
+		@apply font-header text-stone-200 font-bold;
+	}
 
-.type-sub-header {
-	@apply font-header font-bold text-xs uppercase;
+	.type-sub-header {
+		@apply font-header font-bold text-xs uppercase;
+	}
 }

@@ -6,10 +6,10 @@ import logo from "@public/prosperity.svg";
 import A from "@components/A";
 
 export default function Menu() {
-	const links = [
+	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
-		{ href: "/wiki", text: "Wiki" },
+		{ href: "/wiki/index", text: "Wiki", loose: true },
 		{ href: "/database", text: "Database" },
 		{ href: "/donate", text: "Donate" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
@@ -35,10 +35,15 @@ export default function Menu() {
 						href={"/"}
 						className="items-center inline-flex overflow-hidden font-bold font-header">
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
-						<span>Prosperity MC</span>
+						<header>Prosperity MC</header>
 					</Link>
 					{links.map((link) => (
-						<A key={link.text} className="font-header font-medium" href={link.href}>
+						<A
+							key={link.text}
+							activeClassName="text-white"
+							activeLooseMatch={link.loose}
+							className="font-header font-medium"
+							href={link.href}>
 							{link.text}
 						</A>
 					))}
