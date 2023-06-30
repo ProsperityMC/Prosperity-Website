@@ -25,7 +25,7 @@ export default function Footer() {
 	];
 
 	return (
-		<div className="w-full select-none flex justify-between container mx-auto px-20 py-24">
+		<div className="w-full select-none flex justify-between mx-auto px-20 py-24">
 			<div className="flex flex-col">
 				<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
 					<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />

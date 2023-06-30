@@ -27,7 +27,7 @@ export default function Menu() {
 	return (
 		<div className="sticky top-0">
 			<div
-				className={`flex justify-between duration-200 items-center container mx-auto px-20 border-stone-700 select-none ${
+				className={`flex justify-between duration-200 items-center mx-auto px-20 border-stone-700 select-none ${
 					hasScrolled ? "bg-stone-950/75 backdrop-blur-md py-3 border-b" : "py-5"
 				}`}>
 				<span className="flex gap-10 items-center">
