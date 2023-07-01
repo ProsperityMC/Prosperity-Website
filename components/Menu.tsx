@@ -20,22 +20,22 @@ export default function Menu() {
 	// with a saved scroll position.
 	if (typeof window != "undefined") {
 		window.addEventListener("scroll", () => {
-			setHasScrolled(window.scrollY >= 10 ? true : false);
+			setHasScrolled(window.scrollY >= 5 ? true : false);
 		});
 	}
 
 	return (
-		<div className="sticky top-0">
-			<div
-				className={`flex justify-between duration-200 items-center mx-auto px-20 border-stone-700 select-none ${
-					hasScrolled ? "bg-stone-950/75 backdrop-blur-md py-3 border-b" : "py-5"
-				}`}>
-				<span className="flex gap-10 items-center">
+		<div
+			className={`sticky top-0 border-stone-700 select-none duration-150 ${
+				hasScrolled ? "bg-stone-950/60 backdrop-blur-md py-2.5 border-b" : "py-5"
+			}`}>
+			<div className={`flex justify-between items-center content-width`}>
+				<span className="flex gap-8 items-center">
 					<Link
 						href={"/"}
-						className="items-center inline-flex overflow-hidden font-bold font-header">
-						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
-						<header>Prosperity MC</header>
+						className="items-center hidden md:inline-flex shrink-0 font-bold font-header">
+						<Image className="inline-block w-7 h-7 rounded" src={logo} alt="" />
+						<header className="ml-4 hidden lg:block">Prosperity MC</header>
 					</Link>
 					{links.map((link) => (
 						<A
@@ -48,9 +48,16 @@ export default function Menu() {
 						</A>
 					))}
 				</span>
-				<button className="bg-yellow-500 text-stone-900 px-8 py-1 rounded justify-items-end">
-					Join
-				</button>
+				<span className="flex gap-8 flex-grow justify-end">
+					<input
+						className="w-[100%] max-w-xs placeholder-stone-400 rounded duration-100 bg-stone-800 focus:ring-transparent focus:border-white focus:outline focus:outline-transparent px-2 border border-stone-700"
+						placeholder="Search wiki..."
+						type="text"
+					/>
+					<button className="bg-yellow-500 text-stone-900 px-8 py-1 type-header rounded justify-items-end">
+						Join
+					</button>
+				</span>
 			</div>
 		</div>
 	);

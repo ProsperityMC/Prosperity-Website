@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import { Inter } from "next/font/google";
-import { Atkinson_Hyperlegible } from "next/font/google";
+import { Archivo } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 
 import Menu from "@components/Menu";
@@ -11,9 +11,9 @@ const fontInter = Inter({
 	variable: "--font-inter",
 	preload: true
 });
-const fontAtkinsonHyperlegible = Atkinson_Hyperlegible({
+const fontArchivo = Archivo({
 	subsets: ["latin"],
-	variable: "--font-atkinson-hyperlegible",
+	variable: "--font-Archivo",
 	weight: ["400", "700"],
 	style: ["normal", "italic"],
 	preload: true
@@ -28,9 +28,9 @@ const fontJetBrainsMono = JetBrains_Mono({
 export default function Layout(props: { children?: React.ReactNode }) {
 	return (
 		<div
-			className={`${fontInter.variable} ${fontAtkinsonHyperlegible.variable} ${fontJetBrainsMono.variable}`}>
+			className={`${fontInter.variable} ${fontArchivo.variable} ${fontJetBrainsMono.variable}`}>
 			<Menu />
-			<main className="px-20">{props.children}</main>
+			<main className="px-20 content-width min-h-[90vh]">{props.children}</main>
 			<Footer />
 		</div>
 	);

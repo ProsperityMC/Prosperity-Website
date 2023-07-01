@@ -25,25 +25,27 @@ export default function Footer() {
 	];
 
 	return (
-		<div className="w-full select-none flex justify-between mx-auto px-20 py-24">
-			<div className="flex flex-col">
-				<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
-					<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
-					<header>Prosperity MC</header>
-				</A>
+		<nav className="border-t border-stone-700 w-full select-none py-8 mt-16 bg-stone-950/60 backdrop-blur-md">
+			<div className="content-width flex justify-between">
+				<div className="flex flex-col">
+					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
+						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
+						<header>Prosperity MC</header>
+					</A>
+				</div>
+				<div className="flex gap-16">
+					{content.map((entry) => (
+						<div key={entry.header} className="flex flex-col gap-y-2">
+							<header className="type-sub-header text-stone-400">{entry.header}</header>
+							{entry.links.map((link) => (
+								<A key={link.text} className="type-nav-link" href={link.href}>
+									{link.text}
+								</A>
+							))}
+						</div>
+					))}
+				</div>
 			</div>
-			<div className="flex gap-16">
-				{content.map((entry) => (
-					<div key={entry.header} className="flex flex-col gap-y-2">
-						<header className="type-sub-header text-stone-400">{entry.header}</header>
-						{entry.links.map((link) => (
-							<A key={link.text} className="type-nav-link" href={link.href}>
-								{link.text}
-							</A>
-						))}
-					</div>
-				))}
-			</div>
-		</div>
+		</nav>
 	);
 }
