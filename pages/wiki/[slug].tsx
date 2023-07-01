@@ -1,34 +1,34 @@
 import { InferGetStaticPropsType } from "next";
+import { MDXProps } from "mdx/types";
+import { readdir } from "fs/promises";
 import dynamic from "next/dynamic";
+import path from "path";
 
 import WikiMenu from "@components/WikiMenu";
-import { getAllWikiSlugs, getWikiPageData } from "@lib/wiki";
-import { MDXProps } from "mdx/types";
 
 export async function getStaticPaths() {
-	const paths = await getAllWikiSlugs();
+	const paths = (await readdir(path.join(process.cwd(), "wiki"))).map((file) => {
+		return { params: { slug: file.replace(".mdx", "") } };
+	});
 
 	return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
-	const wikiPageData = await getWikiPageData(params.slug);
-	const slugs = await getAllWikiSlugs();
+	const slug = params.slug;
+	const slugs = (await getStaticPaths()).paths;
 
-	return { props: { wikiPageData, slugs } };
+	return { props: { slug, slugs } };
 }
 
-export default function WikiPage({
-	wikiPageData,
-	slugs
-}: InferGetStaticPropsType<typeof getStaticProps>) {
-	const MdxContent = dynamic<MDXProps>(import(`../../wiki/${wikiPageData.file}`));
+export default function WikiPage({ slug, slugs }: InferGetStaticPropsType<typeof getStaticProps>) {
+	const Content = dynamic<MDXProps>(import(`../../wiki/${slug}.mdx`));
 
 	return (
 		<div className="flex gap-4">
 			<WikiMenu slugs={slugs} />
 			<article>
-				<MdxContent />
+				<Content />
 			</article>
 		</div>
 	);
