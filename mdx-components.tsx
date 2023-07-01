@@ -7,7 +7,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		<a className="group" href={`#${props.id}`}>
 			{props.children}
 			<svg
-				className="w-5 h-5 fill-transparent duration-75 group-hover:fill-stone-500/100 inline-flex align-middle ml-2"
+				className="w-5 h-5 fill-transparent duration-75 group-hover:fill-zinc-500/100 inline-flex align-middle ml-2"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 20 20">
 				<path

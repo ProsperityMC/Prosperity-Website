@@ -26,8 +26,8 @@ export default function Menu() {
 
 	return (
 		<div
-			className={`sticky top-0 border-stone-700 select-none duration-150 ${
-				hasScrolled ? "bg-stone-950/60 backdrop-blur-md py-2.5 border-b" : "py-5"
+			className={`sticky top-0 border-zinc-700 select-none duration-150 ${
+				hasScrolled ? "bg-zinc-950/60 backdrop-blur-md py-2.5 border-b" : "py-5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>
 				<span className="flex gap-8 items-center">
@@ -50,11 +50,11 @@ export default function Menu() {
 				</span>
 				<span className="flex gap-8 flex-grow justify-end">
 					<input
-						className="w-[100%] max-w-xs placeholder-stone-400 rounded duration-100 bg-stone-800 focus:ring-transparent focus:border-white focus:outline focus:outline-transparent px-2 border border-stone-700"
+						className="w-[100%] max-w-xs placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-white focus:outline focus:outline-transparent px-2 border border-zinc-700"
 						placeholder="Search wiki..."
 						type="text"
 					/>
-					<button className="bg-yellow-500 text-stone-900 px-8 py-1 type-header rounded justify-items-end">
+					<button className="bg-yellow-500 text-zinc-900 px-8 py-1 type-header rounded justify-items-end">
 						Join
 					</button>
 				</span>

@@ -5,12 +5,12 @@
 @layer base {
 	html {
 		font-family: "Archivo", Arial, Helvetica, sans-serif;
-		@apply bg-stone-900 text-stone-300;
+		@apply bg-zinc-900 text-zinc-300;
 	}
 
 	header {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-100 font-bold;
+		@apply font-header text-zinc-100 font-bold;
 	}
 
 	code {
@@ -20,7 +20,7 @@
 
 @layer components {
 	.type-nav-link {
-		@apply font-header text-stone-200 font-medium;
+		@apply font-header text-zinc-200 font-medium;
 	}
 
 	.type-sub-header {
@@ -29,37 +29,37 @@
 
 	.type-header {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 font-bold;
+		@apply font-header text-zinc-200 font-bold;
 	}
 
 	.markdown h1 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-4xl font-bold;
+		@apply font-header text-zinc-200 text-4xl font-bold;
 	}
 
 	.markdown h2 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-3xl font-bold;
+		@apply font-header text-zinc-200 text-3xl font-bold;
 	}
 
 	.markdown h3 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-2xl font-bold;
+		@apply font-header text-zinc-200 text-2xl font-bold;
 	}
 
 	.markdown h4 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-xl font-bold;
+		@apply font-header text-zinc-200 text-xl font-bold;
 	}
 
 	.markdown h5 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-lg font-bold;
+		@apply font-header text-zinc-200 text-lg font-bold;
 	}
 
 	.markdown h6 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-stone-200 text-sm font-bold;
+		@apply font-header text-zinc-200 text-sm font-bold;
 	}
 
 	.markdown p {
@@ -67,15 +67,15 @@
 	}
 
 	.markdown hr {
-		@apply border-stone-700;
+		@apply border-zinc-700;
 	}
 
 	.markdown code {
-		@apply rounded border border-stone-700 bg-stone-800 px-1 py-0.5;
+		@apply rounded border border-zinc-700 bg-zinc-800 px-1 py-0.5;
 	}
 
 	.markdown pre {
-		@apply rounded border border-stone-700 bg-stone-800 p-1.5;
+		@apply rounded border border-zinc-700 bg-zinc-800 p-1.5;
 	}
 
 	.markdown pre > code {
@@ -92,13 +92,13 @@
 	}
 
 	.markdown table {
-		@apply table-auto border border-stone-600 border-collapse w-full;
+		@apply table-auto border border-zinc-600 border-collapse w-full;
 	}
 
 	.markdown tr,
 	td,
 	th {
-		@apply border border-stone-600 px-4 py-1.5;
+		@apply border border-zinc-600 px-4 py-1.5;
 	}
 
 	.markdown ul {

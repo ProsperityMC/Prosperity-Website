@@ -25,7 +25,7 @@ export default function Footer() {
 	];
 
 	return (
-		<nav className="border-t border-stone-700 w-full select-none py-8 mt-16 bg-stone-950/60 backdrop-blur-md">
+		<nav className="border-t border-zinc-700 w-full select-none py-8 mt-16 bg-zinc-950/60 backdrop-blur-md">
 			<div className="content-width flex justify-between">
 				<div className="flex flex-col">
 					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
@@ -36,7 +36,7 @@ export default function Footer() {
 				<div className="flex gap-16">
 					{content.map((entry) => (
 						<div key={entry.header} className="flex flex-col gap-y-2">
-							<header className="type-sub-header text-stone-400">{entry.header}</header>
+							<header className="type-sub-header text-zinc-400">{entry.header}</header>
 							{entry.links.map((link) => (
 								<A key={link.text} className="type-nav-link" href={link.href}>
 									{link.text}
