@@ -27,7 +27,7 @@ export default function WikiPage({ slug, slugs }: InferGetStaticPropsType<typeof
 	return (
 		<div className="flex gap-8">
 			<div className="whitespace-pre mt-6">
-				<div className="flex sticky top-[3rem] pt-6 flex-col gap-2 pr-12">
+				<div className="flex sticky top-[3rem] pt-6 flex-col gap-2 pr-12 select-none">
 					{slugs.map((slug) => (
 						<A
 							key={slug.params.slug}
