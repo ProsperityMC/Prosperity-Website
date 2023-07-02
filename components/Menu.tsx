@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import logo from "@public/prosperity.svg";
 import A from "@components/A";
+import SearchWindow from "./SearchWindow";
 
 export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
@@ -15,6 +16,7 @@ export default function Menu() {
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
+	const [searchQuery, setSearchQuery] = useState("");
 
 	// TODO: Fix a behavior where the signal isn't updated upon reloading a page
 	// with a saved scroll position.
@@ -25,7 +27,7 @@ export default function Menu() {
 	}
 
 	return (
-		<div
+		<nav
 			className={`sticky top-0 border-zinc-700 select-none duration-150 ${
 				hasScrolled ? "bg-zinc-950/60 backdrop-blur-md py-2.5 border-b" : "py-5"
 			}`}>
@@ -49,16 +51,26 @@ export default function Menu() {
 					))}
 				</span>
 				<span className="flex gap-8 flex-grow justify-end">
-					<input
-						className="w-[100%] max-w-xs placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-white focus:outline focus:outline-transparent px-2 border border-zinc-700"
-						placeholder="Search wiki..."
-						type="text"
-					/>
+					<div className="w-[100%] max-w-xs">
+						<input
+							onChange={(e) => setSearchQuery(e.target.value)}
+							className="w-[100%] max-w-xs h-full placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-yellow-400	 focus:outline focus:outline-transparent px-2 border border-zinc-700"
+							placeholder="Search wiki..."
+							type="text"
+						/>
+						{searchQuery != "" ? (
+							<div className="absolute w-[100%] max-w-xs mt-4">
+								<SearchWindow query={searchQuery} />
+							</div>
+						) : (
+							<></>
+						)}
+					</div>
 					<button className="bg-yellow-500 text-zinc-900 px-8 py-1 type-header rounded justify-items-end">
 						Join
 					</button>
 				</span>
 			</div>
-		</div>
+		</nav>
 	);
 }
