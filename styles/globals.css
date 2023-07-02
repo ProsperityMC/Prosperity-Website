@@ -62,12 +62,8 @@
 		@apply font-header text-zinc-200 text-sm font-bold;
 	}
 
-	.markdown p {
-		@apply my-1.5;
-	}
-
 	.markdown hr {
-		@apply border-zinc-700;
+		@apply border-zinc-700 my-4 w-full;
 	}
 
 	.markdown code {

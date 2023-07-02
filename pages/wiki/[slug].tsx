@@ -1,49 +1,53 @@
 import { InferGetStaticPropsType } from "next";
-import { MDXProps } from "mdx/types";
-import { readdir } from "fs/promises";
 import dynamic from "next/dynamic";
-import path from "path";
 
 import A from "@components/A";
+import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/wiki";
 
 export async function getStaticPaths() {
-	const paths = (await readdir(path.join(process.cwd(), "wiki"))).map((file) => {
-		return { params: { slug: file.replace(".mdx", "") } };
+	const paths = (await wikiPageDataGetAll()).map((page) => {
+		return { params: { slug: page.slug } };
 	});
 
 	return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
-	const slug = params.slug;
-	const slugs = (await getStaticPaths()).paths;
+	const data = await wikiPageDataGet(params.slug);
+	const allData = await wikiPageDataGetAll();
 
-	return { props: { slug, slugs } };
+	return { props: { allData, ...data } };
 }
 
-export default function WikiPage({ slug, slugs }: InferGetStaticPropsType<typeof getStaticProps>) {
-	const Content = dynamic<MDXProps>(import(`../../wiki/${slug}.mdx`));
+export default function WikiPage({
+	slug,
+	fileName,
+	meta,
+	allData
+}: InferGetStaticPropsType<typeof getStaticProps>) {
+	const content: Promise<typeof import("*.mdx")> = import(`../../wiki/${fileName}`);
+	const WikiContent = dynamic(content);
 
 	return (
 		<div className="flex gap-8">
 			<div className="whitespace-pre mt-6">
 				<div className="flex sticky top-[3rem] pt-6 flex-col gap-2 pr-12 select-none">
-					{slugs.map((slug) => (
+					{allData.map((page) => (
 						<A
-							key={slug.params.slug}
-							href={slug.params.slug}
-							className="font-header font-medium hover:text-white duration-100"
+							key={page.slug}
+							href={page.slug}
+							className="font-header font-medium"
 							activeClassName="text-white">
-							{slug.params.slug}
+							{page.meta?.title || page.slug}
 						</A>
 					))}
 				</div>
 			</div>
-			<article className="markdown w-full min-h-screen min-w-0 space-y-4">
-				<section className="mt-12 mb-4">
-					<header className="text-4xl">Static Example Title</header>
+			<article className="markdown w-full min-h-screen min-w-0 flex flex-col gap-4">
+				<section className="mt-12">
+					<header className="text-4xl">{meta?.title || slug}</header>
 				</section>
-				<Content />
+				<WikiContent />
 			</article>
 		</div>
 	);
