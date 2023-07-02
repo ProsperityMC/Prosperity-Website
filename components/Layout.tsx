@@ -27,10 +27,9 @@ const fontJetBrainsMono = JetBrains_Mono({
 
 export default function Layout(props: { children?: React.ReactNode }) {
 	return (
-		<div
-			className={`${fontInter.variable} ${fontArchivo.variable} ${fontJetBrainsMono.variable}`}>
+		<div className={`${fontInter.variable} ${fontArchivo.variable} ${fontJetBrainsMono.variable}`}>
 			<Menu />
-			<main className="px-20 content-width min-h-[90vh]">{props.children}</main>
+			<main className="pt-16 px-20 content-width min-h-[90vh]">{props.children}</main>
 			<Footer />
 		</div>
 	);

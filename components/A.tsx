@@ -8,6 +8,7 @@ export interface AProps
 	children?: React.ReactNode;
 	activeClassName?: string;
 	activeLooseMatch?: boolean;
+	noIcon?: boolean;
 }
 
 /** Wrapper of the `next/link` element with additional UI functionality.  */
@@ -38,7 +39,7 @@ export default function A(props: AProps) {
 			target={isExternal ? "_blank" : ""}
 			referrerPolicy="no-referrer">
 			{props.children}
-			{isExternal ? (
+			{isExternal && !props.noIcon ? (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 20 20"

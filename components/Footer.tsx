@@ -18,14 +18,24 @@ export default function Footer() {
 			header: "Resources",
 			links: [
 				{ text: "Branding", href: "https://github.com/ProsperityMC/Prosperity-Branding" },
-				{ text: "Web Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
-				{ text: "Contact", href: "/" }
+				{ text: "Web Source", href: "https://github.com/ProsperityMC/Prosperity-Website" }
+				// { text: "Contact", href: "/contact" }
+				// { text: "Metriccs", href: "#" }
+			]
+		},
+		{
+			header: "Projects",
+			links: [
+				{ text: "Client Modpack", href: "https://modrinth.com/modpack/prosperity" },
+				{ text: "Remodulated", href: "https://modrinth.com/modpack/remodulated" },
+				{ text: "Resource Pack", href: "https://github.com/ProsperityMC/Prosperity-Resource-Pack" },
+				{ text: "Scripts", href: "https://github.com/ProsperityMC/Prosperity-Scripts" }
 			]
 		}
 	];
 
 	return (
-		<nav className="border-t border-zinc-700 w-full select-none py-8 mt-16 bg-zinc-950/60 backdrop-blur-md">
+		<nav className="w-full select-none py-20 mt-16 text-sm ">
 			<div className="content-width flex justify-between">
 				<div className="flex flex-col">
 					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
@@ -35,7 +45,7 @@ export default function Footer() {
 				</div>
 				<div className="flex gap-16">
 					{content.map((entry) => (
-						<div key={entry.header} className="flex flex-col gap-y-2">
+						<div key={entry.header} className="flex flex-col whitespace-pre min-w-[6rem] gap-y-2">
 							<header className="type-sub-header text-zinc-400">{entry.header}</header>
 							{entry.links.map((link) => (
 								<A key={link.text} className="type-nav-link" href={link.href}>

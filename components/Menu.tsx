@@ -11,8 +11,8 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
 		{ href: "/wiki/index", text: "Wiki", loose: true },
-		{ href: "/database", text: "Database" },
-		{ href: "/donate", text: "Donate" },
+		// { href: "/database", text: "Database" },
+		// { href: "/donate", text: "Donate" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
@@ -66,9 +66,11 @@ export default function Menu() {
 							<></>
 						)}
 					</div>
-					<button className="bg-yellow-500 text-zinc-900 px-8 py-1 type-header rounded justify-items-end">
-						Join
-					</button>
+					<A href="https://discord.gg/hfTxZ4XxYj" noIcon={true}>
+						<button className="bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 px-8 py-1 type-header rounded justify-items-end">
+							Join
+						</button>
+					</A>
 				</span>
 			</div>
 		</nav>
