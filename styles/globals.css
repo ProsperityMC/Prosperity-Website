@@ -32,6 +32,10 @@
 		@apply font-header text-zinc-200 font-bold;
 	}
 
+	.markdown {
+		@apply flex flex-col gap-6 leading-relaxed;
+	}
+
 	.markdown h1 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
 		@apply font-header text-zinc-200 text-4xl font-bold;

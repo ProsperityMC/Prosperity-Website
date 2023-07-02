@@ -31,23 +31,33 @@ export default function WikiPage({
 	return (
 		<div className="flex gap-8">
 			<div className="whitespace-pre mt-6">
-				<div className="flex sticky top-[3rem] pt-6 flex-col gap-2 pr-12 select-none">
-					{allData.map((page) => (
-						<A
-							key={page.slug}
-							href={page.slug}
-							className="font-header font-medium"
-							activeClassName="text-white">
-							{page.meta?.title || page.slug}
-						</A>
-					))}
+				<div className="flex sticky top-[3rem] pt-6 flex-col gap-2 pr-4 select-none">
+					{allData
+						.filter((page) => page.meta?.publish != false)
+						.map((page) => (
+							<A
+								key={page.slug}
+								href={page.slug}
+								className="font-header font-medium"
+								activeClassName="text-white">
+								{page.meta?.title || page.slug}
+							</A>
+						))}
 				</div>
 			</div>
-			<article className="markdown w-full min-h-screen min-w-0 flex flex-col gap-4">
-				<section className="mt-12">
+			<article className="markdown w-full min-h-screen min-w-0">
+				<section className="mt-12 markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 				</section>
 				<WikiContent />
+				<hr />
+				<p>
+					<A
+						className="text-yellow-400 hover:underline"
+						href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
+						Edit this page on GitHub
+					</A>
+				</p>
 			</article>
 		</div>
 	);
