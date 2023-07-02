@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 
 import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/wiki";
+import WikiMenu from "@components/WikiMenu";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {
@@ -30,21 +31,7 @@ export default function WikiPage({
 
 	return (
 		<div className="flex gap-8">
-			<div className="whitespace-pre">
-				<div className="flex sticky top-20 flex-col gap-2 pr-4 select-none">
-					{allData
-						.filter((page) => page.meta?.publish != false)
-						.map((page) => (
-							<A
-								key={page.slug}
-								href={page.slug}
-								className="font-header font-medium"
-								activeClassName="text-white">
-								{page.meta?.title || page.slug}
-							</A>
-						))}
-				</div>
-			</div>
+			<WikiMenu pages={allData} baseUrl="/wiki" />
 			<article className="markdown w-full min-h-screen min-w-0">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>

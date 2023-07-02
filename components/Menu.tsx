@@ -10,7 +10,7 @@ export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
-		{ href: "/wiki/index", text: "Wiki", loose: true },
+		{ href: "/wiki", text: "Wiki", loose: true },
 		// { href: "/database", text: "Database" },
 		// { href: "/donate", text: "Donate" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
@@ -54,7 +54,7 @@ export default function Menu() {
 					<div className="w-[100%] max-w-xs">
 						<input
 							onChange={(e) => setSearchQuery(e.target.value)}
-							className="w-[100%] max-w-xs h-full placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-yellow-400	 focus:outline focus:outline-transparent px-2 border border-zinc-700"
+							className="w-[100%] max-w-xs h-full placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-yellow-400 focus:outline focus:outline-transparent px-2 border border-zinc-700"
 							placeholder="Search wiki..."
 							type="text"
 						/>
