@@ -11,8 +11,8 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		// { href: "/database", text: "Database" },
-		// { href: "/donate", text: "Donate" },
+		{ href: "/database", text: "Database" },
+		{ href: "/donate", text: "Donate" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
@@ -28,8 +28,8 @@ export default function Menu() {
 
 	return (
 		<nav
-			className={`sticky top-0 border-zinc-700 select-none duration-150 ${
-				hasScrolled ? "bg-zinc-950/60 backdrop-blur-md py-2.5 border-b" : "py-5"
+			className={`sticky top-0 border-b border-zinc-700/0 select-none duration-150 ${
+				hasScrolled ? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b" : "py-5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>
 				<span className="flex gap-8 items-center">
@@ -55,7 +55,7 @@ export default function Menu() {
 						<input
 							onChange={(e) => setSearchQuery(e.target.value)}
 							className="w-[100%] max-w-xs h-full placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-yellow-400 focus:outline focus:outline-transparent px-2 border border-zinc-700"
-							placeholder="Search wiki..."
+							placeholder="Search the database or wiki..."
 							type="text"
 						/>
 						{searchQuery != "" ? (

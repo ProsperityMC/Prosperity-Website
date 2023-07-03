@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/wiki";
 import WikiMenu from "@components/WikiMenu";
+import Head from "next/head";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {
@@ -31,20 +32,24 @@ export default function WikiPage({
 
 	return (
 		<div className="flex gap-8">
+			<Head>
+				<title>{meta?.title || slug}</title>
+				<meta name="description" content={meta?.short || ""} />
+			</Head>
 			<WikiMenu pages={allData} baseUrl="/wiki" />
-			<article className="markdown w-full min-h-screen min-w-0">
+			<article className="markdown max-w-4xl mx-auto min-h-screen">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
+					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}
 				</section>
+				<hr />
 				<WikiContent />
 				<hr />
-				<p>
-					<A
-						className="text-yellow-400 hover:underline"
-						href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
-						Edit this page on GitHub
-					</A>
-				</p>
+				<A
+					className="custom-link inline"
+					href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
+					Edit this page on GitHub
+				</A>
 			</article>
 		</div>
 	);

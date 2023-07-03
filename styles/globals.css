@@ -71,7 +71,7 @@
 	}
 
 	.markdown code {
-		@apply rounded border border-zinc-700 bg-zinc-800 px-1 py-0.5;
+		@apply rounded border border-zinc-700 bg-zinc-800 px-1 py-0.5 text-sm;
 	}
 
 	.markdown pre {
@@ -92,13 +92,17 @@
 	}
 
 	.markdown table {
-		@apply table-auto border border-zinc-600 border-collapse w-full;
+		@apply table-auto border-collapse w-full;
 	}
 
 	.markdown tr,
 	td,
 	th {
-		@apply border border-zinc-600 px-4 py-1.5;
+		@apply border-y border-zinc-600 px-2 py-1.5;
+	}
+
+	.markdown th {
+		@apply border-t-transparent;
 	}
 
 	.markdown ul {
@@ -108,6 +112,23 @@
 	.markdown ol {
 		@apply list-decimal list-inside;
 	}
+
+	.custom-link {
+		@apply text-yellow-400 hover:underline;
+	}
+}
+
+#headline {
+	@apply bg-gradient-to-b to-transparent;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -100;
+	width: 100%;
+	height: 100vh;
+	background-image: url("/headline.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .content-width {
