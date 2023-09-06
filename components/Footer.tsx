@@ -39,7 +39,7 @@ export default function Footer() {
 
 	return (
 		<nav className="w-full select-none py-20 mt-16 text-sm">
-			<div className="content-width flex justify-between">
+			<div className="content-width flex justify-between gap-16">
 				<div className="flex flex-col gap-4">
 					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />

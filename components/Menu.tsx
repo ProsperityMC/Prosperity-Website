@@ -8,7 +8,7 @@ import SearchWindow from "./SearchWindow";
 
 export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
-		{ href: "/", text: "Home" },
+		// { href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
 		{ href: "/wiki", text: "Wiki", loose: true },
 		{ href: "/database", text: "Database" },
