@@ -8,11 +8,11 @@ import SearchWindow from "./SearchWindow";
 
 export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
-		// { href: "/", text: "Home" },
+		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects" },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		{ href: "/database", text: "Database" },
-		{ href: "/donate", text: "Donate" },
+		// { href: "/database", text: "Database" },
+		{ href: "https://ko-fi.com/prosperitymc", text: "Donate" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
@@ -28,7 +28,7 @@ export default function Menu() {
 
 	return (
 		<nav
-			className={`sticky top-0 border-b border-zinc-700/0 select-none duration-150 ${
+			className={`z-50 sticky top-0 border-b border-zinc-700/0 select-none duration-150 ${
 				hasScrolled ? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b" : "py-5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>

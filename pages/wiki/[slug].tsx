@@ -2,7 +2,7 @@ import { InferGetStaticPropsType } from "next";
 import dynamic from "next/dynamic";
 
 import A from "@components/A";
-import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/wiki";
+import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Head from "next/head";
 

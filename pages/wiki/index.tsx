@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from "next";
 
 import A from "@components/A";
-import { wikiPageDataGetAll } from "@lib/wiki";
+import { wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Index from "@wiki/index.mdx";
 import Head from "next/head";

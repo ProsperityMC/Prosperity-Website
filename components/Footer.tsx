@@ -10,16 +10,16 @@ export default function Footer() {
 			links: [
 				{ text: "Discord", href: "https://discord.gg/Gf5tDk5EhR" },
 				{ text: "YouTube", href: "https://youtube.com/@prosperitymc" },
-				{ text: "Twitter", href: "https://twitter.com/prosperitymc" },
-				{ text: "GitHub", href: "https://github.com/ProsperityMC" }
+				{ text: "X", href: "https://twitter.com/prosperitymc" },
+				{ text: "GitHub", href: "https://github.com/ProsperityMC" },
+				{ text: "Ko-fi", href: "https://ko-fi.com/prosperitymc" }
 			]
 		},
 		{
 			header: "Resources",
 			links: [
-				{ text: "Branding", href: "https://github.com/ProsperityMC/Prosperity-Branding" },
 				{ text: "Web Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
-				{ text: "Contact", href: "/contact" }
+				{ text: "Live Map", href: "https://map.prosperitymc.net" }
 			]
 		},
 		{
@@ -30,10 +30,6 @@ export default function Footer() {
 				{ text: "Resource Pack", href: "https://github.com/ProsperityMC/Prosperity-Resource-Pack" },
 				{ text: "Scripts", href: "https://github.com/ProsperityMC/Prosperity-Scripts" }
 			]
-		},
-		{
-			header: "Friends",
-			links: [{ text: "Quasar", href: "https://discord.gg/vs9DBX9WAz" }]
 		}
 	];
 
@@ -45,7 +41,6 @@ export default function Footer() {
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
 						<header>Prosperity MC</header>
 					</A>
-					<small className="text-zinc-400">Last update {new Date().toLocaleString()}</small>
 				</div>
 				<div className="flex gap-16 flex-wrap">
 					{content.map((entry) => (
