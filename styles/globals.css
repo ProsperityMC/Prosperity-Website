@@ -132,5 +132,5 @@
 }
 
 .content-width {
-	@apply max-w-7xl px-8 mx-auto;
+	@apply max-w-screen-xl px-8 mx-auto;
 }

@@ -29,7 +29,7 @@ export default function Layout(props: { children?: React.ReactNode }) {
 	return (
 		<div className={`${fontInter.variable} ${fontArchivo.variable} ${fontJetBrainsMono.variable}`}>
 			<Menu />
-			<main className="pt-16 px-20 content-width min-h-[90vh]">{props.children}</main>
+			<div className="pt-16 px-20 content-width min-h-[90vh]">{props.children}</div>
 			<Footer />
 		</div>
 	);
