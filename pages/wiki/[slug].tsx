@@ -36,11 +36,32 @@ export default function WikiPage({
 				<title>{meta?.title || slug}</title>
 				<meta name="description" content={meta?.short || ""} />
 			</Head>
-			<WikiMenu pages={allData} baseUrl="/wiki" />
+			<div className="hidden md:block">
+				<WikiMenu pages={allData} baseUrl="/wiki" />
+			</div>
 			<article className="markdown max-w-4xl mx-auto min-h-screen">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}
+					<div className="block md:hidden">
+						<A
+							href="/wiki"
+							noIcon={true}
+							className="bg-zinc-800 group hover:bg-zinc-700 duration-150 text-zinc-300 py-2 px-6 rounded border border-zinc-700">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								className="w-5 h-5 inline-block align-text-bottom">
+								<path
+									fillRule="evenodd"
+									d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+									clipRule="evenodd"
+								/>
+							</svg>
+							Back to Index
+						</A>
+					</div>
 				</section>
 				<hr />
 				<WikiContent />
@@ -49,7 +70,7 @@ export default function WikiPage({
 					className="custom-link inline"
 					href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
 					Edit this page on GitHub
-				</A>
+			</A>
 			</article>
 		</div>
 	);
