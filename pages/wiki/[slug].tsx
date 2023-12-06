@@ -36,10 +36,10 @@ export default function WikiPage({
 				<title>{meta?.title || slug}</title>
 				<meta name="description" content={meta?.short || ""} />
 			</Head>
-			<div className="hidden md:block">
+			<div className="hidden md:flex">
 				<WikiMenu pages={allData} baseUrl="/wiki" />
 			</div>
-			<article className="markdown max-w-4xl mx-auto min-h-screen">
+			<article className="w-full markdown max-w-4xl mx-auto min-h-screen">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}

@@ -89,7 +89,7 @@ export default function Home() {
 					<header className="text-6xl type-header">Go Further Than Ever</header>
 					<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 						Prosperity is a Minecraft community focused on high-level technical and building
-						gameplay. <Highlight>Create</Highlight>, <Highlight>engineer</Highlight>, and{" "}
+						gamepolay. <Highlight>Create</Highlight>, <Highlight>engineer</Highlight>, and{" "}
 						<Highlight>grow</Highlight> on a server intent on providing the best possible experience
 						for everyone.
 					</p>
@@ -126,7 +126,7 @@ export default function Home() {
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
 							<Highlight>Work better together in survival and creative.</Highlight> Take advantage
-							of a powerful creative server, real-time schematic syncing, and a cooprative community
+							of a powerful creative server, real-time schematic syncing, and a cooperative community
 							willing to help with large scale builds.
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
@@ -135,7 +135,7 @@ export default function Home() {
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
 							<Highlight>Building together.</Highlight> With a strong community focus you don't need
-							to worry about greifing, trolls, or claims disrupting or ruining your hard work.
+							to worry about griefing, trolls, or claims disrupting or ruining your hard work.
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
 							<Highlight>Updates in weeks, not months.</Highlight> We work hard to update to the
@@ -194,12 +194,12 @@ export default function Home() {
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Expanding The Minds of Engineers</header>
 					<p>
-						Technical gameplay is at the core of Prosperity, with the server focused heavily on
+						Technical gamepolay is at the core of Prosperity, with the server focused heavily on
 						allowing experimentation and new ideas.
 					</p>
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
-							<Highlight>Redstone without comprimise.</Highlight> Build what you want without
+							<Highlight>Redstone without compromise.</Highlight> Build what you want without
 							worrying about Redstone functionality being broken and limited. Make your farms,
 							storage systems, and machines on your terms.
 						</p>
@@ -294,7 +294,7 @@ export default function Home() {
 						Prosperity is it's community. We take community feedback and suggestions to and strive
 						to create the best experience possible. See what our members think.
 					</p>
-					<div className="columns-1 md:colunms-2 lg:columns-3 gap-8 overflow-hidden">
+					<div className="columns-1 md:columns-2 lg:columns-3 gap-8 overflow-hidden">
 						{testimonials.map((comment) => (
 							<div className="break-inside-avoid-column border border-zinc-700 p-4 mb-4 rounded-md text-left">
 								<div className="flex gap-4 mb-1.5 items-center">
@@ -335,7 +335,7 @@ export default function Home() {
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Fast and Reliable</header>
 					<p>
-						Key to both technical gameplay and quality-of-life, we take performance and reliability
+						Key to both technical gamepolay and quality-of-life, we take performance and reliability
 						seriously.
 					</p>
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
@@ -345,7 +345,7 @@ export default function Home() {
 							<Highlight>Don't just run one world eater</Highlight>, run two, or three!
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
-							<Highlight>Dedicated Hardware.</Highlight> Prosperity is hoested on dedicated high-end
+							<Highlight>Dedicated Hardware.</Highlight> Prosperity is hosted on dedicated high-end
 							hardware from a trustworthy host in Los Angeles, California.
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">

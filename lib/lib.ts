@@ -12,6 +12,7 @@ export type WikiMeta = {
 	authors?: string[];
 	short?: string;
 	publish?: boolean;
+	highlight?: boolean;
 };
 
 export async function wikiPageDataGetAll(): Promise<WikiData[]> {
