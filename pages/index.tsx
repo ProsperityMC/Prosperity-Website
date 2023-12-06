@@ -110,8 +110,17 @@ export default function Home() {
 								</svg>
 							</button>
 						</A>
-						<A href="#learn-more" className="hidden md:inline-flex custom-link type-header">
-							More About Prosperity
+						<A
+							href="/wiki/new-player-guide"
+							className="hidden md:inline custom-link type-header">
+							New Player Guide{" "}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								className="w-5 h-5 inline-block align-middle">
+								<path d="M10.75 16.82A7.462 7.462 0 0115 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0018 15.06v-11a.75.75 0 00-.546-.721A9.006 9.006 0 0015 3a8.963 8.963 0 00-4.25 1.065V16.82zM9.25 4.065A8.963 8.963 0 005 3c-.85 0-1.673.118-2.454.339A.75.75 0 002 4.06v11a.75.75 0 00.954.721A7.506 7.506 0 015 15.5c1.579 0 3.042.487 4.25 1.32V4.065z" />
+							</svg>
 						</A>
 					</div>
 				</section>
@@ -170,11 +179,11 @@ export default function Home() {
 							}
 						]}
 					/>
-					<A href="/projects" className="block md:flex text-left justify-between mt-8">
-						<p className="text-lg text-zinc-400 font-medium">
+					<A href="/projects" className="block md:flex text-left justify-between mt-8 group">
+						<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
 							Explore more builds, farms, and projects done on the server
 						</p>
-						<A href="/projects" className="text-lg font-medium custom-link">
+						<p className="text-lg font-medium custom-link group-hover:underline">
 							Project Gallery
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +196,7 @@ export default function Home() {
 									clipRule="evenodd"
 								/>
 							</svg>
-						</A>
+						</p>
 					</A>
 				</section>
 				<hr />
@@ -219,11 +228,11 @@ export default function Home() {
 							farms for sand, Elytra, sponges, and more.
 						</p>
 					</div>
-					<A href="/wiki/features" className="block md:flex text-left justify-between mt-8">
-						<p className="text-lg text-zinc-400 font-medium">
+					<A href="/wiki/features" className="block md:flex text-left justify-between mt-8 group">
+						<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
 							See what's new for technical players
 						</p>
-						<A href="/wiki/features" className="text-lg font-medium custom-link">
+						<p className="text-lg font-medium custom-link group-hover:underline">
 							Mechanics & Features
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +245,7 @@ export default function Home() {
 									clipRule="evenodd"
 								/>
 							</svg>
-						</A>
+						</p>
 					</A>
 				</section>
 				<hr />
@@ -272,9 +281,11 @@ export default function Home() {
 							</p>
 						</A>
 					</div>
-					<A href="/schematics" className="block md:flex text-left justify-between mt-8">
-						<p className="text-lg text-zinc-400 font-medium">See the complete schematic archive</p>
-						<A href="/schematics" className="text-lg font-medium custom-link">
+					<A href="/schematics" className="block md:flex text-left justify-between mt-8 group">
+						<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
+							See the complete schematic archive
+						</p>
+						<p className="text-lg font-medium custom-link group-hover:underline">
 							Schematic Archive
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -287,7 +298,7 @@ export default function Home() {
 									clipRule="evenodd"
 								/>
 							</svg>
-						</A>
+						</p>
 					</A>
 				</section>
 				<hr />
@@ -298,8 +309,10 @@ export default function Home() {
 						to create the best experience possible. See what our members think.
 					</p>
 					<div className="columns-1 md:columns-2 lg:columns-3 gap-8 overflow-hidden">
-						{testimonials.map((comment) => (
-							<div className="break-inside-avoid-column border border-zinc-700 p-4 mb-4 rounded-md text-left">
+						{testimonials.map((comment, i) => (
+							<div
+								key={i}
+								className="break-inside-avoid-column border border-zinc-700 p-4 mb-4 rounded-md text-left">
 								<div className="flex gap-4 mb-1.5 items-center">
 									<Image
 										alt=""
@@ -314,11 +327,13 @@ export default function Home() {
 							</div>
 						))}
 					</div>
-					<A href="/wiki/admin-overview" className="block md:flex text-left justify-between mt-8">
-						<p className="text-lg text-zinc-400 font-medium">
+					<A
+						href="/wiki/admin-overview"
+						className="block md:flex text-left justify-between mt-8 group">
+						<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
 							Read more about how we keep the server safe and civil
 						</p>
-						<A href="/wiki/admin-overview" className="text-lg font-medium custom-link">
+						<p className="text-lg font-medium custom-link group-hover:underline">
 							Public Admin Documentation
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +346,7 @@ export default function Home() {
 									clipRule="evenodd"
 								/>
 							</svg>
-						</A>
+						</p>
 					</A>
 				</section>
 				<hr />
