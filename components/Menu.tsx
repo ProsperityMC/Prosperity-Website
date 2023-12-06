@@ -28,7 +28,7 @@ export default function Menu() {
 	return (
 		<nav
 			className={`z-50 sticky top-0 border-b border-zinc-700/0 select-none duration-150 ${
-				hasScrolled ? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b" : "py-5"
+				hasScrolled ? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b" : "py-2.5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>
 				<span className="flex gap-8 items-center">
@@ -49,7 +49,7 @@ export default function Menu() {
 						</A>
 					))}
 				</span>
-				<span className="hidden sm:flex gap-8 flex-grow justify-end">
+				<span className="hidden md:flex gap-8 flex-grow justify-end">
 					{/* <div className="w-[100%] max-w-xs">
 						<div className="group hover:brightness-110 flex gap-2 place-items-center w-[100%] max-w-xs h-full placeholder-zinc-400 rounded duration-100 bg-zinc-800 focus:ring-transparent focus:border-yellow-400 px-2 border border-zinc-700">
 							<svg
@@ -80,13 +80,13 @@ export default function Menu() {
 					<A
 						href="https://ko-fi.com/prosperitymc"
 						noIcon={true}
-						className="bg-zinc-800 group hover:bg-zinc-700 duration-150 text-zinc-300 px-6 py-1 rounded  border border-zinc-700">
+						className="bg-zinc-800 group hover:bg-zinc-900 duration-150 text-zinc-300 px-6 py-1 rounded  border border-zinc-700 focus:border-yellow-400">
 						Donate{"  "}
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
 							fill="currentColor"
-							className="w-5 h-5 inline-block align-middle group-hover:fill-yellow-400 ease-in-out duration-500 group-hover:rotate-12 group-hover:scale-110">
+							className="w-5 h-5 inline-block align-text-top group-hover:fill-yellow-400 ease-in-out duration-500 group-hover:rotate-12 group-hover:scale-110">
 							<path d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
 						</svg>
 					</A>

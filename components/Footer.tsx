@@ -34,7 +34,7 @@ export default function Footer() {
 	];
 
 	return (
-		<nav className="w-full select-none py-20 mt-16 text-sm">
+		<nav className="border-t border-zinc-700 w-full select-none py-12 mt-16 text-sm bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md">
 			<div className="content-width flex justify-between gap-16">
 				<div className="flex flex-col gap-4">
 					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
