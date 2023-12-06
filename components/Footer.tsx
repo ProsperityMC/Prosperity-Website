@@ -9,16 +9,16 @@ export default function Footer() {
 			header: "Social",
 			links: [
 				{ text: "Discord", href: "https://discord.gg/Gf5tDk5EhR" },
+				{ text: "Ko-fi", href: "https://ko-fi.com/prosperitymc" },
 				{ text: "YouTube", href: "https://youtube.com/@prosperitymc" },
 				{ text: "X", href: "https://twitter.com/prosperitymc" },
-				{ text: "GitHub", href: "https://github.com/ProsperityMC" },
-				{ text: "Ko-fi", href: "https://ko-fi.com/prosperitymc" }
+				{ text: "GitHub", href: "https://github.com/ProsperityMC" }
 			]
 		},
 		{
 			header: "Resources",
 			links: [
-				{ text: "Web Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
+				{ text: "Site Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
 				{ text: "Live Map", href: "https://map.prosperitymc.net" }
 			]
 		},
@@ -39,10 +39,10 @@ export default function Footer() {
 				<div className="flex flex-col gap-4">
 					<A href={"/"} className="items-center inline-flex overflow-hidden font-bold font-header">
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
-						<header>Prosperity MC</header>
+						<header className="hidden md:block">Prosperity MC</header>
 					</A>
 				</div>
-				<div className="flex gap-16 flex-wrap">
+				<div className="flex gap-12 flex-wrap">
 					{content.map((entry) => (
 						<div key={entry.header} className="flex flex-col whitespace-pre min-w-[6rem] gap-y-2">
 							<header className="type-sub-header text-xs text-zinc-400">{entry.header}</header>

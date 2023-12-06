@@ -126,8 +126,8 @@ export default function Home() {
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
 							<Highlight>Work better together in survival and creative.</Highlight> Take advantage
-							of a powerful creative server, real-time schematic syncing, and a cooperative community
-							willing to help with large scale builds.
+							of a powerful creative server, real-time schematic syncing, and a cooperative
+							community willing to help with large scale builds.
 						</p>
 						<p className="text-lg text-zinc-400 font-medium max-w-2xl text-left">
 							<Highlight>A wider palette than ever.</Highlight> With more renewable resources
@@ -170,7 +170,7 @@ export default function Home() {
 							}
 						]}
 					/>
-					<div className="block md:flex text-left justify-between mt-8">
+					<A href="/projects" className="block md:flex text-left justify-between mt-8">
 						<p className="text-lg text-zinc-400 font-medium">
 							Explore more builds, farms, and projects done on the server
 						</p>
@@ -188,7 +188,7 @@ export default function Home() {
 								/>
 							</svg>
 						</A>
-					</div>
+					</A>
 				</section>
 				<hr />
 				<section className="flex flex-col gap-12 text-center markdown my-20">
@@ -219,7 +219,7 @@ export default function Home() {
 							farms for sand, Elytra, sponges, and more.
 						</p>
 					</div>
-					<div className="block md:flex text-left justify-between mt-8">
+					<A href="/wiki/features" className="block md:flex text-left justify-between mt-8">
 						<p className="text-lg text-zinc-400 font-medium">
 							See what's new for technical players
 						</p>
@@ -237,8 +237,11 @@ export default function Home() {
 								/>
 							</svg>
 						</A>
-					</div>
-					<header className="text-3xl type-header">Designed On Prosperity</header>
+					</A>
+				</section>
+				<hr />
+				<section className="flex flex-col gap-12 text-center markdown my-20">
+					<header className="text-4xl type-header">Designed On Prosperity</header>
 					<p>Explore the tech created by our members.</p>
 					<div className="grid grid-cols-1 lg:grid-cols-3 transition-colors gap-8 w-full">
 						<A
@@ -269,9 +272,9 @@ export default function Home() {
 							</p>
 						</A>
 					</div>
-					<div className="block md:flex text-left justify-between mt-8">
+					<A href="/schematics" className="block md:flex text-left justify-between mt-8">
 						<p className="text-lg text-zinc-400 font-medium">See the complete schematic archive</p>
-						<A href="#learn-more" className="text-lg font-medium custom-link">
+						<A href="/schematics" className="text-lg font-medium custom-link">
 							Schematic Archive
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +288,7 @@ export default function Home() {
 								/>
 							</svg>
 						</A>
-					</div>
+					</A>
 				</section>
 				<hr />
 				<section className="flex flex-col gap-12 text-center markdown my-20">
@@ -311,7 +314,7 @@ export default function Home() {
 							</div>
 						))}
 					</div>
-					<div className="block md:flex text-left justify-between mt-8">
+					<A href="/wiki/admin-overview" className="block md:flex text-left justify-between mt-8">
 						<p className="text-lg text-zinc-400 font-medium">
 							Read more about how we keep the server safe and civil
 						</p>
@@ -329,7 +332,7 @@ export default function Home() {
 								/>
 							</svg>
 						</A>
-					</div>
+					</A>
 				</section>
 				<hr />
 				<section className="flex flex-col gap-12 text-center markdown my-20">
