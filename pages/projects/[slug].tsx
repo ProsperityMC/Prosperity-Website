@@ -40,7 +40,7 @@ export default function ProjectPage({
 					alt: ""
 				}))}
 			/>
-			<article className="w-full markdown max-w-4xl mx-auto mb-20">
+			<article className="w-full markdown max-w-5xl mx-auto mb-20">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}

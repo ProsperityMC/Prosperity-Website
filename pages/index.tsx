@@ -85,7 +85,7 @@ export default function Home() {
 				className="bg-no-repeat bg-bottom w-full h-[58rem] -z-50 absolute left-0 top-0 opacity-50"
 			/>
 			<main className="markdown">
-				<section className="flex flex-col gap-12 text-center markdown my-60">
+				<section className="flex flex-col gap-12 text-center markdown my-52">
 					<header className="text-6xl type-header">Go Further Than Ever</header>
 					<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 						Prosperity is a Minecraft community focused on high-level technical and building
@@ -150,31 +150,26 @@ export default function Home() {
 						</p>
 					</div>
 					<Slideshow
+						quality={80}
 						images={[
 							{
-								src: "/index/builds/a.png",
+								src: "/projects/mhov-random-rotor-gharmonica-base_0.png",
 								width: 1920,
 								height: 1080,
-								alt: '"The Aabshaar Minar" by Mhov, Rotor, and gharmonica'
+								alt: "Base by Mhov, Random Cryptid, Rotor, and gharmonica"
 							},
 							{
-								src: "/index/builds/b.png",
+								src: "/projects/nether-hub_0.png",
 								width: 1920,
 								height: 1080,
-								alt: '"The Eye Of Index" by Index'
+								alt: "Community nether hub"
 							},
 							{
-								src: "/index/builds/c.png",
+								src: "/projects/benbenney-iron-farm.png",
 								width: 1920,
 								height: 1080,
-								alt: "Nether hub by MadPancho"
+								alt: "Benbenney's iron farm"
 							},
-							{
-								src: "/index/builds/d.png",
-								width: 1920,
-								height: 1080,
-								alt: "Sand castle by CarbonGhost"
-							}
 						]}
 					/>
 					<A href="/projects" className="block md:flex text-left justify-between mt-8 group">
@@ -376,7 +371,7 @@ export default function Home() {
 					</div>
 				</section>
 				<hr />
-				<section className="flex flex-col gap-12 text-center markdown my-52">
+				<section className="flex flex-col gap-12 text-center markdown my-36">
 					<header className="text-5xl">This is Prosperity</header>
 					<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 						Ready to join our community? Join our Discord and apply to be whitelisted now.

@@ -17,7 +17,7 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 				<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 					A detailed gallery of projects and places on Prosperity.
 				</p>
-				<section className="columns-1 md:columns-2 lg:columns-3 w-full overflow-hidden gap-8 space-y-8">
+				<section className="columns-1 md:columns-2 w-full overflow-hidden gap-8 space-y-8">
 					{allData.map((p) =>
 						p.imageFiles.map((i) => (
 							<A

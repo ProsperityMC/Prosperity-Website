@@ -39,7 +39,7 @@ export default function WikiPage({
 			<div className="hidden md:flex">
 				<WikiMenu pages={allData} baseUrl="/wiki" />
 			</div>
-			<article className="w-full markdown max-w-4xl mx-auto min-h-screen">
+			<article className="w-full markdown max-w-5xl mx-auto min-h-screen">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}
