@@ -118,7 +118,7 @@
 	}
 
 	.custom-link {
-		@apply text-yellow-400 hover:underline;
+		@apply text-yellow-500 hover:underline transition-colors duration-150 hover:text-yellow-400;
 	}
 }
 
