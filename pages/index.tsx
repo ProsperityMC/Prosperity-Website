@@ -110,9 +110,7 @@ export default function Home() {
 								</svg>
 							</button>
 						</A>
-						<A
-							href="/wiki/new-player-guide"
-							className="hidden md:inline custom-link type-header">
+						<A href="/wiki/new-player-guide" className="hidden md:inline custom-link type-header">
 							New Player Guide{" "}
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
