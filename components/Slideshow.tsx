@@ -6,6 +6,7 @@ export default function Slideshow(props: {
 	autoScroll?: boolean;
 	autoScrollDuration?: number;
 	autoScrollDirection?: "forward" | "backward";
+	quality?: number;
 }) {
 	const [imageIndex, setImageIndex] = useState(0);
 	const advance = (direction: "forward" | "backward") => {
@@ -30,33 +31,34 @@ export default function Slideshow(props: {
 	}
 
 	return (
-		<div>
+		<div className="aspect-video">
 			{props.images.map((image, index) => (
 				<Image
 					priority={index == 0 ? true : false}
 					hidden={imageIndex == index ? false : true}
 					key={image.src}
-					className="rounded-lg"
+					className="rounded-lg w-auto h-full mx-auto bg-zinc-800"
 					src={image.src}
 					width={image.width}
 					height={image.height}
 					alt={image.alt}
+					quality={props.quality || 75}
+					loading="eager"
 				/>
 			))}
-			<div className="py-4 flex justify-between self-center">
-				<p>{props.images[imageIndex].alt}</p>
+			<div className="py-4 flex justify-center self-center">
 				<span className="flex gap-6">
 					<button
 						className="text-zinc-50 active:text-yellow-500 duration-200"
 						onClick={() => advance("backward")}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
+							viewBox="0 0 20 20"
 							fill="currentColor"
-							className="w-6 h-6">
+							className="w-5 h-5">
 							<path
 								fillRule="evenodd"
-								d="M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z"
+								d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
 								clipRule="evenodd"
 							/>
 						</svg>
@@ -69,12 +71,12 @@ export default function Slideshow(props: {
 						onClick={() => advance("forward")}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
+							viewBox="0 0 20 20"
 							fill="currentColor"
-							className="w-6 h-6">
+							className="w-5 h-5">
 							<path
 								fillRule="evenodd"
-								d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+								d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
 								clipRule="evenodd"
 							/>
 						</svg>

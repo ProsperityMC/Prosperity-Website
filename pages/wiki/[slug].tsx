@@ -70,7 +70,7 @@ export default function WikiPage({
 					className="custom-link inline"
 					href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
 					Edit this page on GitHub
-			</A>
+				</A>
 			</article>
 		</div>
 	);
