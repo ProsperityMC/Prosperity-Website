@@ -1,10 +1,10 @@
 import { InferGetStaticPropsType } from "next";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
-import Head from "next/head";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {

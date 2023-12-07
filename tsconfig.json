@@ -24,6 +24,6 @@
 			"@lib/*":		 ["./lib/*"]
 		}
 	},
-	"include": ["../next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/wiki/[slug].not_tsx"],
+	"include": ["../next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/wiki/[slug].not_tsx", "projects/bingus.msx"],
 	"exclude": ["node_modules"]
 }

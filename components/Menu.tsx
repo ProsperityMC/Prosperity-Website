@@ -4,18 +4,18 @@ import Image from "next/image";
 
 import logo from "@public/prosperity.svg";
 import A from "@components/A";
-import SearchWindow from "./SearchWindow";
+// import SearchWindow from "./SearchWindow";
 
 export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
-		{ href: "/projects", text: "Projects" },
+		{ href: "/projects", text: "Projects", loose: true },
 		{ href: "/wiki", text: "Wiki", loose: true },
 		// { href: "/database", text: "Database" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
-	const [searchQuery, setSearchQuery] = useState("");
+	// const [searchQuery, setSearchQuery] = useState("");
 
 	// TODO: Fix a behavior where the signal isn't updated upon reloading a page
 	// with a saved scroll position.
@@ -28,7 +28,9 @@ export default function Menu() {
 	return (
 		<nav
 			className={`z-50 sticky top-0 border-b border-zinc-700/0 select-none duration-150 ${
-				hasScrolled ? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b" : "py-2.5"
+				hasScrolled
+					? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b"
+					: "py-2.5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>
 				<span className="flex gap-8 items-center">
