@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import A from "@components/A";
 import { projectPageDataGet, projectPageDataGetAll } from "@lib/lib";
 import Slideshow from "@components/Slideshow";
+import Head from "next/head";
 
 export async function getStaticPaths() {
 	const paths = (await projectPageDataGetAll()).map((page) => {
@@ -31,6 +32,10 @@ export default function ProjectPage({
 
 	return (
 		<div>
+			<Head>
+				<title>{meta?.title || slug}</title>
+				<meta name="description" content={meta?.short || "A project page"} />
+			</Head>
 			<Slideshow
 				quality={100}
 				images={imageFiles.map((i) => ({

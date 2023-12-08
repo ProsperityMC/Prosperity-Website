@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Slideshow from "@components/Slideshow";
 import A from "@components/A";
+import Head from "next/head";
 
 function Highlight(props: { children: React.ReactNode }) {
 	return <span className="text-zinc-100">{props.children}</span>;
@@ -80,10 +81,23 @@ export default function Home() {
 
 	return (
 		<>
-			<div
-				id="headline"
-				className="bg-no-repeat bg-bottom w-full h-[58rem] -z-50 absolute left-0 top-0 opacity-50"
-			/>
+			<Head>
+				<title>This is Prosperity</title>
+				<meta
+					property="og:description"
+					content="Prosperity is a Minecraft community focused on high-level technical and building gamepolay"
+				/>
+			</Head>
+			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-50">
+				<Image
+					priority={true}
+					quality={80}
+					className="object-bottom object-cover"
+					alt=""
+					src="/headline.png"
+					fill
+				/>
+			</div>
 			<main className="markdown">
 				<section className="flex flex-col gap-12 text-center markdown my-52">
 					<header className="text-6xl type-header">Go Further Than Ever</header>
@@ -169,7 +183,7 @@ export default function Home() {
 								width: 1920,
 								height: 1080,
 								alt: "Benbenney's iron farm"
-							},
+							}
 						]}
 					/>
 					<A href="/projects" className="block md:flex text-left justify-between mt-8 group">

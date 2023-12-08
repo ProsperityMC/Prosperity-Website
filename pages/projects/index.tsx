@@ -2,6 +2,7 @@ import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import A from "@components/A";
 import { projectPageDataGetAll } from "@lib/lib";
+import Head from "next/head";
 
 export async function getStaticProps() {
 	const allData = await projectPageDataGetAll();
@@ -12,10 +13,17 @@ export async function getStaticProps() {
 export default function Projects({ allData }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="markdown">
+			<Head>
+				<title>Built On Prosperity</title>
+				<meta
+					property="og:description"
+					content="Explore the builds, farms, and projects created on Prosperity."
+				/>
+			</Head>
 			<section className="flex flex-col gap-12 text-center markdown">
 				<header className="text-4xl type-header">Built On Prosperity</header>
 				<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
-					A detailed gallery of projects and places on Prosperity.
+					Explore the builds, farms, and projects created on Prosperity.
 				</p>
 				<section className="columns-1 md:columns-2 w-full overflow-hidden gap-8 space-y-8">
 					{allData.map((p) =>
@@ -38,7 +46,9 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 						))
 					)}
 				</section>
-				<A href="/wiki/features" className="my-20 block md:flex text-left justify-between group">
+				<A
+					href="/wiki/wiki-contribution#adding-projects"
+					className="my-20 block md:flex text-left justify-between group">
 					<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
 						Looking to add your creation to the project gallery?
 					</p>

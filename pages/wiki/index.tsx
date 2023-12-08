@@ -16,13 +16,13 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 	return (
 		<div className="flex gap-8">
 			<Head>
-				<title>Wiki Index</title>
-				<meta name="description" content="Directory of wiki pages" />
+				<title>Wiki</title>
+				<meta property="og:description" content="Directory of wiki pages" />
 			</Head>
 			<div className="hidden md:flex">
 				<WikiMenu pages={data} baseUrl="/wiki" />
 			</div>
-			<div className="flex flex-col gap-8 max-w-4xl mx-auto">
+			<div className="flex flex-col gap-8 max-w-5xl mx-auto">
 				<article className="markdown">
 					<section className="markdown">
 						<header className="text-4xl">Index</header>
@@ -54,7 +54,7 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 								<header className="text-lg type-header my-1.5">
 									{page.meta?.title || page.slug}
 								</header>
-								<p className="mb-1.4 max-w-lg">{page.meta?.short || ""}</p>
+								<p className="mb-1.4 max-w-sm">{page.meta?.short || ""}</p>
 							</A>
 						))}
 				</div>
