@@ -20,7 +20,7 @@
 
 @layer components {
 	.type-nav-link {
-		@apply font-header text-zinc-200 font-medium;
+		@apply font-header text-zinc-100 font-medium;
 	}
 
 	.type-sub-header {
@@ -29,7 +29,7 @@
 
 	.type-header {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 font-bold;
+		@apply font-header text-zinc-100 font-bold;
 	}
 
 	.markdown {
@@ -42,32 +42,32 @@
 
 	.markdown h1 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-4xl font-bold;
+		@apply font-header text-4xl font-bold;
 	}
 
 	.markdown h2 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-3xl font-bold;
+		@apply font-header text-3xl font-bold;
 	}
 
 	.markdown h3 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-2xl font-bold;
+		@apply font-header text-2xl font-bold;
 	}
 
 	.markdown h4 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-xl font-bold;
+		@apply font-header text-xl font-bold;
 	}
 
 	.markdown h5 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-lg font-bold;
+		@apply font-header text-lg font-bold;
 	}
 
 	.markdown h6 {
 		font-family: "Inter", Arial, Helvetica, sans-serif;
-		@apply font-header text-zinc-200 text-sm font-bold;
+		@apply font-header text-sm font-bold;
 	}
 
 	.markdown hr {
