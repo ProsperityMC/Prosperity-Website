@@ -15,10 +15,10 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta
 					property="og:description"
 					content="Prosperity is a Minecraft community focused on high-level technical and building
-						gamepolay"
+						gameplay"
 				/>
 				<meta name="theme-color" content="#fec11b" />
-				<meta property="og:image" content="_next/image?url=%2Fopengraph-image.png&w=3840&q=100" />
+				<meta property="og:image" content="/_next/image?url=%2Fopengraph-image.png&w=3840&q=100" />
 			</Head>
 			<Analytics />
 			<SpeedInsights />

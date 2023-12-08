@@ -17,7 +17,7 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 				<title>Built On Prosperity</title>
 				<meta
 					property="og:description"
-					content="Explore the builds, farms, and projects created on Prosperity."
+					content="Explore the builds, farms, and projects created on Prosperity"
 				/>
 			</Head>
 			<section className="flex flex-col gap-12 text-center markdown">

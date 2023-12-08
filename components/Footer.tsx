@@ -30,6 +30,16 @@ export default function Footer() {
 				{ text: "Resource Pack", href: "https://github.com/ProsperityMC/Prosperity-Resource-Pack" },
 				{ text: "Scripts", href: "https://github.com/ProsperityMC/Prosperity-Scripts" }
 			]
+		},
+		{
+			header: "Friends",
+			links: [
+				{ text: "Canada", href: "https://visitquebec.info" },
+				{ text: "Lab Safety", href: "https://remove.directory/chemicals" },
+				{ text: "Melon", href: "https://mrmelon54.com" },
+				{ text: "Xonotic", href: "https://xonotic.org/" },
+				{ text: "MrBeast", href: "https://www.youtube.com/@MrBeast/" },
+			]
 		}
 	];
 

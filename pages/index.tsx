@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Head from "next/head";
 
+import MainImage from "public/index/main.png";
 import Slideshow from "@components/Slideshow";
 import A from "@components/A";
-import Head from "next/head";
 
 function Highlight(props: { children: React.ReactNode }) {
 	return <span className="text-zinc-100">{props.children}</span>;
@@ -22,6 +23,19 @@ export default function Home() {
 			iconUrl: "/index/users/interplanetary.webp"
 		},
 		{
+			user: "Andt",
+			text: (
+				<>
+					I've been playing on Prosperity for about a year now, and although the server had already
+					been up for quite a while longer, the amazing members of the server helped me get started
+					faster than I expected. They're great technical players and equally great builders, but
+					most of all, they are the best community I have ever seen in a Minecraft-Server, and I can
+					only recommend it.
+				</>
+			),
+			iconUrl: "/index/users/andt.webp"
+		},
+		{
 			user: "Takeout",
 			text: (
 				<>
@@ -31,51 +45,6 @@ export default function Home() {
 				</>
 			),
 			iconUrl: "/index/users/takeout.webp"
-		},
-		{
-			user: "Username",
-			text: (
-				<>
-					<Highlight>Prosperity is great.</Highlight> Lorem ipsum dolor sit amet.
-				</>
-			),
-			iconUrl: ""
-		},
-		{
-			user: "Username",
-			text: (
-				<>
-					<Highlight>Prosperity is great.</Highlight> Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Neque, esse dolore! Laudantium quis, error, aspernatur maxime veniam
-					laborum rem quibusdam laboriosam magnam, ut beatae vero accusamus nemo alias ad? Id? rem
-					quibusdam laboriosam ma. Ra.
-				</>
-			),
-			iconUrl: ""
-		},
-		{
-			user: "Username",
-			text: (
-				<>
-					<Highlight>Prosperity is great.</Highlight> Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Neque, esse dolore! Laudantium quis, error, aspernatur maxime veniam
-					laborum rem quibusdam laboriosam magnam, ut beatae vero accusamus nemo alias ad? Id? rem
-					quibusdam laboriosam ma. Ra.
-				</>
-			),
-			iconUrl: ""
-		},
-		{
-			user: "Username",
-			text: (
-				<>
-					<Highlight>Prosperity is great.</Highlight> Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Neque, esse dolore! Laudantium quis, error, aspernatur maxime veniam
-					laborum rem quibusdam laboriosam magnam, ut beatae vero accusamus nemo alias ad? Id? rem
-					quibusdam laboriosam ma. Ra.
-				</>
-			),
-			iconUrl: ""
 		}
 	];
 
@@ -85,16 +54,16 @@ export default function Home() {
 				<title>This is Prosperity</title>
 				<meta
 					property="og:description"
-					content="Prosperity is a Minecraft community focused on high-level technical and building gamepolay"
+					content="Prosperity is a Minecraft community focused on high-level technical and building gameplay"
 				/>
 			</Head>
 			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-50">
 				<Image
 					priority={true}
-					quality={80}
-					className="object-bottom object-cover"
+					quality={90}
+					className="blur-sm md:blur-none duration-200 object-cover object-bottom"
 					alt=""
-					src="/headline.png"
+					src={MainImage}
 					fill
 				/>
 			</div>
@@ -103,7 +72,7 @@ export default function Home() {
 					<header className="text-6xl type-header">Go Further Than Ever</header>
 					<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 						Prosperity is a Minecraft community focused on high-level technical and building
-						gamepolay. <Highlight>Create</Highlight>, <Highlight>engineer</Highlight>, and{" "}
+						gameplay. <Highlight>Create</Highlight>, <Highlight>engineer</Highlight>, and{" "}
 						<Highlight>grow</Highlight> on a server intent on providing the best possible experience
 						for everyone.
 					</p>
@@ -210,7 +179,7 @@ export default function Home() {
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Expanding The Minds of Engineers</header>
 					<p>
-						Technical gamepolay is at the core of Prosperity, with the server focused heavily on
+						Technical gameplay is at the core of Prosperity, with the server focused heavily on
 						allowing experimentation and new ideas.
 					</p>
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
@@ -260,33 +229,77 @@ export default function Home() {
 					<header className="text-4xl type-header">Designed On Prosperity</header>
 					<p>Explore the tech created by our members.</p>
 					<div className="grid grid-cols-1 lg:grid-cols-3 transition-colors gap-8 w-full">
-						<A
-							href="/"
-							className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
-							<header className="text-lg type-header my-1.5">Neat Machine</header>
+						<div className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
+							<Image
+								className="max-w-xs mx-auto"
+								alt=""
+								src="/index/schematics/8x-speed-trencher.png"
+								width={512}
+								height={512}
+							/>
+							<header className="text-lg type-header my-1.5">8x Speed Trencher</header>
 							<p className="mb-1.4">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore placeat
-								molestiae non dolore aut ullam cumque esse.
+								A wicked fast trencher, in-part responsible for the huge number of perimeters on the
+								server.
 							</p>
-						</A>
-						<A
-							href="/"
-							className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
-							<header className="text-lg type-header my-1.5">Neat Machine</header>
+							<div className="flex gap-4 mt-1.5 items-center">
+								<Image
+									alt=""
+									src="/index/users/sg.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<header className="text-lg">Sg</header>
+							</div>
+						</div>
+						<div className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
+							<Image
+								className="max-w-xs mx-auto"
+								alt=""
+								src="/index/schematics/shulker-loader.png"
+								width={512}
+								height={512}
+							/>
+							<header className="text-lg type-header my-1.5">Fast Shulker Loader</header>
 							<p className="mb-1.4">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore placeat
-								molestiae non dolore aut ullam cumque esse.
+								A fast and satisfying design for loading preset Shulker configurations.
 							</p>
-						</A>
-						<A
-							href="/"
-							className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
-							<header className="text-lg type-header my-1.5">Neat Machine</header>
+							<div className="flex gap-4 mt-1.5 items-center">
+								<Image
+									alt=""
+									src="/index/users/index.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<header className="text-lg">Index</header>
+							</div>
+						</div>
+						<div className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
+							<Image
+								className="max-w-xs mx-auto"
+								alt=""
+								src="/index/schematics/8x-speed-trencher.png"
+								width={512}
+								height={512}
+							/>
+							<header className="text-lg type-header my-1.5">8x Speed Trencher</header>
 							<p className="mb-1.4">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore placeat
-								molestiae non dolore aut ullam cumque esse.
+								A wicked fast trencher, in-part responsible for the huge number of perimeters on the
+								server.
 							</p>
-						</A>
+							<div className="flex gap-4 mt-1.5 items-center">
+								<Image
+									alt=""
+									src="/index/users/sg.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<header className="text-lg">Sg</header>
+							</div>
+						</div>
 					</div>
 					<A href="/schematics" className="block md:flex text-left justify-between mt-8 group">
 						<p className="group-hover:text-zinc-300 transition-colors duration-150 text-lg text-zinc-400 font-medium">
@@ -360,7 +373,7 @@ export default function Home() {
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Fast and Reliable</header>
 					<p>
-						Key to both technical gamepolay and quality-of-life, we take performance and reliability
+						Key to both technical gameplay and quality-of-life, we take performance and reliability
 						seriously.
 					</p>
 					<div className="grid grid-cols-1 grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-12  max-w-screen-lg mx-auto">
