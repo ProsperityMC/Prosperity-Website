@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
 						gamepolay"
 				/>
 				<meta name="theme-color" content="#fec11b" />
+				<meta property="og:image" content="../public/opengraph-image.png" />
 			</Head>
 			<Component {...pageProps} />
 		</Layout>
