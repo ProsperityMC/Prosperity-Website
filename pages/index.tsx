@@ -69,7 +69,7 @@ export default function Home() {
 			</div>
 			<main className="markdown">
 				<section className="flex flex-col gap-12 text-center markdown my-52">
-					<header className="text-6xl type-header">Go Further Than Ever</header>
+					<header className="text-6xl type-header">Build Different, Go Beyond</header>
 					<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 						Prosperity is a Minecraft community focused on high-level technical and building
 						gameplay. <Highlight>Create</Highlight>, <Highlight>engineer</Highlight>, and{" "}
