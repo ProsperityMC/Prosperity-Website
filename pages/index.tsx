@@ -257,6 +257,50 @@ export default function Home() {
 							<Image
 								className="max-w-xs mx-auto"
 								alt=""
+								src="/index/schematics/void-trader.png"
+								width={512}
+								height={512}
+							/>
+							<header className="text-lg type-header my-1.5">Void Trading Hall</header>
+							<p className="mb-1.4">
+								A fast, highly performant, void trading hall. Utilizes chainstone and auto-crafting.
+							</p>
+							<div className="flex gap-4 mt-1.5 items-center">
+								<Image
+									alt=""
+									src="/index/users/madpancho.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<Image
+									alt=""
+									src="/index/users/devil.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<Image
+									alt=""
+									src="/index/users/bothebot.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<Image
+									alt=""
+									src="/index/users/sg.webp"
+									width={256}
+									height={256}
+									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+								/>
+								<header className="text-lg">Mad, Devil, BotheBot, & Sg</header>
+							</div>
+						</div>
+						<div className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
+							<Image
+								className="max-w-xs mx-auto"
+								alt=""
 								src="/index/schematics/shulker-loader.png"
 								width={512}
 								height={512}
@@ -274,30 +318,6 @@ export default function Home() {
 									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
 								/>
 								<header className="text-lg">Index</header>
-							</div>
-						</div>
-						<div className="p-4 pb-6 block hover:bg-zinc-900 text-left rounded-md duration-200 transform focus:border-yellow-400 bg-zinc-800 border border-zinc-700 w-full">
-							<Image
-								className="max-w-xs mx-auto"
-								alt=""
-								src="/index/schematics/8x-speed-trencher.png"
-								width={512}
-								height={512}
-							/>
-							<header className="text-lg type-header my-1.5">8x Speed Trencher</header>
-							<p className="mb-1.4">
-								A wicked fast trencher, in-part responsible for the huge number of perimeters on the
-								server.
-							</p>
-							<div className="flex gap-4 mt-1.5 items-center">
-								<Image
-									alt=""
-									src="/index/users/sg.webp"
-									width={256}
-									height={256}
-									className="w-8 h-8 bg-zinc-800 rounded-full border-none"
-								/>
-								<header className="text-lg">Sg</header>
 							</div>
 						</div>
 					</div>
