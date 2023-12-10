@@ -20,6 +20,8 @@ export default function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta name="theme-color" content="#fec11b" />
 				<meta property="og:image" content="/_next/image?url=%2Fopengraph-image.png&w=3840&q=100" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="560" />
 			</Head>
 			<Analytics />
 			<SpeedInsights />
