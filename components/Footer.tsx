@@ -19,7 +19,8 @@ export default function Footer() {
 			header: "Resources",
 			links: [
 				{ text: "Site Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
-				{ text: "Live Map", href: "https://map.prosperitymc.net" }
+				{ text: "Live Map", href: "https://map.prosperitymc.net" },
+				{ text: "Historical Maps", href: "/historical-maps" }
 			]
 		},
 		{
