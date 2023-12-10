@@ -34,6 +34,7 @@ export default function WikiPage({
 		<div className="flex gap-8">
 			<Head>
 				<title>{meta?.title || slug}</title>
+				<meta property="og:title" content={meta?.title || slug} />
 				<meta name="description" content={meta?.short || "A wiki page"} />
 			</Head>
 			<div className="hidden md:flex">

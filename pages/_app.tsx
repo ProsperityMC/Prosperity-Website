@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<meta name="author" content="Prosperity MC" />
 				<title>This is Prosperity</title>
+				<meta property="og:title" content="This is Prosperity" />
 				<meta
 					property="og:description"
 					content="Prosperity is a Minecraft community focused on high-level technical and building

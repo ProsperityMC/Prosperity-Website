@@ -15,6 +15,7 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 		<div className="markdown">
 			<Head>
 				<title>Built On Prosperity</title>
+				<meta property="og:title" content="Built On Prosperity" />
 				<meta
 					property="og:description"
 					content="Explore the builds, farms, and projects created on Prosperity"

@@ -17,6 +17,7 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 		<div className="flex gap-8">
 			<Head>
 				<title>Wiki</title>
+				<meta property="og:title" content="Wiki" />
 				<meta property="og:description" content="Directory of wiki pages" />
 			</Head>
 			<div className="hidden md:flex">

@@ -6,6 +6,7 @@ export default function Schematics() {
 		<div className="markdown">
 			<Head>
 				<title>Schematics</title>
+				<meta property="og:title" content="Schematics" />
 				<meta property="og:description" content="Explore the archive of technical schematics" />
 			</Head>
 			<section className="flex flex-col gap-12 text-center markdown">

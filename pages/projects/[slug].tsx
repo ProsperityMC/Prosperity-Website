@@ -34,6 +34,7 @@ export default function ProjectPage({
 		<div>
 			<Head>
 				<title>{meta?.title || slug}</title>
+				<meta property="og:title" content={meta?.title || slug} />
 				<meta name="description" content={meta?.short || "A project page"} />
 			</Head>
 			<Slideshow

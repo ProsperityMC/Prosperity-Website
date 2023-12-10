@@ -52,6 +52,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>This is Prosperity</title>
+				<meta property="og:title" content="This is Prosperity" />
 				<meta
 					property="og:description"
 					content="Prosperity is a Minecraft community focused on high-level technical and building gameplay"

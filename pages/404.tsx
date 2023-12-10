@@ -5,6 +5,7 @@ export default function NotFound() {
 		<div className="markdown flex flex-col gap-8 text-center">
 			<Head>
 				<title>Content Not Found</title>
+				<meta property="og:title" content="Not Found" />
 				<meta property="og:description" content="Error 404" />
 			</Head>
 			<header className="text-4xl">Error 404</header>
