@@ -1,16 +1,16 @@
 import A from "@components/A";
+import Metadata from "@components/Metadata";
 import Head from "next/head";
 
 export default function Schematics() {
 	return (
 		<div className="markdown">
-			<Head>
-				<title>Schematics</title>
-				<meta property="og:title" content="Schematics" />
-				<meta property="og:description" content="Explore the archive of technical schematics" />
-			</Head>
+			<Metadata
+				title="Designed On Prosperity"
+				description="Explore the complete schematic archive."
+			/>
 			<section className="flex flex-col gap-12 text-center markdown">
-				<header className="text-4xl type-header">Schematics</header>
+				<header className="text-4xl type-header">Designed On Prosperity</header>
 				<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 					Feature not implemented yet, come back later.
 				</p>

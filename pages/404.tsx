@@ -1,13 +1,9 @@
-import Head from "next/head";
+import Metadata from "@components/Metadata";
 
 export default function NotFound() {
 	return (
 		<div className="markdown flex flex-col gap-8 text-center">
-			<Head>
-				<title>Content Not Found</title>
-				<meta property="og:title" content="Not Found" />
-				<meta property="og:description" content="Error 404" />
-			</Head>
+			<Metadata title="Content Not Found" description="Error 404, this content does not exist" />
 			<header className="text-4xl">Error 404</header>
 			<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">
 				The requested page does not exist.

@@ -4,6 +4,7 @@ import Head from "next/head";
 import MainImage from "public/index/main.png";
 import Slideshow from "@components/Slideshow";
 import A from "@components/A";
+import Metadata from "@components/Metadata";
 
 function Highlight(props: { children: React.ReactNode }) {
 	return <span className="text-zinc-100">{props.children}</span>;
@@ -50,14 +51,14 @@ export default function Home() {
 
 	return (
 		<>
-			<Head>
-				<title>This is Prosperity</title>
-				<meta property="og:title" content="This is Prosperity" />
-				<meta
-					property="og:description"
-					content="Prosperity is a Minecraft community focused on high-level technical and building gameplay"
-				/>
-			</Head>
+			<Metadata
+				title="This is Prosperity"
+				description="Prosperity is a Minecraft community focused on high-level technical and building
+						gameplay, go beyond, build different"
+				imageUrl="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100"
+				imageHeight={1200}
+				imageWidth={560}
+			/>
 			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-50">
 				<Image
 					priority={true}

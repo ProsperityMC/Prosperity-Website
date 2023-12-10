@@ -2,7 +2,7 @@ import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import A from "@components/A";
 import { projectPageDataGetAll } from "@lib/lib";
-import Head from "next/head";
+import Metadata from "@components/Metadata";
 
 export async function getStaticProps() {
 	const allData = await projectPageDataGetAll();
@@ -13,14 +13,10 @@ export async function getStaticProps() {
 export default function Projects({ allData }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="markdown">
-			<Head>
-				<title>Built On Prosperity</title>
-				<meta property="og:title" content="Built On Prosperity" />
-				<meta
-					property="og:description"
-					content="Explore the builds, farms, and projects created on Prosperity"
-				/>
-			</Head>
+			<Metadata
+				title="Built On Prosperity"
+				description="Explore the builds, farms, and projects created on Prosperity"
+			/>
 			<section className="flex flex-col gap-12 text-center markdown">
 				<header className="text-4xl type-header">Built On Prosperity</header>
 				<p className="text-lg text-zinc-400 font-medium max-w-2xl mx-auto">

@@ -4,7 +4,7 @@ import A from "@components/A";
 import { wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Index from "@wiki/index.mdx";
-import Head from "next/head";
+import Metadata from "@components/Metadata";
 
 export async function getStaticProps() {
 	const data = await wikiPageDataGetAll();
@@ -15,11 +15,7 @@ export async function getStaticProps() {
 export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="flex gap-8">
-			<Head>
-				<title>Wiki</title>
-				<meta property="og:title" content="Wiki" />
-				<meta property="og:description" content="Directory of wiki pages" />
-			</Head>
+			<Metadata title="Wiki" description="Directory of wiki pages" />
 			<div className="hidden md:flex">
 				<WikiMenu pages={data} baseUrl="/wiki" />
 			</div>
