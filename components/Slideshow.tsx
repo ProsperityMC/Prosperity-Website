@@ -63,7 +63,7 @@ export default function Slideshow(props: {
 							/>
 						</svg>
 					</button>
-					<p className="text-sm text-zinc-400 self-center select-none">
+					<p className="text-sm text-zinc-300 self-center select-none">
 						{imageIndex + 1} of {props.images.length}
 					</p>
 					<button

@@ -23,7 +23,7 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 				<article className="markdown">
 					<section className="markdown">
 						<header className="text-4xl">Index</header>
-						<p className="text-lg text-zinc-400">Directory of wiki pages</p>
+						<p className="text-lg text-zinc-300">Directory of wiki pages</p>
 					</section>
 					<hr />
 					<Index />

@@ -6,6 +6,7 @@ import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Metadata from "@components/Metadata";
+import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {
@@ -45,23 +46,13 @@ export default function WikiPage({
 			<article className="w-full markdown max-w-5xl mx-auto min-h-screen">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
-					{meta?.short ? <p className="text-lg text-zinc-400">{meta?.short}</p> : <></>}
+					{meta?.short ? <p className="text-lg text-zinc-300">{meta?.short}</p> : <></>}
 					<div className="block md:hidden">
 						<A
 							href="/wiki"
 							noIcon={true}
 							className="bg-zinc-800 group hover:bg-zinc-700 duration-150 text-zinc-300 py-2 px-6 rounded border border-zinc-700">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-								className="w-5 h-5 inline-block align-text-bottom">
-								<path
-									fillRule="evenodd"
-									d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
-									clipRule="evenodd"
-								/>
-							</svg>
+							<ArrowLeftIcon className="w-5 h-5 inline-block align-middle" />
 							Back to Index
 						</A>
 					</div>
