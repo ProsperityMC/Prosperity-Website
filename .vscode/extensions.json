@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "yzhang.markdown-all-in-one"
+    ]
+}

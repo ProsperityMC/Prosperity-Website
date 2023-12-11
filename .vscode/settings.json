@@ -1,0 +1,20 @@
+{
+	"cSpell.words": [
+        "bothebot",
+        "chainstone",
+        "Elytra",
+        "heroicons",
+        "madpancho",
+        "Redstone",
+        "Shulker",
+        "webp"
+    ],
+	"cSpell.enabled": true,
+	"cSpell.language": "en,en-US,lorem",
+    "cSpell.enableFiletypes": [
+        "aspnetcorerazor",
+        "markdown-math",
+        "markdown_latex_combined"
+    ],
+    "typewriterAutoScroll.enable": false
+}
