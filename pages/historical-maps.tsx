@@ -43,12 +43,15 @@ function Button(
 	);
 }
 
-function AreaWidget({ name, area }: { name: string; area: Area }) {
+function AreaWidget({ name, area, visible }: { name: string; area: Area; visible: boolean }) {
 	const [counter, setCounter] = useState(area.files.length - 1);
 
+	if (!visible) {
+		return null;
+	}
+
 	return (
-		<div className="bg-zinc-800 border border-zinc-700 rounded-lg p-8 flex flex-col items-center">
-			<h2 className="text-2xl mb-2">{name}</h2>
+		<div className="bg-zinc-800 p-2 flex flex-col items-center">
 			<div className="info mb-2">{getAreaInfoText(area)}</div>
 			<div className="flex justify-center items-center mb-2 gap-2">
 				<Button
@@ -70,20 +73,35 @@ function AreaWidget({ name, area }: { name: string; area: Area }) {
 				</Button>
 			</div>
 			<div className="flex justify-center">
-				<img width="600" height="600" src={`${API_URL}/${area.files[counter]}/${name}.png`} />
+				<img width="1000" height="1000" src={`${API_URL}/${area.files[counter]}/${name}.png`} className="max-w-full" />
 			</div>
 		</div>
 	);
 }
 
+function TabButton(
+	props: React.DetailedHTMLProps<
+		React.ButtonHTMLAttributes<HTMLButtonElement>,
+		HTMLButtonElement
+	> & { children: ReactNode; active: boolean }
+) {
+	return (
+		<button className={`px-2 hover:bg-zinc-700 ${props.active ? "bg-zinc-600" : ""} flex-shrink-0 h-10`} {...props}>
+			{props.children}
+		</button>
+	);
+}
+
 export default function HistoricalMaps() {
 	const [areas, setAreas] = useState<AreaList | string>("Loading...");
+	const [currentArea, setCurrentArea] = useState<string>("");
 
 	useEffect(() => {
 		async function f() {
 			const json: AreaList = await (await fetch(`${API_URL}/list.json`)).json();
 			console.log(json);
 			setAreas(json);
+			setCurrentArea(Object.keys(json)[0]);
 		}
 		f().catch((e) => {
 			setAreas(e.toString());
@@ -92,16 +110,31 @@ export default function HistoricalMaps() {
 
 	return (
 		<div className="flex flex-col gap-12 text-center markdown">
-			<header className="text-4xl type-header">Prosperity historical maps</header>
-			{typeof areas === "object" ? (
-				<div className="flex flex-wrap gap-8 justify-center">
-					{Object.entries(areas).map(([name, area]) => {
-						return <AreaWidget key={name} name={name} area={area} />;
-					})}
+			{typeof areas == "object" ? (
+				<div className="border border-zinc-700 rounded-lg overflow-hidden">
+					<div className="bg-zinc-800 flex border-b border-zinc-700 overflow-x-scroll">
+						{Object.entries(areas).map(([k, v]) => {
+							return (
+								<TabButton onClick={() => setCurrentArea(k)} active={k == currentArea}>
+									{k}
+								</TabButton>
+							);
+						})}
+					</div>
+					<div>
+						{Object.entries(areas).map(([k, v]) => {
+							// We store all area widgets components to remember counter for
+							// each tab separately
+							return (
+								<AreaWidget
+									name={currentArea}
+									area={areas[currentArea]}
+									visible={k == currentArea}></AreaWidget>
+							);
+						})}
+					</div>
 				</div>
-			) : (
-				areas
-			)}
+			) : null}
 		</div>
 	);
 }
