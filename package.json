@@ -18,11 +18,13 @@
 		"next": "13.4.6",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"react-leaflet": "^4.2.1",
 		"rehype-slug": "^5.1.0",
 		"remark-breaks": "^3.0.3",
 		"remark-gfm": "^3.0.1"
 	},
 	"devDependencies": {
+		"@types/leaflet": "^1.9.8",
 		"@types/node": "20.3.1",
 		"@types/react": "18.2.12",
 		"@types/react-dom": "18.2.5",

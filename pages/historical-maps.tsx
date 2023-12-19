@@ -1,7 +1,8 @@
 import { Left, Right } from "@components/Icons";
+import dynamic from "next/dynamic";
 import { ReactNode, useEffect, useState } from "react";
 
-const API_URL = "https://raw.githubusercontent.com/sppmacd/Prosperity-Map-Server/main/maps";
+const API_URL = "https://raw.githubusercontent.com/sppmacd/Prosperity-Maps/maps/maps";
 
 interface Area {
 	/// Dimension (overworld, the_nether, the_end)
@@ -44,6 +45,10 @@ function Button(
 }
 
 function AreaWidget({ name, area, visible }: { name: string; area: Area; visible: boolean }) {
+	const Map = dynamic(() => import("@components/Map"), {
+		ssr: false
+	});
+
 	const [counter, setCounter] = useState(area.files.length - 1);
 
 	if (!visible) {
@@ -51,9 +56,8 @@ function AreaWidget({ name, area, visible }: { name: string; area: Area; visible
 	}
 
 	return (
-		<div className="bg-zinc-800 p-2 flex flex-col items-center">
-			<div className="info mb-2">{getAreaInfoText(area)}</div>
-			<div className="flex justify-center items-center mb-2 gap-2">
+		<div className="bg-zinc-800 p-2 flex flex-col">
+			<div className="info mb-2 inline-flex gap-2 items-center">
 				<Button
 					name="prev"
 					onClick={() => {
@@ -71,10 +75,10 @@ function AreaWidget({ name, area, visible }: { name: string; area: Area; visible
 					disabled={counter == area.files.length - 1}>
 					{Right}
 				</Button>
+				<div className="flex-1" />
+				{getAreaInfoText(area)}
 			</div>
-			<div className="flex justify-center">
-				<img width="1000" height="1000" src={`${API_URL}/${area.files[counter]}/${name}.png`} className="max-w-full" />
-			</div>
+			<Map url={`${API_URL}/${area.files[counter]}/${name}/{x}/{y}.webp`} />
 		</div>
 	);
 }
@@ -86,7 +90,9 @@ function TabButton(
 	> & { children: ReactNode; active: boolean }
 ) {
 	return (
-		<button className={`px-2 hover:bg-zinc-700 ${props.active ? "bg-zinc-600" : ""} flex-shrink-0 h-10`} {...props}>
+		<button
+			className={`px-2 hover:bg-zinc-700 ${props.active ? "bg-zinc-600" : ""} flex-shrink-0 h-10`}
+			onClick={props.onClick}>
 			{props.children}
 		</button>
 	);
@@ -115,7 +121,7 @@ export default function HistoricalMaps() {
 					<div className="bg-zinc-800 flex border-b border-zinc-700 overflow-x-scroll">
 						{Object.entries(areas).map(([k, v]) => {
 							return (
-								<TabButton onClick={() => setCurrentArea(k)} active={k == currentArea}>
+								<TabButton onClick={() => setCurrentArea(k)} active={k == currentArea} key={k}>
 									{k}
 								</TabButton>
 							);
@@ -129,7 +135,9 @@ export default function HistoricalMaps() {
 								<AreaWidget
 									name={currentArea}
 									area={areas[currentArea]}
-									visible={k == currentArea}></AreaWidget>
+									visible={k == currentArea}
+									key={k}
+								/>
 							);
 						})}
 					</div>
