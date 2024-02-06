@@ -1,10 +1,10 @@
 import { InferGetStaticPropsType } from "next";
+import Head from "next/head";
 
 import A from "@components/A";
 import { wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Index from "@wiki/index.mdx";
-import Metadata from "@components/Metadata";
 
 export async function getStaticProps() {
 	const data = await wikiPageDataGetAll();
@@ -15,7 +15,16 @@ export async function getStaticProps() {
 export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="flex gap-8">
-			<Metadata title="Wiki" description="Directory of wiki pages" />
+			{/* prettier-ignore */}
+			<Head>
+				<title>Wiki</title>
+				<meta property="og:title" content="Wiki" />
+				<meta property="twitter:title" content="Wiki" />
+				<meta name="description" content="Directory of wiki pages" />
+				<meta name="og:description" content="Directory of wiki pages" />
+				<meta name="twitter:description" content="Directory of wiki pages" />
+			</Head>
+
 			<div className="hidden md:flex">
 				<WikiMenu pages={data} baseUrl="/wiki" />
 			</div>

@@ -5,7 +5,6 @@ import Head from "next/head";
 import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
-import Metadata from "@components/Metadata";
 import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 
 export async function getStaticPaths() {
@@ -34,12 +33,16 @@ export default function WikiPage({
 
 	return (
 		<div className="flex gap-8">
+			{/* prettier-ignore */}
 			<Head>
 				<title>{meta?.title || slug}</title>
 				<meta property="og:title" content={meta?.title || slug} />
+				<meta property="twitter:title" content={meta?.title || slug} />
 				<meta name="description" content={meta?.short || "A wiki page"} />
+				<meta name="og:description" content={meta?.short || "A wiki page"} />
+				<meta name="twitter:description" content={meta?.short || "A wiki page"} />
 			</Head>
-			<Metadata title={meta?.title || slug} description={meta?.short || "A wiki page"} />
+
 			<div className="hidden md:flex">
 				<WikiMenu pages={allData} baseUrl="/wiki" />
 			</div>

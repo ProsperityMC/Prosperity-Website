@@ -1,16 +1,10 @@
-import Head from "next/head";
-import { ExclamationCircleIcon } from "@heroicons/react/20/solid"
+import { ExclamationCircleIcon } from "@heroicons/react/20/solid";
 
 import A from "@components/A";
-import Metadata from "@components/Metadata";
 
 export default function Schematics() {
 	return (
 		<div className="markdown">
-			<Metadata
-				title="Designed On Prosperity"
-				description="Explore the complete schematic archive."
-			/>
 			<section className="flex flex-col gap-12 text-center markdown">
 				<header className="text-4xl type-header">Designed On Prosperity</header>
 				<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">

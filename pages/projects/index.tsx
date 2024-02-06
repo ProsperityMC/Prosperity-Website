@@ -1,8 +1,9 @@
 import { InferGetStaticPropsType } from "next";
+import Head from "next/head";
 import Image from "next/image";
+
 import A from "@components/A";
 import { projectPageDataGetAll } from "@lib/lib";
-import Metadata from "@components/Metadata";
 import HighlightLinkBanner from "@components/HighlightLinkBanner";
 
 export async function getStaticProps() {
@@ -14,10 +15,16 @@ export async function getStaticProps() {
 export default function Projects({ allData }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="markdown">
-			<Metadata
-				title="Built On Prosperity"
-				description="Explore the builds, farms, and projects created on Prosperity"
-			/>
+			{/* prettier-ignore */}
+			<Head>
+				<title>Built On Prosperity</title>
+				<meta property="og:title" content="Built On Prosperity" />
+				<meta property="twitter:title" content="Built On Prosperity" />
+				<meta name="description" content="Explore the builds, farms, and projects created on Prosperity" />
+				<meta name="og:description" content="Explore the builds, farms, and projects created on Prosperity" />
+				<meta name="twitter:description" content="Explore the builds, farms, and projects created on Prosperity" />
+			</Head>
+
 			<section className="flex flex-col gap-12 text-center markdown">
 				<header className="text-4xl type-header">Built On Prosperity</header>
 				<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">

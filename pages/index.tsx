@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { ArrowRightIcon, BookOpenIcon } from "@heroicons/react/20/solid";
 import React from "react";
+import Head from "next/head";
 
+import MainImage from "public/index/main.png";
 import H from "@components/H";
 import Slideshow from "@components/Slideshow";
 import A from "@components/A";
-import Metadata from "@components/Metadata";
 import SchematicCard from "@components/SchematicCard";
-import MainImage from "public/index/main.png";
 import InfoGrid from "@components/InfoGrid";
 import HighlightLinkBanner from "@components/HighlightLinkBanner";
 
@@ -52,14 +52,19 @@ export default function Home() {
 
 	return (
 		<>
-			<Metadata
-				title="This is Prosperity"
-				description="Prosperity is a Minecraft community focused on high-level technical and building
-						gameplay, go beyond, build different"
-				imageUrl="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100"
-				imageHeight={1200}
-				imageWidth={560}
-			/>
+			{/* prettier-ignore */}
+			<Head>
+				<title>This is Prosperity</title>
+				<meta property="og:title" content="This is Prosperity" />
+				<meta property="twitter:title" content="This is Prosperity" />
+				<meta property="description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
+				<meta property="og:description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
+				<meta property="twitter:description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
+				<meta property="og:image" content="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100" />
+				<meta property="twitter:image" content="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="560" />
+			</Head>
 
 			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-50">
 				<Image

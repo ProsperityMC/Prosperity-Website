@@ -1,10 +1,10 @@
 import { InferGetStaticPropsType } from "next";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 import A from "@components/A";
 import { projectPageDataGet, projectPageDataGetAll } from "@lib/lib";
 import Slideshow from "@components/Slideshow";
-import Metadata from "@components/Metadata";
 import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 
 export async function getStaticPaths() {
@@ -33,11 +33,20 @@ export default function ProjectPage({
 
 	return (
 		<div>
-			<Metadata
-				title={meta?.title || slug}
-				description={meta?.short || "A project page"}
-				imageUrl={`/_next/image?url=%2Fprojects%2F${imageFiles[0]}&w=1920&q=50`}
-			/>
+			{/* prettier-ignore */}
+			<Head>
+				<title>{meta?.title || slug}</title>
+				<meta property="og:title" content={meta?.title || slug} />
+				<meta property="twitter:title" content={meta?.title || slug} />
+				<meta property="description" content={meta?.short || "A project page"} />
+				<meta property="og:description" content={meta?.short || "A project page"} />
+				<meta property="twitter:description" content={meta?.short || "A project page"} />
+				<meta property="og:image" content={`/_next/image?url=%2Fprojects%2F${imageFiles[0]}&w=1920&q=50`} />
+				<meta property="twitter:image" content={`/_next/image?url=%2Fprojects%2F${imageFiles[0]}&w=1920&q=50`} />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="560" />
+			</Head>
+
 			<Slideshow
 				quality={100}
 				images={imageFiles.map((i) => ({
@@ -47,6 +56,7 @@ export default function ProjectPage({
 					alt: ""
 				}))}
 			/>
+
 			<article className="w-full markdown max-w-5xl mx-auto mb-20">
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
