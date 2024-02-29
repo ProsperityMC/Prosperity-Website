@@ -10,8 +10,8 @@ export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
+		{ href: "/database", text: "Database" },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		// { href: "/database", text: "Database" },
 		// { href: "/schematics", text: "Schematics" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
@@ -55,14 +55,14 @@ export default function Menu() {
 					<A
 						href="https://ko-fi.com/prosperitymc"
 						noIcon={true}
-						className="bg-zinc-800 group hover:bg-zinc-900 duration-150 text-zinc-300 px-6 py-1 rounded  border border-zinc-700 focus:border-yellow-400">
+						className="type-header bg-zinc-800 group hover:bg-zinc-900 duration-150 text-zinc-300 px-6 py-1 rounded  border border-zinc-700 focus:border-yellow-400">
 						Donate{"  "}
 						<HeartIcon className="w-5 h-5 inline-block align-text-top group-hover:fill-yellow-400 ease-in-out duration-500 group-hover:rotate-12 group-hover:scale-110" />
 					</A>
 					<A
 						href="https://discord.gg/hfTxZ4XxYj"
 						noIcon={true}
-						className="bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 px-6 py-1 rounded justify-items-end">
+						className="type-header bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 px-6 py-1 rounded justify-items-end">
 						Join
 						<ArrowRightIcon className="w-5 h-5 inline-block align-middle" />
 					</A>

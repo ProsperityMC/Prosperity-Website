@@ -26,10 +26,12 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 			</Head>
 
 			<section className="flex flex-col gap-12 text-center markdown">
-				<header className="text-4xl type-header">Built On Prosperity</header>
-				<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
-					Explore the builds, farms, and projects created on Prosperity.
-				</p>
+				<div className="markdown">
+					<header className="text-4xl type-header">Built On Prosperity</header>
+					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
+						Explore the builds, farms, and projects created on Prosperity.
+					</p>
+				</div>
 				<section className="columns-1 md:columns-2 w-full overflow-hidden gap-8 space-y-8">
 					{allData.map((p) =>
 						p.imageFiles.map((i) => (

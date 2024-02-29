@@ -66,7 +66,7 @@ export default function Home() {
 				<meta property="og:image:height" content="560" />
 			</Head>
 
-			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-50">
+			<div className="absolute top-0 left-0 w-full h-[60rem] -z-50 opacity-40">
 				<Image
 					priority={true}
 					quality={90}
@@ -101,7 +101,7 @@ export default function Home() {
 
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">A Playground For Architects</header>
-					<p>
+					<p className="max-w-4xl mx-auto">
 						For those who wish to build, this is a great place to be. With no shortage of community
 						projects to contribute to, and a technical community giving you access to endless
 						resources, you can expand the scope of your builds further than ever before.
@@ -161,7 +161,7 @@ export default function Home() {
 
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Expanding The Minds of Engineers</header>
-					<p>
+					<p className="max-w-4xl mx-auto">
 						Technical gameplay is at the core of Prosperity, with the server focused heavily on
 						allowing experimentation and new ideas.
 					</p>
@@ -199,7 +199,7 @@ export default function Home() {
 
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Designed On Prosperity</header>
-					<p>Explore the tech created by our members.</p>
+					<p className="max-w-4xl mx-auto">Explore the tech created by our members.</p>
 					<div className="grid grid-cols-1 lg:grid-cols-3 transition-colors gap-8 w-full">
 						<SchematicCard
 							imageUrl="/index/schematics/8x-speed-trencher.png"
@@ -243,7 +243,7 @@ export default function Home() {
 
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">By The Community, For The Community</header>
-					<p>
+					<p className="max-w-4xl mx-auto">
 						Prosperity is it's community. We take community feedback and suggestions to and strive
 						to create the best experience possible. See what our members think.
 					</p>
@@ -277,7 +277,7 @@ export default function Home() {
 
 				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Fast and Reliable</header>
-					<p>
+					<p className="max-w-4xl mx-auto">
 						Key to both technical gameplay and quality-of-life, we take performance and reliability
 						seriously.
 					</p>

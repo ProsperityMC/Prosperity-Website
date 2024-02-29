@@ -36,9 +36,7 @@ export default function Footer() {
 			links: [
 				{ text: "Canada", href: "https://visitquebec.info" },
 				{ text: "Lab Safety", href: "https://remove.directory/chemicals" },
-				{ text: "Melon", href: "https://mrmelon54.com" },
-				{ text: "Xonotic", href: "https://xonotic.org/" },
-				{ text: "MrBeast", href: "https://www.youtube.com/@MrBeast/" },
+				{ text: "Melon", href: "https://mrmelon54.com" }
 			]
 		}
 	];
