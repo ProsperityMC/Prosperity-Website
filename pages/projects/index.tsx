@@ -32,7 +32,7 @@ export default function Projects({ allData }: InferGetStaticPropsType<typeof get
 						Explore the builds, farms, and projects created on Prosperity.
 					</p>
 				</div>
-				<section className="columns-1 md:columns-2 w-full overflow-hidden gap-8 space-y-8">
+				<section className="columns-lg w-full overflow-hidden gap-8 space-y-8">
 					{allData.map((p) =>
 						p.imageFiles.map((i) => (
 							<A
