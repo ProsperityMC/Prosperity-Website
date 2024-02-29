@@ -10,7 +10,7 @@ export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
-		{ href: "/database", text: "Database" },
+		// { href: "/database", text: "Database" },
 		{ href: "/wiki", text: "Wiki", loose: true },
 		// { href: "/schematics", text: "Schematics" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
