@@ -10,9 +10,7 @@ export default function Menu() {
 	const links: { href: string; text: string; loose?: boolean }[] = [
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
-		// { href: "/database", text: "Database" },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		// { href: "/schematics", text: "Schematics" },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
@@ -36,7 +34,7 @@ export default function Menu() {
 				<span className="flex gap-8 items-center">
 					<Link
 						href={"/"}
-						className="items-center hidden md:inline-flex shrink-0 font-bold font-header">
+						className="items-center hidden text-zinc-100 md:inline-flex shrink-0 font-bold font-header">
 						<Image className="inline-block w-7 h-7 rounded" src={logo} alt="" />
 						<header className="ml-4 hidden lg:block">Prosperity MC</header>
 					</Link>

@@ -60,8 +60,6 @@ export default function Home() {
 				<meta property="description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
 				<meta property="og:description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
 				<meta property="twitter:description" content="Prosperity is a Minecraft community focused on high-level technical and building gameplay, go beyond, build different" />
-				<meta property="og:image" content="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100" />
-				<meta property="twitter:image" content="/_next/image?url=%2Fmeta%2Findex.png&w=1200&q=100" />
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="560" />
 			</Head>
