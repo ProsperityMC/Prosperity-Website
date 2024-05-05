@@ -1,26 +1,27 @@
 {
 	"cSpell.words": [
-        "bothebot",
-        "chainstone",
-        "Deepslate",
-        "Elytra",
-        "Enderman",
-        "Froglight",
-        "heroicons",
-        "madpancho",
-        "Mobswitch",
-        "Overworld",
-        "Redstone",
-        "Shulker",
-        "Terracom",
-        "webp"
-    ],
+		"bothebot",
+		"chainstone",
+		"Deepslate",
+		"Elytra",
+		"Enderman",
+		"Froglight",
+		"heroicons",
+		"madpancho",
+		"Mobswitch",
+		"Overworld",
+		"Redstone",
+		"Shulker",
+		"Terracom",
+		"webp"
+	],
 	"cSpell.enabled": false,
 	"cSpell.language": "en,en-US,lorem",
-    "cSpell.enableFiletypes": [
-        "aspnetcorerazor",
-        "markdown-math",
-        "markdown_latex_combined"
-    ],
-    "typewriterAutoScroll.enable": false
+	"cSpell.enableFiletypes": [
+		"aspnetcorerazor",
+		"markdown-math",
+		"markdown_latex_combined"
+	],
+	"typewriterAutoScroll.enable": false,
+	"css.customData": [".vscode/tailwind.json"]
 }
