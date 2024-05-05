@@ -12,7 +12,9 @@ export async function getStaticProps() {
 	return { props: { data } };
 }
 
-export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Wiki({
+	data
+}: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<div className="flex gap-8">
 			{/* prettier-ignore */}
@@ -28,11 +30,13 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 			<div className="hidden md:flex">
 				<WikiMenu pages={data} baseUrl="/wiki" />
 			</div>
-			<div className="flex flex-col gap-8 max-w-5xl mx-auto">
+			<div className="flex flex-col gap-8 max-w-[100ch] mx-auto">
 				<article className="markdown">
 					<section className="markdown">
 						<header className="text-4xl">Index</header>
-						<p className="text-lg text-zinc-300">Directory of wiki pages</p>
+						<p className="text-lg text-zinc-300">
+							Directory of wiki pages
+						</p>
 					</section>
 					<hr />
 					<Index />
@@ -40,7 +44,11 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 				</article>
 				<div className="grid rid-cols-1 md:grid-cols-2 gap-8 w-full">
 					{data
-						.filter((page) => page.meta?.publish != false && page.meta?.highlight == true)
+						.filter(
+							(page) =>
+								page.meta?.publish != false &&
+								page.meta?.highlight == true
+						)
 						.map((page) => (
 							<A
 								href={`/wiki/${page.slug}`}
@@ -48,11 +56,17 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 								<header className="text-lg type-header my-1.5 text-yellow-500">
 									{page.meta?.title || page.slug}
 								</header>
-								<p className="mb-1.4 max-w-lg text-yellow-500">{page.meta?.short || ""}</p>
+								<p className="mb-1.4 max-w-lg text-yellow-500">
+									{page.meta?.short || ""}
+								</p>
 							</A>
 						))}
 					{data
-						.filter((page) => page.meta?.publish != false && page.meta?.highlight != true)
+						.filter(
+							(page) =>
+								page.meta?.publish != false &&
+								page.meta?.highlight != true
+						)
 						.map((page) => (
 							<A
 								href={`/wiki/${page.slug}`}
@@ -60,7 +74,9 @@ export default function Wiki({ data }: InferGetStaticPropsType<typeof getStaticP
 								<header className="text-lg type-header my-1.5">
 									{page.meta?.title || page.slug}
 								</header>
-								<p className="mb-1.4 max-w-sm">{page.meta?.short || ""}</p>
+								<p className="mb-1.4 max-w-sm">
+									{page.meta?.short || ""}
+								</p>
 							</A>
 						))}
 				</div>

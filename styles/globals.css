@@ -6,7 +6,7 @@
 	html {
 		font-size: small;
 		font-family: "Archivo", Arial, Helvetica, sans-serif;
-		@apply bg-zinc-900 text-zinc-300 scroll-smooth selection:bg-fuchsia-400/30;
+		@apply bg-zinc-900 text-zinc-300 scroll-smooth selection:bg-fuchsia-400/30 text-pretty;
 	}
 
 	header {
@@ -132,5 +132,5 @@
 }
 
 .content-width {
-	@apply max-w-screen-2xl px-8 mx-auto;
+	@apply max-w-screen-xl px-8 mx-auto;
 }
