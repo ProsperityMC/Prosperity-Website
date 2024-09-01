@@ -321,6 +321,9 @@ export default function Home() {
 								<ArrowRightIcon className="w-5 h-5 inline-block align-middle" />
 							</button>
 						</A>
+						<div className="mt-6 text-sm text-zinc-400 max-w-[50ch] mx-auto">
+							If you are a member of the server find joining information <A className="underline hover:no-underline" href="/wiki">here</A>
+						</div>
 					</div>
 				</section>
 			</main>
