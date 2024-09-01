@@ -10,6 +10,7 @@ import A from "@components/A";
 import SchematicCard from "@components/SchematicCard";
 import InfoGrid from "@components/InfoGrid";
 import HighlightLinkBanner from "@components/HighlightLinkBanner";
+import ResetBanner from "@components/ResetBanner";
 
 export default function Home() {
 	const testimonials: { user: string; iconUrl: string; text: JSX.Element }[] = [
@@ -77,6 +78,9 @@ export default function Home() {
 
 			<main id="main" className="markdown">
 				<section className="flex flex-col gap-12 text-center markdown my-52">
+					<div className="text-sm mx-auto">
+						<ResetBanner></ResetBanner>
+					</div>
 					<header className="text-6xl type-header">Build Different, Go Beyond</header>
 					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
 						Prosperity is a Minecraft community focused on high-level technical and building

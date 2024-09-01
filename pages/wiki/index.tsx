@@ -5,6 +5,7 @@ import A from "@components/A";
 import { wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import Index from "@wiki/index.mdx";
+import ResetBanner from "@components/ResetBanner";
 
 export async function getStaticProps() {
 	const data = await wikiPageDataGetAll();
@@ -32,6 +33,7 @@ export default function Wiki({
 			</div>
 			<div className="flex flex-col gap-8 max-w-[100ch] mx-auto">
 				<article className="markdown">
+					<ResetBanner></ResetBanner>
 					<section className="markdown">
 						<header className="text-4xl">Index</header>
 						<p className="text-lg text-zinc-300">
