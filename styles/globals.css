@@ -4,7 +4,6 @@
 
 @layer base {
 	html {
-		font-size: small;
 		font-family: "Archivo", Arial, Helvetica, sans-serif;
 		@apply bg-zinc-900 text-zinc-300 scroll-smooth selection:bg-fuchsia-400/30 text-pretty;
 	}

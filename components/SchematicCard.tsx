@@ -16,9 +16,11 @@ export default function SchematicCard(props: {
 				width={512}
 				height={512}
 			/>
-			<header className="text-lg type-header my-1.5">{props.title}</header>
+			<header className="text-lg type-header my-1.5">
+				{props.title}
+			</header>
 			<p className="mb-1.4">{props.content}</p>
-			<div className="flex gap-4 mt-1.5 items-center">
+			<div className="flex gap-4 mt-4 items-center">
 				{props.credits.map((credit) => (
 					<Image
 						key={credit.username}
@@ -26,10 +28,10 @@ export default function SchematicCard(props: {
 						src={credit.userIconUrl}
 						width={256}
 						height={256}
-						className="w-8 h-8 bg-zinc-800 rounded-full border-none"
+						className="w-6 h-6 bg-zinc-800 rounded-full border-none"
 					/>
 				))}
-				<header className="text-lg">
+				<header className="text-sm">
 					{props.credits.map((credit) => credit.username).join(", ")}
 				</header>
 			</div>
