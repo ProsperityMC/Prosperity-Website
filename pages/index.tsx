@@ -322,7 +322,7 @@ export default function Home() {
 							</button>
 						</A>
 						<div className="mt-6 text-sm text-zinc-400 max-w-[50ch] mx-auto">
-							If you are a member of the server find joining information <A className="underline hover:no-underline" href="/wiki">here</A>
+							If you are a member of the server find joining information <A className="underline hover:no-underline" href="/wiki/join-info">here</A>
 						</div>
 					</div>
 				</section>
