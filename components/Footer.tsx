@@ -50,7 +50,7 @@ export default function Footer() {
 						<header className="hidden md:block">Prosperity MC</header>
 					</A>
 				</div>
-				<div className="flex gap-12 flex-wrap">
+				<div className="flex gap-10 flex-wrap">
 					{content.map((entry) => (
 						<div key={entry.header} className="flex flex-col whitespace-pre min-w-[6rem] gap-y-2">
 							<header className="type-sub-header text-xs text-zinc-400">{entry.header}</header>

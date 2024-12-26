@@ -27,7 +27,7 @@ export default function Projects({
 				<meta name="twitter:description" content="Explore the builds, farms, and projects created on Prosperity" />
 			</Head>
 
-			<section className="flex flex-col gap-12 text-center markdown">
+			<section className="flex flex-col gap-10 text-center markdown">
 				<div className="markdown">
 					<header className="text-4xl type-header">
 						Built On Prosperity

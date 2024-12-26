@@ -5,7 +5,7 @@ import A from "@components/A";
 export default function Schematics() {
 	return (
 		<div className="markdown">
-			<section className="flex flex-col gap-12 text-center markdown">
+			<section className="flex flex-col gap-10 text-center markdown">
 				<header className="text-4xl type-header">Designed On Prosperity</header>
 				<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
 					Feature not implemented yet, come back later.

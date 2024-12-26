@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function News() {
 	return (
 		<div className="markdown">
-			<section className="flex flex-col gap-12 text-center markdown">
+			<section className="flex flex-col gap-10 text-center markdown">
 				<div className="markdown">
 					<header className="text-4xl type-header">News & Announcements</header>
 					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">

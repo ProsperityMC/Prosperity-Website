@@ -6,7 +6,6 @@ import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
 import { ArrowLeftIcon } from "@heroicons/react/20/solid";
-import ResetBanner from "@components/ResetBanner";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {
@@ -48,7 +47,6 @@ export default function WikiPage({
 				<WikiMenu pages={allData} baseUrl="/wiki" />
 			</div>
 			<article className="w-full markdown max-w-[100ch] mx-auto min-h-screen">
-				<ResetBanner></ResetBanner>
 				<section className="markdown">
 					<header className="text-4xl">{meta?.title || slug}</header>
 					{meta?.short ? <p className="text-lg text-zinc-300">{meta?.short}</p> : <></>}

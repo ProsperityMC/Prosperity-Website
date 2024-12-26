@@ -10,7 +10,6 @@ import A from "@components/A";
 import SchematicCard from "@components/SchematicCard";
 import InfoGrid from "@components/InfoGrid";
 import HighlightLinkBanner from "@components/HighlightLinkBanner";
-import ResetBanner from "@components/ResetBanner";
 
 export default function Home() {
 	const testimonials: { user: string; iconUrl: string; text: JSX.Element }[] = [
@@ -77,14 +76,12 @@ export default function Home() {
 			</div>
 
 			<main id="main" className="markdown">
-				<section className="flex flex-col gap-12 text-center markdown my-52">
-					<div className="text-sm mx-auto">
-						<ResetBanner></ResetBanner>
-					</div>
-					<header className="text-6xl type-header">Build Different, Go Beyond</header>
+				<section className="flex flex-col gap-10 text-center markdown my-52">
+					<header className="text-6xl type-header">Experience Minecraft Anew</header>
 					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
-						Prosperity is a Minecraft community focused on high-level technical and building
-						gameplay. <H>Create</H>, <H>engineer</H>, and <H>grow</H> on a server you can call home.
+						Prosperity is a modded Minecraft community founded on <H>looking beyond</H> the 
+						boundries of the game.  <H>Create</H>, <H>engineer</H>, and <H>grow</H> 
+						on a server you can call home.
 					</p>
 					<div className="space-x-12">
 						<A href="https://discord.gg/hfTxZ4XxYj" noIcon={true}>
@@ -101,7 +98,7 @@ export default function Home() {
 
 				<hr id="builders" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-20">
+				<section className="flex flex-col gap-10 text-center markdown my-20">
 					<header className="text-4xl type-header">A Playground For Architects</header>
 					<p className="max-w-4xl mx-auto">
 						For those who wish to build, this is a great place to be. With no shortage of community
@@ -111,22 +108,20 @@ export default function Home() {
 					<InfoGrid
 						sections={[
 							<>
+								<H>A wider palette than ever.</H> With an extensive selection of decorative mods, a greater level of atmosphere, and more renewable resources than ever, you can build bigger and with more detail than you ever thought possible.
+							</>,
+							<>
 								<H>Work better together in survival and creative.</H> Take advantage of a powerful
 								creative server, real-time schematic syncing, and a cooperative community willing to
 								help with large scale builds.
 							</>,
 							<>
-								<H>A wider palette than ever.</H> With more renewable resources Prosperity can allow
-								you to build with blocks you never would have dreamed of before.
+								<H>We do what Mojang won't.</H> Build with more detail thanks to vertical slabs, framed blocks, and many more highly-requested features that builders have desired for years.
 							</>,
 							<>
-								<H>Building together.</H> With a strong community focus you don't need to worry
-								about griefing, trolls, or claims disrupting or ruining your hard work.
+								<H>Building community.</H> With a strong community focus you don't need to worry
+								about griefing, trolls, or claims disrupting or ruining your hard work. Building is the lifeblood of our server and your work is appreciated.
 							</>,
-							<>
-								<H>Updates in weeks, not months.</H> We work hard to update to the most recent
-								version of the game quickly so you can have access to new features faster.
-							</>
 						]}
 					/>
 					<Slideshow
@@ -152,6 +147,7 @@ export default function Home() {
 							}
 						]}
 					/>
+					<small className="mt-2">The builds shown are pre-2024 server reset.</small>
 					<HighlightLinkBanner
 						content="Explore more builds, farms, bases, and projects"
 						linkContent="Project Gallery"
@@ -161,7 +157,7 @@ export default function Home() {
 
 				<hr className="technical" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-20">
+				<section className="flex flex-col gap-10 text-center markdown my-20">
 					<header className="text-4xl type-header">Expanding The Minds of Engineers</header>
 					<p className="max-w-4xl mx-auto">
 						Technical gameplay is at the core of Prosperity, with the server focused heavily on
@@ -195,11 +191,9 @@ export default function Home() {
 						linkContent="Mechanics & Features"
 						href="/wiki/features"
 					/>
-				</section>
 
-				<hr id="schematics" />
+					<div id="schematics" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-20">
 					<header className="text-4xl type-header">Designed On Prosperity</header>
 					<p className="max-w-4xl mx-auto">Explore the tech created by our members.</p>
 					<div className="grid grid-cols-1 lg:grid-cols-3 transition-colors gap-8 w-full">
@@ -243,7 +237,7 @@ export default function Home() {
 
 				<hr id="community" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-20">
+				<section className="flex flex-col gap-10 text-center markdown my-20">
 					<header className="text-4xl type-header">By The Community, For The Community</header>
 					<p className="max-w-4xl mx-auto">
 						Prosperity is it's community. We take community feedback and suggestions to and strive
@@ -277,8 +271,8 @@ export default function Home() {
 
 				<hr id="performance" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-20">
-					<header className="text-4xl type-header">Fast and Reliable</header>
+				<section className="flex flex-col gap-10 text-center markdown my-20">
+					<header className="text-4xl type-header">A Commitment to Quality</header>
 					<p className="max-w-4xl mx-auto">
 						Key to both technical gameplay and quality-of-life, we take performance and reliability
 						seriously.
@@ -286,12 +280,12 @@ export default function Home() {
 					<InfoGrid
 						sections={[
 							<>
-								<H>20 TPS.</H> Enjoy consistent, solid, performance without worrying about game
-								breaking optimization plugins. <H>Don't just run one world eater</H>, run two, or
+								<H>A rock solid tickrate.</H> Enjoy consistent, solid, performance without worrying about game
+								breaking optimization plugins. Don't just run one world eater, run two, or
 								three!
 							</>,
 							<>
-								<H>Dedicated Hardware.</H> Prosperity is hosted on dedicated high-end hardware from
+								<H>Dedicated hardware.</H> Prosperity is hosted on dedicated high-end hardware from
 								a trustworthy host in Los Angeles, California.
 							</>,
 							<>
@@ -300,7 +294,7 @@ export default function Home() {
 								verbose block logging.
 							</>,
 							<>
-								<H>Battle tested.</H> We only rely on the best open-source mods and software, with
+								<H>Battle tested.</H> We only rely on the best mods and software, with
 								talented developers in the community to fix issues if they arise.
 							</>
 						]}
@@ -309,7 +303,7 @@ export default function Home() {
 
 				<hr id="join" />
 
-				<section className="flex flex-col gap-12 text-center markdown my-36">
+				<section className="flex flex-col gap-10 text-center markdown my-36">
 					<header className="text-5xl">This is Prosperity</header>
 					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
 						Ready to join our community? Join our Discord and apply to be whitelisted now.
