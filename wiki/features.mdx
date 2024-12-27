@@ -3,136 +3,703 @@ export const meta = {
 	short: "Comprehensive documentation for new gameplay changes and features"
 };
 
-## Farms
+## Functional Blocks
 
-[Renewable Sand](https://github.com/gnembon/carpet-extra#renewablesand)
+### Globe
 
-[Clerics Farm Warts](https://github.com/gnembon/carpet-extra#clericsfarmwarts)
+A rare item found in shipwrecks or sold by the Wandering Trader. The Globe will display a randomly generated world that is unique to the world seed and can be interacted with or powered by Redstone to spin and display the current coordinates.
 
-[Renewable Blackstone](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewableblackstone)
+Can be used with a Comparator.
 
-[Renewable Coral](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewablecoral) Expanded
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
-[Renewable Sponges](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewablesponges)
+### Candle Holders
 
-[Renewable Deepslate](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#renewabledeepslate) changes the functionality of stone generators below Y level 0 to create deepslate instead of stone.
+Candle Holders can be placed on walls, floors, and ceilings and stacked like candles with up to 4 per block. Give off a bit more light that candles.
 
-[Renewable Wither Skeletons](https://github.com/gnembon/carpet-extra#renewablewitherskeletons) causes regular skeletons to turn into Wither skeletons when struck by lightning.
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
-[Renewable Elytra](https://tisunion.github.io/Carpet-TIS-Addition/docs/rules#renewableelytra) allows Phantoms killed by Shulker bullet will drop an Elytra with a 2 in 10 probability.
+### Awning
+
+A decorative Awning that can be tilted when interacted with. Shifting while on an Awning will make the player fall through it. Falling onto an Awning will make the player bounce off of it.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Pedestal
+
+A decorative block for displaying your finest treasures, the Pedestal can display one item or block, with special visual effects for weapons and Globes. When stacked vertically the Pedestal will visually connect.
+
+Once an item is taken or removed from a Pedestal the block will update, detectable by Observer. This can be prevented if one swaps the item with a sack.
+
+If an End Crystal is placed on a pedestal the block will give off an enchanting power equal to 3 bookshelves. This means that with 5 of such blocks you'll be able to max out an Enchanting Table.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Statue
+
+The Statue is a small decorative block which can hold items and waves when powered by Redstone.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Present
+
+- A container block which can hold 1 item stack
+- When interacting with its gui you can choose a player to which it will be adressed to as well as a small description
+- Once packed only you and the recipient will be able to open it and access its content
+- Comes in 16 + 1 colors
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Notice Board
+
+- Can hold and display either a written book, a map or a banner pattern
+- When it's displaying a written book it will only show one page at the time
+- The text resolution that is getting displayed depends on the amount of text in a page. Add whitespaces to make it render smaller
+- Once given a redstone pulse it will turn the currently displayed page onto the next one
+- Can be waxed to prevent interactions
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Fodder
+
+- A layered block that serves as a way to automatically feed animals
+- Many animals (controlled via a tag) will try to eat a layer out of the block when they are hungry
+- When eaten it will make baby animals age faster and will set adults in love. Uses the vanilla cooldown
+- Can be placed down with dispensers
+- Clicking with a hoe will remove and destroy one layer
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Bamboo Spikes
+
+- Spikes that will slow and damage all the mobs that walk in them
+- If quark or create are installed they can be pushed with pistons or contraptions and will deal extra damage if they hit something while extending
+- Can be infused with lingering potions. To do so either craft them, click on them or pour the potion using a faucet
+- By default they can only accept negative lingering potions and have infinite charge.
+- You can however enable an alternative mode in the configs which allows them to have 16 changes and accept any potion. Charges will only be depleted when an entity that does not have that potion effect walks over them
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Blackboard
+
+- Can be written on to create interesting pattern in black and white. Basically a bare bones MS Paint in Minecraft
+- Can also be directly edited without the GUI by holding a dye item. This also supports other mods like chalk or similar items like quatz or coal. Doing so won't consume the item
+- Will keep its drawing when broken.
+- The current drawing can be previewed using the item tool tip
+- Blackboards can be duplicated just like banners
+- Can be cleared by using a wet sponge or soap
+- Can be waxed to prevent interactions
+- Can accept glow ink
+- Colored blackboards can be enabled in the configs
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Framed Blocks
+
+- Framed blocks come in 3 shapes: Braces, Cross Braces and Frames
+- Each of them can visually hold any solid block inside. This allows to make every block into a framed one. To do so simply click on it with said block
+- An option to frame an already placed block when clicking on it with this item is available in the configs
+- Using an axe on a framed block will break the frame but not the block contained inside
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Daub and Wattle & Daub
+
+- A new medieval themed decorative block that goes hand it hand with framed blocks
+- When daub is placed inside a framed block it will convert into the respective wattle and daub
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Safe
+
+- Acts as a sort of upgraded shulker box that is fire resistant
+- Safes can be locked with a key. Once this is done their content will only be available to players that have the correct key in their inventory. See the key section for more info
+- An optional config is avialable in the configs that allows them to get bounded to the first player the places them, without the need to use a key
+- To unlock and clear the ownership of a safe simply shift click on it with its key or a tripwire hook if simple safes are enabled
+- In the configs one can also enable an option to make them indestructible unless one holds the correct key
+- Creative players can bypass locks
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Netherite Doors & Trapdoors
+
+Netherite doors and trapdoors are able be locked with a key, disabling interactions by players other than the key owner. By default they are fully accessible by any player.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Gold Doors & Trapdoors
+
+When powered by Redstone, players will be unable to interact with it.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Ropes
+
+Ropes can be placed against a ceiling, on a fence or wall, or next to an already placed rope. Just like scaffolding, ropes can only go that far out horizontally from their closest support until they are no longer supported. Ropes can be placed and will wrap themselves around fences and walls.
+
+Vertical ropes have no hitbox and can be climbed or slow the player down when falling; horizontal ropes do have a hitbox and can be walked on, albeit at a slower paste. Can be broken by a projectile. Sheared to remove its bottom part. 
+
+Placing a rope against an existing vertical one will result in the rope getting extended downwards, pushing all blocks that are attached to the bottom most rope. The opposite is also true and can be achieved by shift clicking a rope with an empty hand. This will pull up the last attached block.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Jar
+
+Jars can store up to 12 cookies and stored cookies can be eaten by interacting with the placed Jar. The Jar may also be filled with 12 bowls of soup or 12 potions that may be consumed.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Goblet
+
+Goblets can hold and display any liquid. Liquid from a Goblet can be consumed instantly when interacted with by a player and the state of the block can be accessed with a Comparator.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Sack
+
+The Sack functions like a Shulker box with 9 slots. The Sack is affected by gravity and deals damage when falling on an entity. The fill level can be accessed with a Comparator.
+
+The Sack can fall vertically, but cannot be moved with a piston.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
 ---
 
-## Redstone
+## Decoration
 
-[Auto-Crafting Dropper](https://github.com/gnembon/carpet-extra#autocraftingdropper)
+### Twigs
 
-[Movable Block Entities](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#movableblockentities)
+TODO
 
-[Chainstone](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#chainstone)
+(source: [Twigs](https://modrinth.com/mod/twigs))
 
-[Dispensers Carve Pumpkins](https://github.com/gnembon/carpet-extra#dispenserscarvepumpkins)
+### Tool Trims
 
-[Comparator Reads Clock](https://github.com/gnembon/carpet-extra#comparatorreadsclock)
+TODO
 
-[Rotator Block](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#rotatorblock)
+(source: [Tool Trims](https://modrinth.com/datapack/tool-trims))
 
-[Dispensers Strip Blocks](https://github.com/gnembon/carpet-extra#dispensersstripblocks)
+### Framed Blocks
 
-[Dispensers Till Soil](https://github.com/gnembon/carpet-extra#dispenserstillsoil)
+TODO
+
+(source: [ReFramed](https://modrinth.com/mod/reframed))
+
+### Labels
+
+TODO
+
+(source: [Labels](https://modrinth.com/mod/labels))
+
+### Hearth & Home
+
+TODO
+
+(source: [Hearth & Home](https://modrinth.com/mod/hearth-and-home))
+
+### Text Signs
+
+TODO
+
+(source:  [Glowcase](https://modrinth.com/mod/glowcase))
+
+### More Block Variants
+
+TODO
+
+(source: [Built](https://modrinth.com/mod/built/gallery))
+
+### Immersive Paintings
+
+TODO
+
+(source: [Immersive Paintings](https://modrinth.com/mod/immersive-paintings))
+
+### Raked Gravel
+
+Using a hoe on a block of gravel will rake it in the direction the player is facing, when connecting, the raked gravel with curve. Cannot be farmed.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### More
+
+- [Windchimes](https://modrinth.com/mod/windchimes)
+	- Windchimes which sway in the wind and chime
+- [Infinite Banner Patterns](https://modrinth.com/mod/infinite-banner-patterns)
+	- Removes banner pattern limit
+- [Horse Armor Stand](https://modrinth.com/mod/horse-armor-stand)
+	- An armor stand for horses
+- [Decorative Blocks](https://modrinth.com/mod/decorative-blocks)
+	- **Wooden palisades** which function like walls or fences and can’t be jumped over
+	- **Wooden beams**
+	- **Braziers**, **Soul Braziers**, and **Chandeliers**
+	- **Rocky Dirt**
+	- **Stone Pillar**
+	- **Bar Panel** and trapdoor, wooden lattice and trapdoor
+	- **Wooden seats** which can be sat on by interacting
+	- **Wooden supports** which have a shape that can be changed by interacting with an axe
+- [Dramatic Doors](https://modrinth.com/mod/dramatic-doors)
+	- **Door** variants of 3-blocks and 1-block tall can be crafted
+- [Better End Rod](https://modrinth.com/mod/better-end-rod)
+	- **End rod** variants can be crafted with Redstone, honeycomb, emerald, amethyst, sand, copper, iron, and Sculk
+- [Supplementaries](https://modrinth.com/mod/supplementaries)
+	- **Bunting** can be placed on Ropes
+	- **Hat Stand** it’s a stand for your hats
+	- **Way Signs** are a new type of sign of which up-to two can be placed on a fence post. The direction of the Way Sign can be changed by shift clicking or clicking with a compass
+	- **Books** and **Enchanted Books** can be placed and stacked as blocks. Enchanted Books enhance enchanting power
+	- **Lanterns** can be placed on walls
+	- New bomb themed painting
+	- **Shulker Shells** can be worn in the head slot
+	- **Vines** can be placed below campfires
+- [Amendments](https://modrinth.com/mod/amendments)
+	- **Tripwire Hooks** hold tools
+	- **Banners and Pots** can be placed on ceilings
+	- **Mob Heads** can have candles placed on-top
+	- **Lilypads** can have any block placed on them
+	- **Cakes** can be stacked
+	- **Carpets and Moss Carpets** can be placed on slabs and stairs
+
+---
+
+## Mobs & Entities
+
+### Quiver Skeletons
+
+Skeletons can rarely spawn equipped with quiver, skeletons with quivers have a chance to shoot a variety of random tipped arrows. When killed they have a high chance to drop their quiver complete with its content.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+---
+
+## Items & Tools
+
+### Compasses for Biomes & Structures
+
+TODO
+
+(source: [Nature's Compass](https://modrinth.com/mod/natures-compass), [Explorer's Compass](https://modrinth.com/mod/explorers-compass))
+
+### Mixed Enchants On Weapons & Armor
+
+- Mix infinity and mending bows
+- Mix different types of protection on armor pieces
+- Mix smite, sharpness, bane of arthropods, and other enchantments on swords
+- Use mixed sword enchantments on tridents
+- Use mixed sword enchantments on axes
+
+(source: [Expanded Bow](https://modrinth.com/mod/expanded-bow-enchanting), [Armor](https://modrinth.com/mod/expanded-armor-enchanting), [Weapon](https://modrinth.com/mod/expanded-weapon-enchanting), [Trident](https://modrinth.com/mod/expanded-trident-enchanting), and [Axe Enchanting](https://modrinth.com/mod/expanded-axe-enchanting))
+
+### Elytra Trims
+
+TODO
+
+(source: [Elytra Trims](https://modrinth.com/mod/elytra-trims))
+
+### Armor with Elytra
+
+TODO
+
+(source: [Armored Elytra](https://modrinth.com/mod/armored-elytra/gallery), [Colytra](https://modrinth.com/mod/colytra))
+
+### Slingshot
+
+The Slingshot can be used to shoot blocks. Shot blocks will place themselves wherever they land if the position is suitable. The Slingshot may be enchanted with Quick Charge, Multishot, and Stasis. 
+
+Stasis is a new enchantment for the Slingshot which removes the projectile drop. The maximum distance for the Slingshot with the Stasis enchantment is about 45 blocks.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Confetti Popper
+
+When used, emits a pop and an explosion of colorful confetti.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Altimeter
+
+Visually shows the player’s current height, when right clicked, prints the player’s current Y level.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Wrench
+
+Wrenches are tools which can be used to rotate any kind of rotatable block. The Wrench also works on blocks you might not expect it to, like signs, way signs, double skulls, double chests, and beds.
+
+Additionally, Wrenches double as fast melee weapons which deal the same damage as a Wooden Sword but is much faster and can even be enchanted with knockback.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### More
+
+- [Scholar](https://modrinth.com/mod/scholar)
+	- **Books** can be dyed and have a new GUI for editing and signing
+- [Netherite Horse Armor](https://modrinth.com/mod/netherite_horse_armor)
+	- **Netherite Horse Armor** is a new horse armor variant which cannot burn
+- [Supplementaries](https://modrinth.com/mod/supplementaries)
+	- **Candy** is a food item that is fast to eat and will fill up half a hunger bar
+	- **Pancakes** can be placed like cakes. Honey can be poured on Pancakes, when done so, grants a speed effect. May have an interaction with Jukeboxes
+	- **Flax** is a new 2-tall farmable crop
 
 ---
 
 ## Mechanics
 
-[Tooled TNT](https://tisunion.github.io/Carpet-TIS-Addition/docs/rules#tooledtnt) causes the effects of tools held by the player to be applied to TNT ignited by said player. This includes gathering specific blocks based on tool, such as grass with shears, as well as applying tool enchantments, such as silk touch or fortune.
+### Tom's Simple Storage Mod
 
-[Protection Stacking](https://github.com/manyrandomthings/minitweaks#protectionstacking) allows all protection types to be stacked on a single piece of armor.
+TODO
 
-[Infinity Mending Stacking](https://github.com/manyrandomthings/minitweaks#infinitymendingstacking) allows both infinity and mending to be placed on a bow.
+(source: [Tom's Simple Storage Mod](https://modrinth.com/mod/toms-storage))
 
-[Shakable Shulker Boxes](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#stackableshulkerboxes) enables empty shulker boxes to stack to 64 in inventories or on the ground.
+### VanitySlots
 
-[Blaze Meal](https://github.com/gnembon/carpet-extra#blazemeal) Blaze powder, applied via player or dispenser, fertilizes Nether Wart.
+TODO
 
-[Flipping Cactus](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#flippincactus)
+(source: [VanitySlots](https://modrinth.com/mod/vanity))
 
-[Blaze Meal](https://github.com/gnembon/carpet-extra#blazemeal)
+### Squashed
 
-[Placement Rotation Fix](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#placementrotationfix)
+TODO
 
-[Ender Pearl Chunk Loading](https://github.com/gnembon/carpet-extra#enderpearlchunkloading)
+(source: [Squashed](https://modrinth.com/mod/squashed))
 
-[Movable Amethyst](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#movableamethyst) lets players create more efficient amethyst farms by moving budding amethyst blocks using pistons.
+### Plant In A Jar
 
----
+TODO
 
-## Quality Of Life
+(source: [Plant In A Jar](https://modrinth.com/mod/plant-in-a-jar))
 
-[Accurate Block Placement](https://github.com/gnembon/carpet-extra#accurateblockplacement)
+### Nether Chest
 
-[Rail Duping Fix](https://tisunion.github.io/Carpet-TIS-Addition/docs/rules#raildupingfix)
+TODO
 
-[Sand Duping Fix](https://tisunion.github.io/Carpet-TIS-Addition/docs/rules#sanddupingfix)
+(source: [Nether Chest](https://modrinth.com/mod/nether-chest))
 
-[Missing Tools](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#missingtools)
+### Placeable Gunpowder
 
-[Disabled Dragon Block Damage](https://github.com/manyrandomthings/minitweaks#dragonblockdamage)
+Gunpowder trails can be placed on the ground and be lit up by fire and fire arrows. Once the gunpowder trail is lit, it will consume itself in outwards from the source. Lit trails can ignite TNT, set flammable blocks on fire, or light up blocks like campfires or candles.
 
-[Disabled Creeper Block Damage](https://github.com/manyrandomthings/minitweaks#nocreeperblockbreaking)
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
-[Max Player XP Drop](https://github.com/manyrandomthings/minitweaks#maxplayerxpdrop)
+### Bell Chain Ringing
 
-[Ctrl Q Crafting Fix](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#ctrlqcraftingfix)
+When a bell is connected to a set of chains the player can interact with the chain to ring the bell.
 
-[Phantom Spawning Time](https://github.com/manyrandomthings/minitweaks#phantomspawningtime) Phantoms now take 144,000 ticks (6 in-game nights) to spawn.
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries)
 
----
+### Cauldrons
 
-## Utilities & Tools
+Cauldrons can now store any liquid and can now be used to mix potions and dye. When a fire source is placed beneath a cauldron, the contents will begin to boil, dealing damage when an entity stands in the cauldron.
 
-[Bot Players](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commandplayer) is a feature which allows you to spawn a "bot" which can be manipulated with commands. This is typically used for AFKing at farms or precisely placing blocks in farms at specific tick intervals, as bots have no risk of being disconnected from the server, nor any connection latency.
+(source: [Amendments](https://modrinth.com/mod/amendments))
 
-[Ping Command](https://github.com/gnembon/carpet-extra#commandping) allows yuo to check your connection latency with the `/ping` command.
+### XP Bottling
 
-[Distance Command](https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings#commanddistance)
+When shift clicking an Enchanting Table with a bottle or jar you can bottle some experience at the cost of health.
 
-### Mods Required
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
-[Syncmatica](https://modrinth.com/mod/syncmatica) is an separate extension which allows schematics to be uploaded and synced for multiple members on the server. This is most useful for large scale community projects.
-<small>Requires [Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica)</small>
+### Zombie Horse Conversion
 
-### Creative Only
+Feeding a stack of rotten flesh to a owned skeleton horse will slowly convert it into a zombie horse. Additionally, zombie horses can breath underwater just like skeleton horses.
 
-[WorldEdit](https://modrinth.com/plugin/worldedit) is *the* building utility mod.
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
 
-[Axiom](https://modrinth.com/mod/axiom) is a building utility mod which focuses on providing a Photoshop-like GUI and in-game overlays.
+### More
 
-[Redstone Multimeter](https://modrinth.com/mod/redstone-multimeter) is a mod which allows for players to track a variety of Redstone events with a HUD.
-
----
-
-## Social
-
-[Link4D](https://github.com/ProsperityMC/Prosperity-Scripts/blob/main/admin/discord.sc) is an in-house Discord integration used for cross chat between Minecraft and Discord, linking in-game players to Discord accounts, whitelisting, and more.
-
-[Customize](https://github.com/ProsperityMC/Prosperity-Scripts/blob/main/utilities/customize.sc) is a utility we've created to allow players to set and change item lore, names, and textures, utilizing the custom [resource pack](/wiki/resource-pack).
-
-[ItemFlexer](https://modrinth.com/mod/itemflexer) allows players to display their items with a tooltip in chat with `/flex`.
-
-### Mods Required
-
-[Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat) allows proximity voice chat via Minecraft for all of those who have the mod.
-
-[Audioplayer](https://modrinth.com/mod/audioplayer) is a seperate extension to Simple Voice Chat allowing players to create and play back custom music discs.
-<small>Requires [Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat)</small>
+- [Supplementaries](https://modrinth.com/mod/supplementaries)
+	- Notch apples can now be disenchanted
+	- Wearing a Mob Head will use the spectator shader effects
+	- Hitting a black cat will give you the unluck effect. Unluck will also make lightning's more likely to hit you
+	- Right clicking with a Clock will print the current time
+	- Axes can be used in dispensers to strip or scrape blocks
+	- **Dispensers** can now fire **Ender Pearls**
+	- **Bricks** can be thrown and break glass
+- [Amendments](https://modrinth.com/mod/amendments)
+	- Placing a Pancake on a Jukebox will play a song
 
 ---
 
-## Misc
+## Visuals & Effects
 
-[Squaremap](https://modrinth.com/plugin/squaremap) provides a real-time web based map for navigating the server.
+### More Particles & Visual Effects
 
-[ViaFabric](https://modrinth.com/mod/viafabric) allows players for mismatching Minecraft client versions to join the server.
+- Splashes, droplets, and ripples when entities fall in water
+- Waterfall clouds
+    - Appears when water flows into two block deep water source blocks / a water source above a wool block (to make it silent)
+- Waterfall mist
+    - Appears when water directly flows from above into source blocks
+    - Can be used to create fog or mist ambiences
+    - If a water source above a wool block is used instead of two water sources, the mist will be colored after the wool
+- Flowing water droplets, Rain ripples
+- Glowing plankton
+    - Makes splashes, droplets, ripples and waterfall clouds glow blue in warm oceans
+- Chests open underwater emit bubbles
+    - Chests with soul sand below them open randomly when underwater
+- Glow squids hypnotize players
+- Allay trails and Golden Allays
+- Warden roars, sonic booms, Ravager roars, Ender dragon roars
+- Fireflies in forests and humid biomes with the color depending on the biome, frequency depending on the biome's humidity
+- Chorus petals around Chorus trees and when breaking Chorus flowers
+- Will o' Wisps in soul sand valleys
+- Eyes in the dark that creep on you during Halloween
+- Improved fireballs, Dragon fireballs, and breath, Spectral arrows, Glow squid particles
 
-[TimeOutOut](https://modrinth.com/mod/timeoutout) is a mod which removes the vanilla connection timeout and prevents those players with a poor internet connection from being kicked by the game.
+(source: [Effective](https://modrinth.com/mod/effective))
+
+### Reverb & Sound Physics
+
+Adds realistic sound attenuation, reverberation, and absorption through blocks.
+
+TODO
+
+(source: [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered))
+
+### Fog
+
+TODO Can be disabled
+
+(source: [Fog](https://modrinth.com/mod/fog))
+
+### More
+
+- [Particle Rain](https://modrinth.com/mod/particle-rain)
+	- Replaces weather with prettier particle effects
+- [Leavesly](https://modrinth.com/mod/leavesly)
+	- Snow will affect all leaves, vines, and ground foliage
+	- There are different levels of coverage depending on the exposure of the leaves to the snow
+- [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)
+	- Dynamic lighting for entities and dropped items that glow
+- [ImmersiveThunder](https://modrinth.com/mod/immersivethunder)
+	- Adds new thunder sounds to the game and plays them dynamically based on the player’s distance from the source
+- [Falling Leaves](https://modrinth.com/mod/fallingleaves)
+	- Leaves fall from leaf blocks as particles
+- [Drip Sounds](https://modrinth.com/mod/dripsounds-fabric)
+	- Added sounds for drip particles landing
+- [Continuity](https://modrinth.com/mod/1IjD5062)
+	- Connected textures
+- [Amendments](https://modrinth.com/mod/amendments)
+	- **Jukeboxes** have a new model which displays the currently playing disc
+	- **Lanterns** have a new view model when being held by the player
+- [Supplementaries](https://modrinth.com/mod/supplementaries)
+	- **Crossbows** loaded with tipped arrows will have their arrow tip texture change color accordingly
+	- **Brewing Stands** will have their potion bottles colored according to what they are holding
+	- **Parrots** can dance on your shoulders
+- [Better Christmas Chests](https://modrinth.com/mod/better-christmas-chests)
+	- During Christmas more containers will be Christmas themed
+
+---
+
+## Quality of Life & Utility
+
+### Too Many Binds
+
+TODO
+
+(source: [Too Many Binds](https://modrinth.com/mod/too-many-binds))
+
+### EMI
+
+TODO
+
+(source: [EMI](https://modrinth.com/mod/fRiHVvU7))
+
+### Effortless Structure
+
+TODO
+
+(source: [Effortless Structure](https://modrinth.com/mod/EF68hjiy))
+
+### Litematica
+
+TODO
+
+(source: [Litematica](https://modrinth.com/mod/litematica))
+
+### Tweakeroo
+
+TODO
+
+(source: [Tweakeroo](https://modrinth.com/mod/tweakeroo))
+
+### MiniHUD
+
+TODO
+
+(source: [MiniHUD](https://modrinth.com/mod/UMxybHE8))
+
+### More
+
+- [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip)
+	- Allows the player to see a preview of the items held within a Shulker box
+- [Screenshot to Clipboard](https://modrinth.com/mod/screenshot-to-clipboard)
+	- Automatically copies any screenshots taken in-game to the system clipbaord
+- [Better Ping Display ](https://modrinth.com/mod/better-ping-display-fabric)
+	- The player list displays the ping time in milliseconds
+- [ItemFlexer](https://modrinth.com/mod/pOYa13DM)
+	- Running the `/flex` command with an item in their hand and display it to chat
+
+---
+
+## Redstone
+
+### Autocrafter
+
+TODO
+
+(source: [Autocrafter Early](https://modrinth.com/mod/autocrafter-early))
+
+### More Buttons & Lever Variants
+
+TODO
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits), [Infinity Buttons](https://modrinth.com/mod/infinitybuttons))
+
+### Redstone Inverter 
+
+Takes an input power of ≥1 and outputs a power of 0, if the input power is 0, outputs 15. In other words, inverts an ON signal to an OFF and vise versa.
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Two Way Redstone Repeater
+
+Takes an input power of ≥1 from either side and outputs a power of 15.
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+#### Redstone Switcher
+
+TODO
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Redstone Projector
+
+Takes an input signal of power N and “projects” the signal forward, through blocks or air, N blocks. If another Projector is at that position, the remote projector will output a signal strength of 15.
+
+Redstone placed between the two Projectors will function as normal.
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Sight Sensor
+
+Emits a 1-tick pulse when looked at by a player from a maximum distance of 128 blocks.
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Redstone Emitter
+
+Has a Comparator-readable state that can be cycled between levels 1 and 15  by right clicking.
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Minecart with Redstone Emitter
+
+TODO
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Color Redstone Lamp
+
+TODO
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Shaded Redstone Lamp
+
+TODO
+
+(source: [Red Bits](https://modrinth.com/mod/red-bits))
+
+### Ram Block
+
+A block that, when pushed by a piston, slowly breaks a block. Break speed depends on the hardness of the block. Additionally it will be able to break anything up to Obsidian hardness, but only iron tier blocks will drop.
+
+When the Ram Block is pushed into a player or mob it deals a small amount of damage and launches the player ~9 blocks.
+
+(source: [You've Goat to be Kidding Me](https://modrinth.com/mod/goated))
+
+### Relayer
+
+Takes the signal strength of the block on the observer face and emits the same signal strength, with a 1-tick delay, on the output face.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Crystal Display
+
+A 7-segment display which can be controlled via input signal strength.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Wind Vane
+
+A block which visually swings depending on the current weather in the world. The block will emit a Redstone signal:
+
+- of 0: clear weather
+- of 1: raining
+- of 2: thundering
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Speaker Block
+
+A block that, when powered, can send a chat message, status message, display a title, or play a text-to-speech message to all players within the set radius.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Hourglass
+
+Can be filled by the player with any kind of sand, dust, or powder, as well as slime and honey. Once filled, the dust will slowly start falling into the lower chamber with a different time depending on the material.
+
+The state can be assessed using a Comparator.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Lock Block
+
+TODO
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Redstone Illuminator
+
+A lighting block which emits a light level inversely proportional to the input signal strength. So, while unpowered emits a light level of 15.
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Dispenser Minecart
+
+TODO
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+### Clock Block
+
+TODO
+
+(source: [Supplementaries](https://modrinth.com/mod/supplementaries))
+
+---
+
+## World Generation
+
+### Steep Surface Fix
+
+TODO
+
+(source: [Steep Surface Fix](https://modrinth.com/mod/steep-surface-fix))
+
+---
+
+## Transport
+
+### Small Ships
+
+TODO
+
+(source: [Small Ships](https://modrinth.com/mod/small-ships))
+
+### NiftyCarts
+
+TODO
+
+(source: [NiftyCarts](https://modrinth.com/mod/niftycarts))
