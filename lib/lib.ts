@@ -13,6 +13,7 @@ export type WikiMeta = {
 	short?: string;
 	publish?: boolean;
 	highlight?: boolean;
+	category?: string;
 };
 
 export async function wikiPageDataGetAll(): Promise<WikiData[]> {
