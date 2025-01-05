@@ -2,12 +2,12 @@ import A from "@components/A";
 import { ShareIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
-export default function News() {
+export default function Timeline() {
 	return (
 		<div className="markdown">
 			<section className="flex flex-col gap-10 text-center markdown">
 				<div className="markdown">
-					<header className="text-4xl type-header">News & Announcements</header>
+					<header className="text-4xl type-header">Server Timeline & Roadmap</header>
 					<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
 						Explore the builds, farms, and projects created on Prosperity.
 					</p>

@@ -5,21 +5,33 @@ export default function WikiMenu(props: {
 	pages: WikiData[];
 	baseUrl: string;
 }) {
+	// Sorting pages by alphabetical order of the title
+	// otherwise the pages will be sorted by the file name
+	// which may not match the title
+	const pages = props.pages.sort((a, b) => {
+		const nameA = a.meta?.title?.toLowerCase() || a.slug;
+		const nameB = b.meta?.title?.toLowerCase() || a.slug;
+
+		if (nameA < nameB) return -1;
+		if (nameA > nameB) return 1;
+
+		return 0;
+	});
 	const categories = props.pages
-		.map((page) => page.meta?.category)
+		.map((page) => page.meta?.category?.toLowerCase())
 		.filter((v, i, list) => list.indexOf(v) === i)
 		.sort();
 
 	return (
 		<div className="whitespace-pre">
-			<div className="flex sticky top-20 flex-col gap-2 pr-4 select-none">
+			<div className="flex sticky top-20 flex-col gap-2 pr-4 select-none w-56">
 				<A
 					href="/wiki"
 					className="font-header font-medium"
 					activeClassName="text-white border-l-2 px-4 border-yellow-500 hover:border-yellow-400 duration-150">
 					Index
 				</A>
-				{props.pages
+				{pages
 					.filter((page) => page.meta?.publish != false)
 					.filter((page) => page.meta?.category === undefined)
 					.map((page) => (
@@ -41,11 +53,12 @@ export default function WikiMenu(props: {
 						) : (
 							<></>
 						)}
-						{props.pages
+						{pages
 							.filter((page) => page.meta?.publish != false)
 							.filter(
 								(page) =>
-									page.meta?.category == category &&
+									page.meta?.category?.toLowerCase() ==
+										category?.toLowerCase() &&
 									page.meta?.category !== undefined
 							)
 							.map((page) => (
