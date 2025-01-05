@@ -10,17 +10,9 @@ export default function Footer() {
 			links: [
 				{ text: "Discord", href: "https://discord.gg/Gf5tDk5EhR" },
 				{ text: "Ko-fi", href: "https://ko-fi.com/prosperitymc" },
-				{ text: "Twitter (X)", href: "https://x.com/prosperitymc" },
 				{ text: "Bluesky", href: "https://bsky.app/profile/prosperitymc.net" },
 				{ text: "GitHub", href: "https://github.com/ProsperityMC" },
 				{ text: "YouTube", href: "https://youtube.com/@prosperitymc" },
-			]
-		},
-		{
-			header: "Resources",
-			links: [
-				{ text: "Site Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
-				{ text: "World Download", href: "https://drive.google.com/file/d/1Cxpbvs9gCttadVn8E7LRFRDpbxn-_QFh/view" },
 			]
 		},
 		{
@@ -33,13 +25,22 @@ export default function Footer() {
 			]
 		},
 		{
+			header: "Resources",
+			links: [
+				{ text: "Survival Map", href: "https://map.prosperitymc.net" },
+				{ text: "Creative Map", href: "https://cmap.prosperitymc.net" },
+				{ text: "Branding", href: "https://github.com/ProsperityMC/Prosperity-Brand" },
+				{ text: "v1 World Files", href: "https://drive.google.com/file/d/1Cxpbvs9gCttadVn8E7LRFRDpbxn-_QFh/view" },
+				{ text: "Web Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
+			]
+		},
+		{
 			header: "Friends",
 			links: [
 				{ text: "Canada", href: "https://visitquebec.info" },
 				{ text: "The Iris Project", href: "https://github.com/IrisShaders/Iris" },
 				{ text: "Lab Safety", href: "https://remove.directory/chemicals" },
 				{ text: "Melon", href: "https://mrmelon54.com" },
-				{ text: "June('s) Minecraft", href: "https://modrinth.com/modpack/june+" },
 			]
 		}
 	];
@@ -52,6 +53,7 @@ export default function Footer() {
 						<Image className="inline-block w-7 h-7 mr-4 rounded" src={logo} alt="" />
 						<header className="hidden md:block">Prosperity MC</header>
 					</A>
+					<small>For business, press, or legal inquiries — <span className="underline select-all">contact@prosperitymc.net</span></small>
 				</div>
 				<div className="flex gap-10 flex-wrap">
 					{content.map((entry) => (

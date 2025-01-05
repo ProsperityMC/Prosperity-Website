@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import { HeartIcon, ArrowRightIcon } from "@heroicons/react/20/solid";
+import { ArrowRightIcon } from "@heroicons/react/20/solid";
 
 import logo from "@public/prosperity.svg";
 import A from "@components/A";
@@ -11,9 +11,9 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		{ href: "/news", text: "News", loose: false },
-		{ href: "/roadmap", text: "Roadmap", loose: false },
-		{ href: "https://map.prosperitymc.net", text: "Map" }
+		{ href: "/timeline", text: "Roadmap", loose: false },
+		{ href: "/download", text: "Downloads" },
+		{ href: "https://ko-fi.com/prosperitymc", text: "Donate" },
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -33,13 +33,21 @@ export default function Menu() {
 					: "py-2.5"
 			}`}>
 			<div className={`flex justify-between items-center content-width`}>
-				<span className="flex gap-8 items-center">
+				<div className="flex items-center justify-center">
 					<Link
 						href={"/"}
 						className="items-center hidden text-zinc-100 md:inline-flex shrink-0 font-bold font-header">
-						<Image className="inline-block w-7 h-7 rounded" src={logo} alt="" />
-						<header className="ml-4 hidden lg:block">Prosperity MC</header>
+						<Image
+							className="inline-block w-7 h-7 rounded"
+							src={logo}
+							alt=""
+						/>
+						<header className="ml-4 hidden lg:block">
+							Prosperity MC
+						</header>
 					</Link>
+				</div>
+				<div className="flex gap-8 items-center">
 					{links.map((link) => (
 						<A
 							key={link.text}
@@ -50,23 +58,16 @@ export default function Menu() {
 							{link.text}
 						</A>
 					))}
-				</span>
-				<span className="hidden md:flex gap-8 flex-grow justify-end">
-					<A
-						href="https://ko-fi.com/prosperitymc"
-						noIcon={true}
-						className="type-header bg-zinc-800 group hover:bg-zinc-900 duration-150 text-zinc-300 px-6 py-1 rounded  border border-zinc-700 focus:border-yellow-400">
-						Donate{"  "}
-						<HeartIcon className="w-5 h-5 inline-block align-text-top group-hover:fill-yellow-400 ease-in-out duration-500 group-hover:rotate-12 group-hover:scale-110" />
-					</A>
+				</div>
+				<div className="hidden md:block">
 					<A
 						href="https://discord.gg/hfTxZ4XxYj"
 						noIcon={true}
-						className="type-header bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 px-6 py-1 rounded justify-items-end">
+						className="type-header bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 ml-12 px-6 py-1.5 rounded justify-items-end">
 						Join
 						<ArrowRightIcon className="w-5 h-5 inline-block align-middle" />
 					</A>
-				</span>
+				</div>
 			</div>
 		</nav>
 	);
