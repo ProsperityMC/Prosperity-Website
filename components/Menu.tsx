@@ -11,6 +11,8 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
 		{ href: "/wiki", text: "Wiki", loose: true },
+		{ href: "/news", text: "News", loose: false },
+		{ href: "/roadmap", text: "Roadmap", loose: false },
 		{ href: "https://map.prosperitymc.net", text: "Map" }
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);

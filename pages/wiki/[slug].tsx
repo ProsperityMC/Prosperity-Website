@@ -5,7 +5,7 @@ import Head from "next/head";
 import A from "@components/A";
 import { wikiPageDataGet, wikiPageDataGetAll } from "@lib/lib";
 import WikiMenu from "@components/WikiMenu";
-import { ArrowLeftIcon } from "@heroicons/react/20/solid";
+import { ArrowLeftIcon, PencilIcon } from "@heroicons/react/20/solid";
 
 export async function getStaticPaths() {
 	const paths = (await wikiPageDataGetAll()).map((page) => {
@@ -66,7 +66,7 @@ export default function WikiPage({
 				<A
 					className="custom-link inline"
 					href={`https://github.com/ProsperityMC/Prosperity-Website/blob/main/wiki/${fileName}`}>
-					Edit this page on GitHub
+					Propose changes on GitHub
 				</A>
 			</article>
 		</div>

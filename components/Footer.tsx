@@ -10,22 +10,23 @@ export default function Footer() {
 			links: [
 				{ text: "Discord", href: "https://discord.gg/Gf5tDk5EhR" },
 				{ text: "Ko-fi", href: "https://ko-fi.com/prosperitymc" },
+				{ text: "Twitter (X)", href: "https://x.com/prosperitymc" },
+				{ text: "Bluesky", href: "https://bsky.app/profile/prosperitymc.net" },
+				{ text: "GitHub", href: "https://github.com/ProsperityMC" },
 				{ text: "YouTube", href: "https://youtube.com/@prosperitymc" },
-				{ text: "X", href: "https://twitter.com/prosperitymc" },
-				{ text: "GitHub", href: "https://github.com/ProsperityMC" }
 			]
 		},
 		{
 			header: "Resources",
 			links: [
 				{ text: "Site Source", href: "https://github.com/ProsperityMC/Prosperity-Website" },
-				{ text: "Live Map", href: "https://map.prosperitymc.net" }
+				{ text: "World Download", href: "https://drive.google.com/file/d/1Cxpbvs9gCttadVn8E7LRFRDpbxn-_QFh/view" },
 			]
 		},
 		{
 			header: "Projects",
 			links: [
-				{ text: "Client Modpack", href: "https://modrinth.com/modpack/prosperity" },
+				{ text: "Modpack", href: "https://modrinth.com/modpack/prosperity" },
 				{ text: "Remodulated", href: "https://modrinth.com/modpack/remodulated" },
 				{ text: "Resource Pack", href: "https://github.com/ProsperityMC/Prosperity-Resource-Pack" },
 				{ text: "Scripts", href: "https://github.com/ProsperityMC/Prosperity-Scripts" }
@@ -35,8 +36,10 @@ export default function Footer() {
 			header: "Friends",
 			links: [
 				{ text: "Canada", href: "https://visitquebec.info" },
+				{ text: "The Iris Project", href: "https://github.com/IrisShaders/Iris" },
 				{ text: "Lab Safety", href: "https://remove.directory/chemicals" },
-				{ text: "Melon", href: "https://mrmelon54.com" }
+				{ text: "Melon", href: "https://mrmelon54.com" },
+				{ text: "June('s) Minecraft", href: "https://modrinth.com/modpack/june+" },
 			]
 		}
 	];
