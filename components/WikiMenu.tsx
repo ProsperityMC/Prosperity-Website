@@ -12,6 +12,8 @@ export default function WikiMenu(props: {
 		const nameA = a.meta?.title?.toLowerCase() || a.slug;
 		const nameB = b.meta?.title?.toLowerCase() || a.slug;
 
+		// This is really stupid
+		if (nameA.includes("overview")) return -999999;
 		if (nameA < nameB) return -1;
 		if (nameA > nameB) return 1;
 
