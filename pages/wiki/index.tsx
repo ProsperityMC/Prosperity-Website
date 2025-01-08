@@ -61,6 +61,7 @@ export default function Wiki({
 					<hr />
 				</article>
 				<div className="grid rid-cols-1 md:grid-cols-2 gap-8 w-full">
+				<header className="type-sub-header col-span-2 text-zinc-400">Recommended Reading</header>
 					{pages
 						.filter((page) => page.meta?.publish != false)
 						.filter((page) => page.meta?.highlight === true)
@@ -92,13 +93,10 @@ export default function Wiki({
 						))}
 					{categories.map((category) => (
 						<>
-							{category ? (
-								<header className="type-sub-header col-span-2 text-zinc-400">
-									{category}
-								</header>
-							) : (
-								<></>
-							)}
+							{
+								/* prettier-ignore */
+								category ? <header className="type-sub-header col-span-2 text-zinc-400">{category}</header> : <></>
+							}
 							{pages
 								.filter((page) => page.meta?.publish != false)
 								.filter(
@@ -122,7 +120,12 @@ export default function Wiki({
 	);
 }
 
-function WikiPageCard(props: { href: string; title: string; content: string, highlight?: boolean }) {
+function WikiPageCard(props: {
+	href: string;
+	title: string;
+	content: string;
+	highlight?: boolean;
+}) {
 	return (
 		<A
 			href={props.href}

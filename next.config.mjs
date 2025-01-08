@@ -10,7 +10,18 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-	rewrites: [{ source: "/wiki", destination: "/wiki/index" }]
+	async rewrites() {
+		return [{ source: "/wiki", destination: "/wiki/index" }];
+	},
+	async redirects() {
+		return [
+			{
+				source: "/wiki/resource-pack",
+				destination: "/wiki/customization",
+				permanent: true
+			}
+		];
+	}
 };
 
 const withMDX = createMdx({
