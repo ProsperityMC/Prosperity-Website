@@ -31,7 +31,7 @@ export default function WikiMenu(props: {
 					href="/wiki"
 					className="font-header font-medium"
 					activeClassName="text-white border-l-2 px-4 border-yellow-500 hover:border-yellow-400 duration-150">
-					Index
+					Home
 				</A>
 				{pages
 					.filter((page) => page.meta?.publish != false)

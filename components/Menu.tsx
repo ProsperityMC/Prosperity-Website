@@ -11,7 +11,7 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		{ href: "/timeline", text: "Roadmap", loose: false },
+		// { href: "/timeline", text: "Roadmap", loose: false },
 		{ href: "/download", text: "Downloads" },
 		{ href: "https://ko-fi.com/prosperitymc", text: "Donate" },
 	];
@@ -32,7 +32,7 @@ export default function Menu() {
 					? "bg-zinc-950/60 border-zinc-700/100 backdrop-blur-md py-2.5 border-b"
 					: "py-2.5"
 			}`}>
-			<div className={`flex justify-between items-center content-width`}>
+			<div className={`flex justify-between items-center content-width py-0.5`}>
 				<div className="flex items-center justify-center">
 					<Link
 						href={"/"}

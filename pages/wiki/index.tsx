@@ -51,7 +51,7 @@ export default function Wiki({
 			<div className="flex flex-col gap-8 max-w-[100ch] mx-auto">
 				<article className="markdown">
 					<section className="markdown">
-						<header className="text-4xl">Index</header>
+						<header className="text-4xl">Wiki Home</header>
 						<p className="text-lg text-zinc-300">
 							Directory of wiki pages
 						</p>

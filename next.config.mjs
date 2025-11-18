@@ -10,6 +10,14 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "cdn.modrinth.com"
+			}
+		]
+	},
 	async rewrites() {
 		return [{ source: "/wiki", destination: "/wiki/index" }];
 	},

@@ -1,0 +1,31 @@
+<svg data-v-e081f5d9="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.7 12.7">
+	<path d="M6.35 6.35" style="fill:#99cd61;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M6.35.53 3.83 4.894 6.35 6.35l2.52-1.455.11-3.1C7.829 1.131 6.64.53 6.35.53"
+		style="fill:#df6277;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M8.98 1.795 6.35 6.35l2.52 1.455 2.521-4.365c-.145-.252-1.26-.98-2.411-1.645"
+		style="fill:#fb9168;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M11.391 3.44 6.35 6.35l2.52 1.455 2.74-1.455c0-1.33-.073-2.658-.219-2.91"
+		style="fill:#f3db6c;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M6.35 6.35v2.91h5.041c.146-.252.218-1.58.218-2.91z"
+		style="fill:#7ab392;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M6.35 6.35v2.91l2.63 1.645c1.15-.665 2.266-1.393 2.411-1.645z"
+		style="fill:#4b7cbc;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M6.35 6.35 3.83 7.805l2.52 4.366c.291 0 1.479-.602 2.63-1.266z"
+		style="fill:#6f488c;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M3.83 4.895 1.308 9.26c.291.505 4.459 2.91 5.041 2.91V6.35z"
+		style="fill:#4d3f33;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M1.309 3.44c-.291.504-.291 5.316 0 5.82L6.35 6.35V3.44z"
+		style="fill:#7a573b;fill-opacity:1;stroke-width:.264583;"></path>
+	<path d="M6.35.53c-.582 0-4.75 2.405-5.041 2.91L6.35 6.35z"
+		style="fill:#99cd61;fill-opacity:1;stroke-width:.264583;"></path>
+	<path
+		d="M6.35 2.94c-.341 0-2.783 1.41-2.953 1.705L6.35 9.76l2.954-5.115c-.17-.296-2.613-1.706-2.954-1.706"
+		style="fill:#fff;stroke-width:.264583;" transform="matrix(.85338 0 0 .85338 .931 .931)">
+	</path>
+	<path
+		d="m16.746 6.974 2.864 4.96c.33 0 2.699-1.367 2.864-1.653s.166-3.02 0-3.307L19.61 8.627z"
+		style="fill:#dfdfdf;fill-opacity:1;stroke-width:.264583;"
+		transform="matrix(.88 0 0 .88 -10.906 -1.242)"></path>
+	<path d="M3.83 4.895c-.146.252-.146 2.658 0 2.91.145.252 2.23 1.455 2.52 1.455V6.35Z"
+		style="fill:#d6d2d2;fill-opacity:1;stroke-width:.264583;"></path>
+</svg>
