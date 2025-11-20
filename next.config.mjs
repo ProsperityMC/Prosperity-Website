@@ -15,6 +15,10 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "cdn.modrinth.com"
+			},
+			{
+				protocol: "https",
+				hostname: "minotar.net"
 			}
 		]
 	},

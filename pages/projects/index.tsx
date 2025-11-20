@@ -40,13 +40,16 @@ export default function Projects({
 				<section className="columns-[30rem] w-full overflow-hidden gap-6 space-y-6">
 					{allData.map((p) =>
 						p.imageFiles.map((i) => (
+							// <A
+							// 	href={`/projects/${i.replace(
+							// 		/(_+.\.png)|(\.png)/,
+							// 		""
+							// 	)}`}
 							<A
-								href={`/projects/${i.replace(
-									/(_+.\.png)|(\.png)/,
-									""
-								)}`}
+								href={`#${i.replace(" ", "-")}`}
 								className="block relative group">
 								<Image
+									id={i.replace(" ", "-")}
 									className="bg-zinc-800 rounded-lg"
 									src={`/projects/${i}`}
 									width={1920}

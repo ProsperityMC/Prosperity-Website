@@ -61,10 +61,10 @@ export default function Menu() {
 				</div>
 				<div className="hidden md:block">
 					<A
-						href="https://discord.gg/hfTxZ4XxYj"
+						href="https://duckduckgo.com/?q=servers+like+prosperity+because+prosperity+doesn%27t+exist+anymore&ia=web"
 						noIcon={true}
 						className="type-header bg-yellow-500 hover:bg-yellow-400 duration-150 text-zinc-900 ml-12 px-6 py-1.5 rounded justify-items-end">
-						Join
+						Leave
 						<ArrowRightIcon className="w-5 h-5 inline-block align-middle" />
 					</A>
 				</div>

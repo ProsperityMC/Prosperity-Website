@@ -125,6 +125,8 @@ export default function Home() {
 						]}
 					/>
 					<Slideshow
+						autoScroll
+						autoScrollDuration={5000}
 						quality={80}
 						images={[
 							{
@@ -132,6 +134,12 @@ export default function Home() {
 								width: 1920,
 								height: 1080,
 								alt: "Base by Mhov, Random Cryptid, Rotor, and gharmonica"
+							},
+							{
+								src: "/projects/carbonghost-base.png",
+								width: 1920,
+								height: 1080,
+								alt: "Base by CarbonGhost"
 							},
 							{
 								src: "/projects/nether-hub_0.png",
