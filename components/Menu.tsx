@@ -11,9 +11,9 @@ export default function Menu() {
 		{ href: "/", text: "Home" },
 		{ href: "/projects", text: "Projects", loose: true },
 		{ href: "/wiki", text: "Wiki", loose: true },
-		// { href: "/timeline", text: "Roadmap", loose: false },
+		{ href: "/rip", text: "History", loose: false },
 		{ href: "/download", text: "Downloads" },
-		{ href: "https://ko-fi.com/prosperitymc", text: "Donate" },
+		// { href: "https://ko-fi.com/prosperitymc", text: "Donate" },
 	];
 	const [hasScrolled, setHasScrolled] = useState(false);
 
