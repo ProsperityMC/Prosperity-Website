@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { ArrowUpRightIcon, ArchiveBoxIcon } from "@heroicons/react/24/outline";
 import { ArrowDownCircleIcon, UsersIcon } from "@heroicons/react/16/solid";
 import A from "@components/A";
 
@@ -74,6 +74,71 @@ export default function Download({
 				<p className="text-lg text-zinc-300 font-medium max-w-2xl mx-auto">
 					3. Join the server!
 				</p>
+			</section>
+
+			<hr />
+
+			<section className="flex flex-col gap-10 text-center markdown">
+				<header className="text-4xl type-header">
+					World Downloads
+				</header>
+
+				<table className="text-left">
+					<tbody>
+						<tr>
+							<td className="w-1/3">
+								<A
+									className="text-yellow-500 hover:underline"
+									href={
+										"https://drive.google.com/file/d/1Cxpbvs9gCttadVn8E7LRFRDpbxn-_QFh/view"
+									}>
+									<ArchiveBoxIcon className="inline-block w-4 h-4 align-text-top" />{" "}
+									Prosperity V1 Combined Download (zip)
+								</A>
+							</td>
+							<td>
+								Combined V1 survival + creative world download,
+								some features require mods but the world can be
+								loaded in vanilla
+							</td>
+						</tr>
+						<tr>
+							<td className="w-1/3">
+								<A
+									className="text-yellow-500 hover:underline"
+									href={
+										"https://prosperity-download.mrmelon54.com/v2/survival/044de1e4-c958-423e-9de2-a7d0aef518af/prosperity-survival-final-download-2025-11-09T025225Z.zip"
+									}>
+									<ArchiveBoxIcon className="inline-block w-4 h-4 align-text-top" />{" "}
+									Prosperity (V2 / Anew) Survival Download
+									(zip)
+								</A>
+							</td>
+							<td>
+								V2 / Prosperity Anew modded survival world
+								download. Requires the Prosperity modpack to
+								run, please ensure you've downloaded the modpack
+							</td>
+						</tr>
+						<tr>
+							<td className="w-1/3">
+								<A
+									className="text-yellow-500 hover:underline"
+									href={
+										"https://prosperity-download.mrmelon54.com/v2/creative/1fcb8b21-3ddd-4f67-b435-323a5ce8a4eb/prosperity-creative-final-download-2025-11-09T025630Z.zip"
+									}>
+									<ArchiveBoxIcon className="inline-block w-4 h-4 align-text-top" />{" "}
+									Prosperity (V2 / Anew) Creative Download
+									(zip)
+								</A>
+							</td>
+							<td>
+								V2 / Prosperity Anew creative world, also
+								requires mods
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 		</div>
 	);
