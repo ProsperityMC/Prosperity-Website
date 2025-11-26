@@ -90,7 +90,7 @@ export default function Download({
 								<A
 									className="text-yellow-500 hover:underline"
 									href={
-										"https://drive.google.com/file/d/1Cxpbvs9gCttadVn8E7LRFRDpbxn-_QFh/view"
+										"https://prosperity-download.mrmelon54.com/v1/cce806d7-ae73-4b82-857d-2aa81b0765b1/v1-world-files-2024-12-15T075600Z.zip"
 									}>
 									<ArchiveBoxIcon className="inline-block w-4 h-4 align-text-top" />{" "}
 									Prosperity V1 Combined Download (zip)
